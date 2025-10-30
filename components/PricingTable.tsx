@@ -1,13 +1,78 @@
+interface PricingPlan {
+  name: string;
+  price: string;
+  features: string[];
+  highlight?: boolean;
+}
+
 interface PricingTier {
   fee: string;
   budget: string;
 }
 
 interface PricingTableProps {
-  tiers: PricingTier[];
+  plans?: PricingPlan[];
+  tiers?: PricingTier[];
 }
 
-export default function PricingTable({ tiers }: PricingTableProps) {
+export default function PricingTable({ plans, tiers }: PricingTableProps) {
+  // If plans are provided (new format), render pricing cards
+  if (plans && plans.length > 0) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+        {plans.map((plan, index) => (
+          <div key={index} className="group relative">
+            {/* Highlight badge for popular package */}
+            {plan.highlight && (
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                <div className="bg-gradient-to-r from-red-600 to-pink-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg">
+                  PHỔ BIẾN NHẤT
+                </div>
+              </div>
+            )}
+
+            {/* Glow effect */}
+            <div className={`absolute -inset-0.5 bg-gradient-to-r from-red-600 to-pink-600 rounded-2xl blur ${plan.highlight ? 'opacity-20' : 'opacity-0'} group-hover:opacity-20 transition duration-500`}></div>
+
+            {/* Card */}
+            <div className={`relative bg-white rounded-2xl p-6 sm:p-8 border-2 ${plan.highlight ? 'border-red-400 shadow-xl' : 'border-gray-200 shadow-sm'} group-hover:border-red-400 group-hover:shadow-xl transition-all duration-300 h-full flex flex-col`}>
+              {/* Plan name */}
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{plan.name}</h3>
+
+              {/* Price */}
+              <div className="mb-6">
+                <div className="text-2xl sm:text-2xl font-black bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                  {plan.price}
+                </div>
+              </div>
+
+              {/* Features */}
+              <ul className="space-y-3 flex-1 mb-6">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-sm text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA Button */}
+              <button className={`w-full py-3 px-6 rounded-xl font-bold transition-all duration-300 ${plan.highlight ? 'bg-gradient-to-r from-red-600 to-pink-600 text-white shadow-lg hover:shadow-xl hover:scale-105' : 'bg-gray-100 text-gray-900 hover:bg-gradient-to-r hover:from-red-600 hover:to-pink-600 hover:text-white'}`}>
+                Liên hệ ngay
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // Otherwise render tiers table (old format)
+  if (!tiers || tiers.length === 0) {
+    return null;
+  }
   return (
     <div className="max-w-5xl mx-auto">
       {/* Table with premium styling */}

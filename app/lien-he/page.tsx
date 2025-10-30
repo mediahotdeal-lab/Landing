@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
+  const t = useTranslations('contactPage');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -51,14 +53,14 @@ export default function ContactPage() {
         <div className="container mx-auto max-w-[1400px] text-center">
           <div className="inline-block mb-4 sm:mb-6">
             <span className="bg-red-50 text-red-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-              Liên Hệ
+              {t('hero.badge')}
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gray-900 px-4">
-            Kết Nối Với <span className="text-red-600">Chúng Tôi</span>
+            {t('hero.heading1')} <span className="text-red-600">{t('hero.heading2')}</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Sẵn sàng tư vấn miễn phí và giải đáp mọi thắc mắc của bạn về Digital Marketing
+            {t('hero.description')}
           </p>
         </div>
       </section>
@@ -71,7 +73,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-red-600 transition-all">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  Gửi Tin Nhắn Cho Chúng Tôi
+                  {t('form.heading')}
                 </h2>
 
                 {submitted && (
@@ -79,7 +81,7 @@ export default function ContactPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Cảm ơn bạn! Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.
+                    {t('form.successMessage')}
                   </div>
                 )}
 
@@ -87,7 +89,7 @@ export default function ContactPage() {
                   {/* Name */}
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
-                      Họ và tên <span className="text-red-600">*</span>
+                      {t('form.name')} <span className="text-red-600">{t('form.required')}</span>
                     </label>
                     <input
                       type="text"
@@ -97,7 +99,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
-                      placeholder="Nhập họ và tên của bạn"
+                      placeholder={t('form.namePlaceholder')}
                     />
                   </div>
 
@@ -105,7 +107,7 @@ export default function ContactPage() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
-                        Email <span className="text-red-600">*</span>
+                        {t('form.email')} <span className="text-red-600">{t('form.required')}</span>
                       </label>
                       <input
                         type="email"
@@ -115,13 +117,13 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
-                        placeholder="example@email.com"
+                        placeholder={t('form.emailPlaceholder')}
                       />
                     </div>
 
                     <div>
                       <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
-                        Số điện thoại <span className="text-red-600">*</span>
+                        {t('form.phone')} <span className="text-red-600">{t('form.required')}</span>
                       </label>
                       <input
                         type="tel"
@@ -131,7 +133,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
-                        placeholder="0123 456 789"
+                        placeholder={t('form.phonePlaceholder')}
                       />
                     </div>
                   </div>
@@ -139,7 +141,7 @@ export default function ContactPage() {
                   {/* Service */}
                   <div>
                     <label htmlFor="service" className="block text-sm font-semibold text-gray-900 mb-2">
-                      Dịch vụ quan tâm
+                      {t('form.service')}
                     </label>
                     <select
                       id="service"
@@ -148,18 +150,18 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
                     >
-                      <option value="">Chọn dịch vụ</option>
-                      <option value="quang-cao-google-ads">Dịch vụ (Quảng Cáo Google Ads)</option>
-                      <option value="thue-tai-khoan-google-ads-vnd">Dịch vụ (Thuê tài khoản Google Ads)</option>
-                      <option value="thiet-ke-website">Dịch vụ (Thiết kế Website)</option>
-                      <option value="thiet-ke-landing-page">Dịch vụ (Thiết kế Landing Page)</option>
+                      <option value="">{t('form.selectService')}</option>
+                      <option value="quang-cao-google-ads">{t('form.services.googleAds')}</option>
+                      <option value="thue-tai-khoan-google-ads-vnd">{t('form.services.googleAdsRental')}</option>
+                      <option value="thiet-ke-website">{t('form.services.websiteDesign')}</option>
+                      <option value="thiet-ke-landing-page">{t('form.services.landingPageDesign')}</option>
                     </select>
                   </div>
 
                   {/* Message */}
                   <div>
                     <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
-                      Tin nhắn <span className="text-red-600">*</span>
+                      {t('form.message')} <span className="text-red-600">{t('form.required')}</span>
                     </label>
                     <textarea
                       id="message"
@@ -169,7 +171,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors resize-none"
-                      placeholder="Mô tả chi tiết nhu cầu của bạn..."
+                      placeholder={t('form.messagePlaceholder')}
                     />
                   </div>
 
@@ -185,11 +187,11 @@ export default function ContactPage() {
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
-                        <span>Đang gửi...</span>
+                        <span>{t('form.submitting')}</span>
                       </>
                     ) : (
                       <>
-                        <span>Gửi tin nhắn</span>
+                        <span>{t('form.submit')}</span>
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
@@ -205,46 +207,95 @@ export default function ContactPage() {
               {/* Contact Details */}
               <div className="bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-red-600 transition-all">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
-                  Thông Tin Liên Hệ
+                  {t('info.heading')}
                 </h3>
 
                 <div className="space-y-4">
-                  {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-start gap-4 group">
-                      <div className="w-10 h-10 bg-red-50 text-red-600 flex items-center justify-center rounded-lg flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-all">
-                        {info.icon}
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-10 h-10 bg-red-50 text-red-600 flex items-center justify-center rounded-lg flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-all">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900 mb-1">
+                        {t('info.address')}
                       </div>
-                      <div>
-                        <div className="text-sm font-semibold text-gray-900 mb-1">
-                          {info.label}
-                        </div>
-                        <div className="text-gray-600 text-sm">
-                          {info.value}
-                        </div>
+                      <div className="text-gray-600 text-sm">
+                        {t('info.addressValue')}
                       </div>
                     </div>
-                  ))}
+                  </div>
+
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-10 h-10 bg-red-50 text-red-600 flex items-center justify-center rounded-lg flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-all">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900 mb-1">
+                        {t('info.hotline')}
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        {t('info.hotlineValue')}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-10 h-10 bg-red-50 text-red-600 flex items-center justify-center rounded-lg flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-all">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900 mb-1">
+                        {t('info.email')}
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        {t('info.emailValue')}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 group">
+                    <div className="w-10 h-10 bg-red-50 text-red-600 flex items-center justify-center rounded-lg flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-all">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900 mb-1">
+                        {t('info.messenger')}
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        {t('info.messengerValue')}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* Working Hours */}
               <div className="bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-red-600 transition-all">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
-                  Giờ Làm Việc
+                  {t('hours.heading')}
                 </h3>
 
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Thứ 2 - Thứ 6</span>
-                    <span className="font-semibold text-gray-900">8:00 - 18:00</span>
+                    <span className="text-gray-600">{t('hours.weekdays')}</span>
+                    <span className="font-semibold text-gray-900">{t('hours.weekdaysHours')}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Thứ 7</span>
-                    <span className="font-semibold text-gray-900">8:00 - 12:00</span>
+                    <span className="text-gray-600">{t('hours.saturday')}</span>
+                    <span className="font-semibold text-gray-900">{t('hours.saturdayHours')}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Chủ nhật</span>
-                    <span className="font-semibold text-red-600">Nghỉ</span>
+                    <span className="text-gray-600">{t('hours.sunday')}</span>
+                    <span className="font-semibold text-red-600">{t('hours.sundayHours')}</span>
                   </div>
                 </div>
               </div>
@@ -252,7 +303,7 @@ export default function ContactPage() {
               {/* Social Media */}
               <div className="bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-red-600 transition-all">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
-                  Theo Dõi Chúng Tôi
+                  {t('social.heading')}
                 </h3>
 
                 <div className="flex gap-3">
@@ -286,9 +337,9 @@ export default function ContactPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <p className="text-gray-500">Google Maps Embed</p>
+                <p className="text-gray-500">{t('map.placeholder')}</p>
                 <p className="text-sm text-gray-400 mt-2">
-                  Thêm Google Maps embed URL vào đây
+                  {t('map.instruction')}
                 </p>
               </div>
 
@@ -312,26 +363,26 @@ export default function ContactPage() {
         <div className="container mx-auto max-w-[1400px]">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Câu Hỏi Thường Gặp
+              {t('faq.heading')}
             </h2>
           </div>
 
           <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
-            {faqs.map((faq, index) => (
+            {['q1', 'q2', 'q3', 'q4', 'q5'].map((key) => (
               <details
-                key={index}
+                key={key}
                 className="group bg-white border-2 border-gray-200 rounded-xl p-4 sm:p-6 hover:border-red-600 transition-all"
               >
                 <summary className="flex justify-between items-start sm:items-center gap-3 cursor-pointer list-none">
                   <span className="font-bold text-gray-900 group-hover:text-red-600 transition-colors text-sm sm:text-base">
-                    {faq.question}
+                    {t(`faq.questions.${key}.question`)}
                   </span>
                   <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="mt-3 sm:mt-4 text-gray-600 leading-relaxed text-sm sm:text-base">
-                  {faq.answer}
+                  {t(`faq.questions.${key}.answer`)}
                 </p>
               </details>
             ))}
@@ -341,47 +392,6 @@ export default function ContactPage() {
     </main>
   );
 }
-
-// Contact Info Data
-const contactInfo = [
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    ),
-    label: "Địa chỉ",
-    value: "332 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP.HCM"
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-      </svg>
-    ),
-    label: "Hotline",
-    value: "(028) 7300 5757"
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-    label: "Email",
-    value: "contact@hotdealmedia.vn"
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-      </svg>
-    ),
-    label: "Zalo/WhatsApp",
-    value: "0909 xxx xxx"
-  }
-];
 
 // Social Media Data
 const socialMedia = [
@@ -420,29 +430,5 @@ const socialMedia = [
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
       </svg>
     )
-  }
-];
-
-// FAQs Data
-const faqs = [
-  {
-    question: "Tôi cần chuẩn bị gì khi liên hệ với HotDeal Media?",
-    answer: "Bạn chỉ cần chuẩn bị thông tin cơ bản về doanh nghiệp, mục tiêu kinh doanh và ngân sách dự kiến. Đội ngũ chuyên gia của chúng tôi sẽ tư vấn chi tiết và xây dựng chiến lược phù hợp nhất."
-  },
-  {
-    question: "Thời gian phản hồi là bao lâu?",
-    answer: "Chúng tôi cam kết phản hồi trong vòng 24 giờ làm việc. Đối với các trường hợp khẩn cấp, bạn có thể gọi hotline để được hỗ trợ ngay lập tức."
-  },
-  {
-    question: "Chi phí dịch vụ như thế nào?",
-    answer: "Chi phí phụ thuộc vào loại dịch vụ, quy mô chiến dịch và mục tiêu cụ thể. Chúng tôi có gói dịch vụ phù hợp với mọi quy mô từ startup đến doanh nghiệp lớn. Hãy liên hệ để nhận báo giá chi tiết."
-  },
-  {
-    question: "HotDeal Media có làm việc với doanh nghiệp nhỏ không?",
-    answer: "Có, chúng tôi phục vụ mọi quy mô doanh nghiệp. Chúng tôi có nhiều gói dịch vụ linh hoạt phù hợp với ngân sách của các startup và doanh nghiệp vừa và nhỏ."
-  },
-  {
-    question: "Tôi có thể đến văn phòng để trao đổi trực tiếp không?",
-    answer: "Chúng tôi rất hoan nghênh! Bạn vui lòng đặt lịch hẹn trước qua hotline hoặc form liên hệ để đảm bảo chuyên gia phù hợp sẽ tư vấn cho bạn."
   }
 ];

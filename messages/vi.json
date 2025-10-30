@@ -195,5 +195,1115 @@
       "contact": "Liên hệ",
       "blog": "Blog"
     }
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "Về Chúng Tôi - HotDeal Media | Digital Marketing Agency",
+      "description": "HotDeal Media - Đối tác tin cậy của 300+ doanh nghiệp. Chuyên gia giải pháp Marketing Online với 5+ năm kinh nghiệm, ROI trung bình 150%+."
+    },
+    "hero": {
+      "badge": "Về Chúng Tôi",
+      "heading1": "Chúng Tôi Là",
+      "heading2": "HotDeal Media",
+      "description": "Đối tác tin cậy của hơn 300 doanh nghiệp, giúp họ tăng trưởng doanh thu vượt bậc thông qua các giải pháp Digital Marketing hiệu quả và bền vững."
+    },
+    "story": {
+      "heading1": "Câu Chuyện Của",
+      "heading2": "Chúng Tôi",
+      "paragraph1": "Được thành lập vào năm 2019, HotDeal Media bắt đầu từ một đội ngũ nhỏ với niềm đam mê và khát vọng mang đến những giải pháp Marketing Online hiệu quả cho doanh nghiệp Việt.",
+      "paragraph2": "Sau 5 năm phát triển, chúng tôi tự hào đã đồng hành cùng hơn 300 doanh nghiệp từ startup đến các tập đoàn lớn, giúp họ đạt được mục tiêu kinh doanh và tăng trưởng bền vững.",
+      "paragraph3": "Với đội ngũ chuyên gia giàu kinh nghiệm, công nghệ hiện đại và phương pháp làm việc chuyên nghiệp, HotDeal Media cam kết mang đến ROI vượt trội cho mọi chiến dịch Marketing.",
+      "stats": {
+        "experience": "Năm kinh nghiệm",
+        "clients": "Khách hàng",
+        "projects": "Dự án",
+        "roi": "ROI trung bình"
+      }
+    },
+    "mission": {
+      "heading": "Sứ Mệnh & Tầm Nhìn",
+      "missionTitle": "Sứ Mệnh",
+      "missionDesc": "Giúp doanh nghiệp Việt Nam tiếp cận và áp dụng thành công các giải pháp Digital Marketing hiện đại, tăng trưởng doanh thu bền vững và xây dựng thương hiệu mạnh mẽ trong thời đại số.",
+      "visionTitle": "Tầm Nhìn",
+      "visionDesc": "Trở thành agency Digital Marketing hàng đầu Việt Nam, được công nhận bởi chất lượng dịch vụ vượt trội, đội ngũ chuyên gia giàu kinh nghiệm và cam kết mang lại giá trị thực sự cho khách hàng."
+    },
+    "coreValues": {
+      "heading": "Giá Trị Cốt Lõi",
+      "description": "Những giá trị định hướng mọi hành động và quyết định của chúng tôi",
+      "values": {
+        "efficiency": {
+          "title": "Hiệu Quả",
+          "description": "Cam kết mang lại kết quả đo lường được và ROI vượt trội cho mọi chiến dịch."
+        },
+        "credibility": {
+          "title": "Uy Tín",
+          "description": "Xây dựng lòng tin qua từng dự án với sự minh bạch và trách nhiệm cao."
+        },
+        "creativity": {
+          "title": "Sáng Tạo",
+          "description": "Không ngừng đổi mới và sáng tạo để mang đến giải pháp tối ưu nhất."
+        },
+        "dedication": {
+          "title": "Tận Tâm",
+          "description": "Đặt lợi ích khách hàng lên hàng đầu, đồng hành từ A đến Z."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "heading1": "Tại Sao Chọn",
+      "heading2": "HotDeal Media?",
+      "reasons": {
+        "experience": {
+          "title": "Đội ngũ chuyên gia giàu kinh nghiệm",
+          "description": "Hơn 5 năm kinh nghiệm với 500+ dự án thành công trong đa dạng lĩnh vực."
+        },
+        "methodology": {
+          "title": "Phương pháp làm việc chuyên nghiệp",
+          "description": "Quy trình chuẩn hóa, báo cáo minh bạch và tối ưu liên tục."
+        },
+        "technology": {
+          "title": "Công nghệ & công cụ hiện đại",
+          "description": "Sử dụng các công nghệ và tools Marketing tiên tiến nhất."
+        },
+        "roi": {
+          "title": "ROI cam kết",
+          "description": "Cam kết mang lại ROI trung bình 150%+ cho mọi chiến dịch."
+        },
+        "support": {
+          "title": "Hỗ trợ 24/7",
+          "description": "Đội ngũ hỗ trợ sẵn sàng giải đáp mọi thắc mắc bất cứ lúc nào."
+        },
+        "cost": {
+          "title": "Chi phí tối ưu",
+          "description": "Giải pháp phù hợp với mọi quy mô từ startup đến doanh nghiệp lớn."
+        }
+      }
+    },
+    "team": {
+      "heading": "Đội Ngũ Chuyên Gia",
+      "description": "Những con người tài năng và nhiệt huyết đứng sau mỗi chiến dịch thành công",
+      "members": {
+        "ceo": {
+          "name": "Nguyễn Văn A",
+          "position": "CEO & Founder",
+          "description": "10+ năm kinh nghiệm Digital Marketing, từng làm việc tại các agency hàng đầu."
+        },
+        "director": {
+          "name": "Trần Thị B",
+          "position": "Marketing Director",
+          "description": "Chuyên gia Facebook & Google Ads với 200+ chiến dịch thành công."
+        },
+        "seoLead": {
+          "name": "Lê Văn C",
+          "position": "SEO Lead",
+          "description": "Expert SEO với hơn 100 keywords top 3 Google cho các ngành hàng khác nhau."
+        }
+      }
+    },
+    "cta": {
+      "heading1": "Sẵn Sàng Bắt Đầu",
+      "heading2": "Hành Trình",
+      "heading3": "Cùng Chúng Tôi?",
+      "description": "Hãy để HotDeal Media đồng hành cùng bạn tạo nên những thành công vượt bậc trong kinh doanh",
+      "primaryButton": "Nhận tư vấn miễn phí",
+      "secondaryButton": "Xem dịch vụ"
+    }
+  },
+  "blogPage": {
+    "metadata": {
+      "title": "Blog - HotDeal Media | Insights & Tips",
+      "description": "Khám phá các bài viết, tips và chiến lược marketing mới nhất từ HotDeal Media. Cập nhật xu hướng Digital Marketing hiệu quả."
+    },
+    "hero": {
+      "badge": "Blog & Insights",
+      "description": "Khám phá các bài viết, tips và chiến lược marketing mới nhất từ đội ngũ chuyên gia của HotDeal Media"
+    },
+    "post": {
+      "readMore": "Đọc thêm"
+    },
+    "newsletter": {
+      "heading1": "Đăng ký nhận",
+      "heading2": "bài viết mới",
+      "description": "Nhận các tips và insights mới nhất về Digital Marketing qua email",
+      "placeholder": "Email của bạn",
+      "button": "Đăng ký"
+    }
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "Dịch Vụ Digital Marketing",
+      "description": "Khám phá các dịch vụ Digital Marketing chuyên nghiệp tại HotDeal Media: Google Ads, Facebook Ads, SEO, thiết kế website, landing page. Giải pháp toàn diện giúp doanh nghiệp tăng trưởng bền vững và hiệu quả."
+    },
+    "hero": {
+      "badge": "Dịch vụ chuyên nghiệp",
+      "heading": "Dịch Vụ Của Chúng Tôi",
+      "description": "Giải pháp Marketing toàn diện giúp doanh nghiệp tăng trưởng bền vững"
+    },
+    "viewDetails": "Xem chi tiết",
+    "cta": {
+      "heading": "Sẵn sàng bắt đầu?",
+      "description": "Liên hệ với chúng tôi ngay để được tư vấn miễn phí và nhận báo giá chi tiết",
+      "button": "Tư vấn miễn phí"
+    },
+    "serviceDetails": {
+      "quang-cao-google-ads": {
+        "name": "Dịch vụ Quảng Cáo Google Ads",
+        "shortName": "Google Ads",
+        "description": "Thiết lập và tối ưu hóa chiến dịch quảng cáo Google Ads hiệu quả, giúp doanh nghiệp tiếp cận đúng khách hàng tiềm năng."
+      },
+      "thue-tai-khoan-google-ads-vnd": {
+        "name": "Dịch vụ Thuê Tài Khoản Google Ads",
+        "shortName": "Tài khoản Google Ads VNĐ",
+        "description": "Cung cấp tài khoản Google Ads thanh toán bằng VNĐ với độ tin cậy cao, giúp doanh nghiệp Việt Nam dễ dàng thanh toán và quản lý ngân sách quảng cáo hiệu quả."
+      },
+      "thiet-ke-website": {
+        "name": "Dịch vụ Thiết Kế Website",
+        "shortName": "Thiết kế Website",
+        "description": "Thiết kế website chuyên nghiệp, tối ưu toàn diện từ giao diện, trải nghiệm người dùng cho đến chuẩn SEO — giúp doanh nghiệp thực sự bứt phá trên thị trường số."
+      },
+      "thiet-ke-landing-page": {
+        "name": "Dịch vụ Thiết Kế Landing Page Chuyên Nghiệp",
+        "shortName": "Landing Page",
+        "description": "Thiết kế Landing Page chuyên nghiệp – sáng tạo, đậm bản sắc thương hiệu và chuẩn SEO, giúp doanh nghiệp tăng tỉ lệ chuyển đổi và tối ưu chi phí quảng cáo."
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Liên Hệ",
+      "heading1": "Kết Nối Với",
+      "heading2": "Chúng Tôi",
+      "description": "Sẵn sàng tư vấn miễn phí và giải đáp mọi thắc mắc của bạn về Digital Marketing"
+    },
+    "form": {
+      "heading": "Gửi Tin Nhắn Cho Chúng Tôi",
+      "successMessage": "Cảm ơn bạn! Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.",
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "service": "Dịch vụ quan tâm",
+      "message": "Tin nhắn",
+      "required": "*",
+      "namePlaceholder": "Nhập họ và tên của bạn",
+      "emailPlaceholder": "example@email.com",
+      "phonePlaceholder": "0123 456 789",
+      "messagePlaceholder": "Mô tả chi tiết nhu cầu của bạn...",
+      "selectService": "Chọn dịch vụ",
+      "services": {
+        "googleAds": "Dịch vụ (Quảng Cáo Google Ads)",
+        "googleAdsRental": "Dịch vụ (Thuê tài khoản Google Ads)",
+        "websiteDesign": "Dịch vụ (Thiết kế Website)",
+        "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)"
+      },
+      "submit": "Gửi tin nhắn",
+      "submitting": "Đang gửi..."
+    },
+    "info": {
+      "heading": "Thông Tin Liên Hệ",
+      "address": "Địa chỉ",
+      "addressValue": "332 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP.HCM",
+      "hotline": "Hotline",
+      "hotlineValue": "(028) 7300 5757",
+      "email": "Email",
+      "emailValue": "contact@hotdealmedia.vn",
+      "messenger": "Zalo/WhatsApp",
+      "messengerValue": "0909 xxx xxx"
+    },
+    "hours": {
+      "heading": "Giờ Làm Việc",
+      "weekdays": "Thứ 2 - Thứ 6",
+      "weekdaysHours": "8:00 - 18:00",
+      "saturday": "Thứ 7",
+      "saturdayHours": "8:00 - 12:00",
+      "sunday": "Chủ nhật",
+      "sundayHours": "Nghỉ"
+    },
+    "social": {
+      "heading": "Theo Dõi Chúng Tôi"
+    },
+    "map": {
+      "placeholder": "Google Maps Embed",
+      "instruction": "Thêm Google Maps embed URL vào đây"
+    },
+    "faq": {
+      "heading": "Câu Hỏi Thường Gặp",
+      "questions": {
+        "q1": {
+          "question": "Tôi cần chuẩn bị gì khi liên hệ với HotDeal Media?",
+          "answer": "Bạn chỉ cần chuẩn bị thông tin cơ bản về doanh nghiệp, mục tiêu kinh doanh và ngân sách dự kiến. Đội ngũ chuyên gia của chúng tôi sẽ tư vấn chi tiết và xây dựng chiến lược phù hợp nhất."
+        },
+        "q2": {
+          "question": "Thời gian phản hồi là bao lâu?",
+          "answer": "Chúng tôi cam kết phản hồi trong vòng 24 giờ làm việc. Đối với các trường hợp khẩn cấp, bạn có thể gọi hotline để được hỗ trợ ngay lập tức."
+        },
+        "q3": {
+          "question": "Chi phí dịch vụ như thế nào?",
+          "answer": "Chi phí phụ thuộc vào loại dịch vụ, quy mô chiến dịch và mục tiêu cụ thể. Chúng tôi có gói dịch vụ phù hợp với mọi quy mô từ startup đến doanh nghiệp lớn. Hãy liên hệ để nhận báo giá chi tiết."
+        },
+        "q4": {
+          "question": "HotDeal Media có làm việc với doanh nghiệp nhỏ không?",
+          "answer": "Có, chúng tôi phục vụ mọi quy mô doanh nghiệp. Chúng tôi có nhiều gói dịch vụ linh hoạt phù hợp với ngân sách của các startup và doanh nghiệp vừa và nhỏ."
+        },
+        "q5": {
+          "question": "Tôi có thể đến văn phòng để trao đổi trực tiếp không?",
+          "answer": "Chúng tôi rất hoan nghênh! Bạn vui lòng đặt lịch hẹn trước qua hotline hoặc form liên hệ để đảm bảo chuyên gia phù hợp sẽ tư vấn cho bạn."
+        }
+      }
+    }
+  },
+  "serviceDetailPage": {
+    "heroSteps": {
+      "context": {
+        "title": "Bối cảnh thị trường",
+        "badge": "BỐI CẢNH",
+        "icon": "💡"
+      },
+      "challenge": {
+        "title": "Chìa khóa thành công",
+        "titleAlt": "Thách thức",
+        "badge": "CHÌA KHÓA THÀNH CÔNG",
+        "badgeAlt": "THÁCH THỨC",
+        "icon": "⚡"
+      },
+      "solution": {
+        "title": "Giải pháp của Hotdeal",
+        "badge": "GIẢI PHÁP",
+        "icon": "✨"
+      }
+    },
+    "rentalHeroCards": {
+      "context": {
+        "badge": "BỐI CẢNH",
+        "text": "Trong kỷ nguyên số, quảng cáo trực tuyến đã trở thành yếu tố then chốt giúp doanh nghiệp phát triển, mở rộng thị phần và tiếp cận khách hàng chính xác hơn bao giờ hết."
+      },
+      "challenge": {
+        "badge": "THÁCH THỨC",
+        "text": "Tuy nhiên, việc khởi chạy chiến dịch quảng cáo hiệu quả đòi hỏi tài khoản Google Ads ổn định, ngân sách linh hoạt và quản lý chuyên nghiệp."
+      },
+      "solution": {
+        "badge": "GIẢI PHÁP",
+        "text": "Hotdeal Media tự hào mang đến dịch vụ cho thuê tài khoản Google Ads uy tín, an toàn và tối ưu chi phí – giải pháp toàn diện giúp doanh nghiệp bắt đầu quảng cáo ngay mà không lo về vấn đề kỹ thuật hay hạn mức tài khoản."
+      }
+    },
+    "sections": {
+      "aboutService": {
+        "badge": "Giới thiệu dịch vụ"
+      },
+      "whyChooseUs": {
+        "badge": "Lý do chọn chúng tôi"
+      },
+      "accountTypes": {
+        "badge": "Loại tài khoản",
+        "note": "Mọi tài khoản của Hotdeal Media đều được cấp quyền sử dụng hợp lệ, có lịch sử hoạt động minh bạch"
+      },
+      "rentalModel": {
+        "badge": "Mô hình thuê",
+        "heading": "Mô hình thuê tài khoản",
+        "subheading": "Đơn giản, minh bạch và hiệu quả"
+      },
+      "benefits": {
+        "badge": "Lợi ích vượt trội",
+        "heading": "Lợi Ích Khi Sử Dụng Dịch Vụ",
+        "description": "Chúng tôi cam kết mang đến trải nghiệm tốt nhất cho khách hàng"
+      },
+      "packages": {
+        "rentalIntro": "Tài khoản quảng cáo Google VNĐ đối tác uy tín của Google có xác minh nhà quảng cáo đầy đủ.",
+        "features": {
+          "allIndustries": "Phù hợp với mọi ngành hàng",
+          "transparent": "Dịch vụ minh bạch, rõ ràng",
+          "noIllegal": "Nói \"Không\" với sản phẩm/dịch vụ vi phạm pháp luật",
+          "supportSuspension": "Hỗ trợ vấn đề tài khoản tạm ngưng",
+          "invoice": "Xuất hóa đơn VAT đầy đủ"
+        }
+      }
+    },
+    "cta": {
+      "heading": "Bắt đầu với {serviceName} ngay hôm nay",
+      "description": "Liên hệ với chúng tôi để được tư vấn miễn phí và nhận báo giá chi tiết",
+      "primaryButton": "Tư vấn miễn phí",
+      "secondaryButton": "Xem dịch vụ khác"
+    },
+    "common": {
+      "contactNow": "Liên hệ ngay",
+      "popularPackage": "Phổ biến nhất",
+      "importantNote": "Lưu ý quan trọng"
+    },
+    "rental": {
+      "shortName": "Tài khoản Google Ads VNĐ",
+      "sections": {
+        "rentalModel": {
+          "heading": "Mô hình thuê tài khoản",
+          "subheading": "Đơn giản, minh bạch và hiệu quả"
+        }
+      },
+      "hero": {
+        "heading": "Dịch vụ Thuê Tài Khoản Google Ads VNĐ"
+      },
+      "heroDescription": {
+        "context": "Trong kỷ nguyên số, quảng cáo trực tuyến đã trở thành yếu tố then chốt giúp doanh nghiệp phát triển, mở rộng thị phần và tiếp cận khách hàng chính xác hơn bao giờ hết.",
+        "challenge": "Tuy nhiên, việc khởi chạy chiến dịch quảng cáo hiệu quả đòi hỏi tài khoản Google Ads ổn định, ngân sách linh hoạt và quản lý chuyên nghiệp.",
+        "solution": "Hotdeal Media tự hào mang đến dịch vụ cho thuê tài khoản Google Ads uy tín, an toàn và tối ưu chi phí – giải pháp toàn diện giúp doanh nghiệp bắt đầu quảng cáo ngay mà không lo về vấn đề kỹ thuật hay hạn mức tài khoản."
+      },
+      "whyChooseUs": {
+        "title": "Vì Sao Chọn Hotdeal Media?",
+        "description": "Chúng tôi không chỉ cung cấp tài khoản mà còn đồng hành cùng bạn trong suốt hành trình quảng cáo.",
+        "points": [
+          {
+            "title": "Kinh nghiệm dày dạn",
+            "description": "Hotdeal Media đã đồng hành cùng hàng trăm doanh nghiệp đạt kết quả quảng cáo vượt mong đợi."
+          },
+          {
+            "title": "An toàn và minh bạch",
+            "description": "Không sử dụng voucher giả, thẻ Visa lậu hay bất kỳ hình thức gian lận nào."
+          },
+          {
+            "title": "Hỗ trợ marketing toàn diện",
+            "description": "Ngoài cho thuê tài khoản, chúng tôi còn cung cấp dịch vụ chạy quảng cáo Google chuyên nghiệp, tối ưu chuyển đổi và báo cáo chi tiết."
+          },
+          {
+            "title": "Chi phí hợp lý, hiệu quả lâu dài",
+            "description": "Bạn chỉ trả phí thuê – không phí ẩn, không rủi ro."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Bảng Giá Thuê Tài Khoản Google Ads",
+        "plans": [
+          {
+            "name": "GÓI CÁ NHÂN",
+            "price": "Liên hệ tư vấn",
+            "features": [
+              "Tài khoản Invoice VNĐ",
+              "Phù hợp cá nhân & doanh nghiệp nhỏ",
+              "Hỗ trợ kỹ thuật cơ bản",
+              "Bảo hành tài khoản",
+              "Hướng dẫn sử dụng chi tiết"
+            ]
+          },
+          {
+            "name": "GÓI DOANH NGHIỆP",
+            "price": "Liên hệ tư vấn",
+            "features": [
+              "Tài khoản Invoice VNĐ cao cấp",
+              "Phù hợp doanh nghiệp vừa & lớn",
+              "Hỗ trợ kỹ thuật 24/7",
+              "Bảo hành trọn đời",
+              "Tư vấn chiến lược quảng cáo",
+              "Báo cáo định kỳ"
+            ]
+          },
+          {
+            "name": "GÓI AGENCY",
+            "price": "Liên hệ tư vấn",
+            "features": [
+              "Nhiều tài khoản Invoice VNĐ",
+              "Quản lý đa chiến dịch",
+              "Hỗ trợ ưu tiên 24/7",
+              "Bảo hành trọn đời",
+              "Tư vấn chuyên sâu",
+              "Dashboard quản lý tập trung",
+              "Chiết khấu đặc biệt"
+            ]
+          }
+        ]
+      },
+      "aboutService": {
+        "title": "Google Ads là gì và tại sao doanh nghiệp cần?",
+        "description": "Google Ads là nền tảng quảng cáo trực tuyến hàng đầu thế giới, cho phép doanh nghiệp hiển thị sản phẩm và dịch vụ đến người dùng tiềm năng thông qua mạng tìm kiếm Google, YouTube, Gmail và hệ thống đối tác. Đây là công cụ tối ưu để doanh nghiệp:",
+        "platforms": {
+          "searchAds": {
+            "name": "Search Ads",
+            "desc": "Công cụ tìm kiếm Google"
+          },
+          "displayAds": {
+            "name": "Display Ads",
+            "desc": "Mạng hiển thị đối tác"
+          },
+          "videoAds": {
+            "name": "Video Ads",
+            "desc": "YouTube"
+          },
+          "shoppingAds": {
+            "name": "Shopping Ads",
+            "desc": "Google Shopping"
+          },
+          "appCampaigns": {
+            "name": "App Campaigns",
+            "desc": "Ứng dụng di động"
+          },
+          "performanceMax": {
+            "name": "Performance Max",
+            "desc": "Tăng doanh thu & bán hàng"
+          }
+        },
+        "benefits": [
+          "Tăng lượt hiển thị thương hiệu.",
+          "Tăng lượng truy cập website chất lượng.",
+          "Tăng chuyển đổi (Conversion) cho website.",
+          "Nâng cao doanh số bán hàng."
+        ],
+        "additionalText": "Tuy nhiên, để vận hành hiệu quả, doanh nghiệp cần một tài khoản Google Ads \"sạch\", có lịch sử hoạt động tốt, được xác minh đầy đủ và đáp ứng tiêu chuẩn của Google. Nhiều doanh nghiệp gặp khó khăn vì tài khoản bị khóa, bị giới hạn chi tiêu hoặc không thể chạy ngân sách lớn. Đó chính là lý do dịch vụ cho thuê tài khoản Google Ads tại Hotdeal Media ra đời."
+      },
+      "accountTypes": {
+        "title": "Các loại tài khoản cho thuê tại Hotdeal Media",
+        "description": "Hotdeal Media hiện cung cấp nhiều gói tài khoản Google Ads khác nhau để đáp ứng nhu cầu đa dạng của khách hàng.",
+        "invoiceAccount": {
+          "name": "Tài khoản invoice",
+          "description": "Dành cho các Cá nhân, Doanh nghiệp vừa & nhỏ Và cả Agency hoặc doanh nghiệp lớn muốn quản lý nhiều tài khoản cùng lúc, triển khai chiến dịch đa kênh, chạy ngân sách quảng cáo lớn."
+        },
+        "note": "Mọi tài khoản của Hotdeal Media đều được cấp quyền sử dụng hợp lệ, có lịch sử hoạt động minh bạch và đáp ứng đầy đủ tiêu chuẩn của Google."
+      },
+      "rentalModel": {
+        "points": [
+          {
+            "title": "Toàn quyền sử dụng",
+            "description": "Bạn được toàn quyền sử dụng tài khoản, tự setup chiến dịch theo nhu cầu."
+          },
+          {
+            "title": "Thời hạn thuê linh hoạt",
+            "description": "Có thể theo tuần, tháng hoặc quý, tùy mục tiêu quảng cáo."
+          },
+          {
+            "title": "Bảo hành trọn gói",
+            "description": "Nếu tài khoản gặp lỗi hoặc bị khóa, Hotdeal Media hỗ trợ đổi mới nhanh chóng trong 24 giờ."
+          }
+        ]
+      },
+      "features": {
+        "title": "Lợi ích nổi bật khi thuê tài khoản Google Ads",
+        "intro": "Khi lựa chọn Hotdeal Media, bạn không chỉ thuê một tài khoản quảng cáo, mà còn nhận được giải pháp trọn gói giúp chiến dịch đạt hiệu quả tối đa:",
+        "items": [
+          {
+            "name": "Tài khoản uy tín, đã được xác minh",
+            "description": "Hoạt động ổn định, không bị giới hạn ngân sách hay khóa tài khoản."
+          },
+          {
+            "name": "Chạy ngân sách lớn thoải mái",
+            "description": "Phù hợp cho cả doanh nghiệp vừa và nhỏ (SMB) lẫn Agency cần chiến dịch quy mô lớn."
+          },
+          {
+            "name": "Hỗ trợ kỹ thuật 24/7",
+            "description": "Đội ngũ chuyên gia luôn sẵn sàng hỗ trợ xử lý sự cố và tối ưu quảng cáo."
+          },
+          {
+            "name": "Tư vấn cá nhân hóa",
+            "description": "Hướng dẫn thiết lập, vận hành và đo lường hiệu quả chiến dịch."
+          },
+          {
+            "name": "Chi phí linh hoạt, rõ ràng",
+            "description": "Cam kết minh bạch, phù hợp với mọi mô hình kinh doanh."
+          }
+        ]
+      },
+      "process": {
+        "title": "Quy trình thuê tài khoản Google Ads tại Hotdeal Media",
+        "steps": [
+          {
+            "title": "Liên hệ tư vấn",
+            "description": "Gửi yêu cầu qua hotline, email hoặc form đăng ký."
+          },
+          {
+            "title": "Chọn loại tài khoản",
+            "description": "Xác định nhu cầu và ngân sách phù hợp."
+          },
+          {
+            "title": "Ký hợp đồng và thanh toán phí thuê",
+            "description": ""
+          },
+          {
+            "title": "Nhận quyền truy cập tài khoản",
+            "description": "Được hướng dẫn chi tiết cách sử dụng."
+          },
+          {
+            "title": "Hỗ trợ vận hành & tối ưu chiến dịch",
+            "description": "Đội ngũ kỹ thuật đồng hành xuyên suốt."
+          }
+        ],
+        "note": "Tất cả diễn ra nhanh gọn – bảo mật – chuyên nghiệp."
+      },
+      "benefits": [
+        "Kinh nghiệm dày dạn: Hotdeal Media đã đồng hành cùng hàng trăm doanh nghiệp đạt kết quả quảng cáo vượt mong đợi.",
+        "An toàn và minh bạch: Không sử dụng voucher giả, thẻ Visa lậu hay bất kỳ hình thức gian lận nào.",
+        "Hỗ trợ marketing toàn diện: Ngoài cho thuê tài khoản, chúng tôi còn cung cấp dịch vụ chạy quảng cáo Google chuyên nghiệp, tối ưu chuyển đổi và báo cáo chi tiết. Ngoài ra chúng tôi còn hỗ trợ tư vấn chiến lược marketing tổng thể để chiến dịch của bạn đạt hiệu quả nhất.",
+        "Chi phí hợp lý, hiệu quả lâu dài: Bạn chỉ trả phí thuê – không phí ẩn, không rủi ro.",
+        "Cam kết hiệu quả: Mỗi khách hàng đều có chuyên viên tư vấn riêng, đồng hành từ lúc setup đến khi đạt kết quả."
+      ],
+      "quickGuide": {
+        "title": "Hướng dẫn nhanh để bắt đầu",
+        "intro": "Để sở hữu tài khoản Google Ads chất lượng, bạn chỉ cần vài phút:",
+        "steps": [
+          "Liên hệ Hotdeal Media qua hotline, email hoặc form đăng ký trực tuyến.",
+          "Chuẩn bị các thông tin cần thiết (ví dụ: giấy phép kinh doanh nếu có).",
+          "Lựa chọn gói thuê phù hợp với quy mô chiến dịch.",
+          "Ký hợp đồng – nhận tài khoản – bắt đầu quảng cáo ngay!"
+        ]
+      },
+      "finalCTA": {
+        "title": "Liên hệ ngay để nhận ưu đãi đặc biệt",
+        "description": "Đừng để vấn đề tài khoản quảng cáo làm gián đoạn chiến dịch marketing của bạn. Với dịch vụ cho thuê tài khoản Google Ads tại Hotdeal Media, bạn có thể quảng cáo hiệu quả, tiết kiệm chi phí và đạt kết quả nhanh chóng.",
+        "bullets": [
+          "Tư vấn miễn phí về loại tài khoản phù hợp với nhu cầu của bạn.",
+          "Nhận tài khoản Google Ads uy tín, đã được xác minh đầy đủ.",
+          "Hỗ trợ kỹ thuật 24/7 trong suốt quá trình sử dụng."
+        ],
+        "footer": "Hotdeal Media – Uy tín là lợi thế, hiệu quả là cam kết!"
+      }
+    },
+    "googleAds": {
+      "shortName": "Google Ads",
+      "sections": {
+        "rentalModel": {
+          "heading": "Mô hình làm việc",
+          "subheading": "Quy trình triển khai chuyên nghiệp"
+        }
+      },
+      "hero": {
+        "heading1": "Dịch Vụ Quảng Cáo Google Ads Chuyên Nghiệp",
+        "heading2": "Giải Pháp Tăng Doanh Số Nhanh Cùng Hotdeal Media"
+      },
+      "heroDescription": {
+        "context": "Trong kỷ nguyên số, khi người tiêu dùng \"Google\" mọi thứ trước khi ra quyết định mua hàng, việc xuất hiện đúng lúc và đúng nơi trên công cụ tìm kiếm không chỉ là lợi thế mà là yếu tố sống còn cho mọi doanh nghiệp.",
+        "challenge": "Giữa hàng nghìn thương hiệu cạnh tranh, Google Ads chính là \"vũ khí tăng trưởng\" giúp doanh nghiệp vươn tầm hiển thị, thu hút khách hàng tiềm năng và tăng doanh thu vượt trội.",
+        "solution": "Với hơn 10 năm kinh nghiệm trong lĩnh vực Digital Marketing, Hotdeal Media tự hào là đối tác chiến lược của Google tại Việt Nam, cung cấp dịch vụ quảng cáo Google Ads chuyên nghiệp – được thiết kế riêng cho từng ngành nghề, đảm bảo chi phí tối ưu và lợi nhuận tối đa."
+      },
+      "aboutService": {
+        "title": "Google Ads Là Gì Và Vì Sao Doanh Nghiệp Cần?",
+        "description": "Google Ads là nền tảng quảng cáo trực tuyến của Google, cho phép doanh nghiệp hiển thị sản phẩm hoặc dịch vụ của mình trên nhiều kênh khác nhau:",
+        "platforms": {
+          "searchAds": {
+            "name": "Search Ads",
+            "desc": "Công cụ tìm kiếm Google"
+          },
+          "displayAds": {
+            "name": "Display Ads",
+            "desc": "Mạng hiển thị đối tác"
+          },
+          "videoAds": {
+            "name": "Video Ads",
+            "desc": "YouTube"
+          },
+          "shoppingAds": {
+            "name": "Shopping Ads",
+            "desc": "Google Shopping"
+          },
+          "appCampaigns": {
+            "name": "App Campaigns",
+            "desc": "Ứng dụng di động"
+          },
+          "performanceMax": {
+            "name": "Performance Max",
+            "desc": "Tăng doanh thu & bán hàng"
+          }
+        },
+        "benefits": [
+          "Tiếp cận đúng khách hàng mục tiêu: hiển thị cho nhóm người đang thật sự tìm kiếm sản phẩm/dịch vụ của bạn.",
+          "Tối ưu chi phí thông minh: chỉ trả tiền khi có người nhấp vào quảng cáo (CPC).",
+          "Đo lường minh bạch: theo dõi chính xác mỗi lượt nhấp, chuyển đổi, tỷ lệ ROI.",
+          "Tăng doanh thu nhanh chóng: phù hợp với mọi quy mô doanh nghiệp.",
+          "Xây dựng thương hiệu mạnh mẽ: duy trì mức độ nhận diện bền vững trên nền tảng toàn cầu."
+        ],
+        "additionalText": "Nếu SEO giúp bạn phát triển dài hạn, thì Google Ads là cách để bứt phá ngay hôm nay – và để không \"đốt tiền\", bạn cần một đối tác am hiểu Google: Hotdeal Media."
+      },
+      "accountTypes": {
+        "title": "Các loại tài khoản Google Ads",
+        "description": "Chúng tôi hỗ trợ thiết lập và quản lý đa dạng loại tài khoản Google Ads phù hợp với nhu cầu của bạn.",
+        "invoiceAccount": {
+          "name": "Tài khoản Invoice",
+          "description": "Dành cho các cá nhân, doanh nghiệp vừa & nhỏ và cả Agency hoặc doanh nghiệp lớn muốn quản lý nhiều tài khoản cùng lúc, triển khai chiến dịch đa kênh."
+        },
+        "note": "Mọi tài khoản của Hotdeal Media đều được cấp quyền sử dụng hợp lệ, có lịch sử hoạt động minh bạch và đáp ứng đầy đủ tiêu chuẩn của Google."
+      },
+      "whyChooseUs": {
+        "title": "Vì Sao Chọn Hotdeal Media Làm Đối Tác Google Ads?",
+        "description": "Hotdeal Media không chỉ là một agency quảng cáo – chúng tôi là chuyên gia tăng trưởng doanh thu thực chiến. Là Google Certified Partner tại Việt Nam, Hotdeal Media cam kết mang đến chiến dịch quảng cáo hiệu quả với 5 điểm khác biệt:",
+        "points": [
+          {
+            "title": "Chuyên gia chứng nhận Google Partner",
+            "description": "Am hiểu sâu từng ngành hàng, nắm bắt hành vi khách hàng."
+          },
+          {
+            "title": "Chiến lược dựa trên dữ liệu (Data-driven)",
+            "description": "Tối ưu theo từ khóa, thiết bị, thời gian hiển thị và hành vi tìm kiếm."
+          },
+          {
+            "title": "Minh bạch 100%",
+            "description": "Báo cáo chi tiết, bạn biết chính xác từng đồng chi phí được sử dụng thế nào."
+          },
+          {
+            "title": "Tối ưu liên tục",
+            "description": "Theo dõi hằng ngày, điều chỉnh để đạt hiệu suất tốt nhất."
+          },
+          {
+            "title": "Dịch vụ trọn gói & hỗ trợ 24/7",
+            "description": "Từ setup chiến dịch, viết nội dung chuẩn SEO, tối ưu landing page đến chăm sóc after-sale – tất cả được đảm bảo nhất quán."
+          }
+        ]
+      },
+      "rentalModel": {
+        "heading": "Mô hình làm việc",
+        "subheading": "Quy trình triển khai chiến dịch Google Ads chuyên nghiệp và hiệu quả",
+        "points": [
+          {
+            "title": "Tư vấn & lập kế hoạch",
+            "description": "Phân tích mục tiêu, ngân sách và xây dựng chiến lược phù hợp."
+          },
+          {
+            "title": "Thiết lập & triển khai",
+            "description": "Setup tài khoản, tạo chiến dịch và khởi chạy quảng cáo."
+          },
+          {
+            "title": "Tối ưu & báo cáo",
+            "description": "Theo dõi hiệu quả, điều chỉnh liên tục và báo cáo định kỳ."
+          }
+        ]
+      },
+      "features": {
+        "title": "Các Loại Chiến Dịch",
+        "intro": "Google Ads cung cấp nhiều loại chiến dịch quảng cáo khác nhau để đáp ứng mục tiêu kinh doanh đa dạng của bạn:",
+        "items": [
+          {
+            "name": "Search Ads",
+            "description": "Quảng cáo tìm kiếm trên Google Search"
+          },
+          {
+            "name": "Display Ads",
+            "description": "Quảng cáo hiển thị trên mạng đối tác Google"
+          },
+          {
+            "name": "YouTube Ads",
+            "description": "Quảng cáo video trên YouTube"
+          },
+          {
+            "name": "Shopping Ads",
+            "description": "Quảng cáo sản phẩm cho E-commerce"
+          },
+          {
+            "name": "App Campaigns",
+            "description": "Quảng cáo ứng dụng di động"
+          },
+          {
+            "name": "Performance Max",
+            "description": "Chiến dịch tự động tối ưu hiệu suất"
+          }
+        ]
+      },
+      "process": {
+        "title": "Quy Trình Triển Khai Quảng Cáo Google Ads Tại Hotdeal Media",
+        "steps": [
+          {
+            "title": "Tư vấn & xác định mục tiêu",
+            "description": "Lắng nghe, phân tích hành trình khách hàng, xác định KPI rõ ràng (chuyển đổi, doanh số, lead, thương hiệu)."
+          },
+          {
+            "title": "Nghiên cứu thị trường & đối thủ",
+            "description": "Sử dụng công cụ phân tích từ khóa, xác định xu hướng tìm kiếm và cơ hội cạnh tranh."
+          },
+          {
+            "title": "Lên chiến lược & thiết lập chiến dịch",
+            "description": "Chọn loại hình quảng cáo phù hợp (Search, Video, Shopping…), viết nội dung hấp dẫn và SEO-friendly."
+          },
+          {
+            "title": "Theo dõi – tối ưu – thử nghiệm",
+            "description": "Liên tục điều chỉnh giá thầu, nhóm quảng cáo, vị trí hiển thị để tăng tỷ lệ chuyển đổi."
+          },
+          {
+            "title": "Báo cáo & đề xuất chiến lược mở rộng",
+            "description": "Cung cấp báo cáo định kỳ, cùng kế hoạch mở rộng để tối đa lợi nhuận lâu dài."
+          }
+        ],
+        "note": "Mỗi dự án đều có chuyên viên phụ trách riêng, đảm bảo tiến độ nhanh, minh bạch và hiệu quả cao nhất cho doanh nghiệp."
+      },
+      "packages": {
+        "title": "Bảng Giá Dịch Vụ Quảng Cáo Google Ads",
+        "plans": [
+          {
+            "name": "GÓI SETUP",
+            "price": "3,500,000đ/lần",
+            "features": [
+              "Full Setup chuẩn Google Ads",
+              "3 chiến dịch Google Search hoặc Google Display",
+              "1 chiến dịch tiếp thị lại - Remarketing",
+              "Cài đặt chuyển đổi, tiếp thị lại",
+              "Bàn giao tài khoản",
+              "Hướng dẫn sử dụng"
+            ]
+          },
+          {
+            "name": "GÓI CARE",
+            "price": "5,500,000đ/tháng",
+            "features": [
+              "Full Setup Google Ads nâng cao",
+              "5+ chiến dịch Search, Remarketing",
+              "10+ chiến dịch Display, Demand Gen, Video, Pmax",
+              "Phù hợp ngân sách vừa và nhỏ",
+              "Cài đặt và theo dõi chuyển đổi",
+              "Tối ưu quảng cáo hàng ngày",
+              "Áp dụng cho ngân sách dưới 50tr/tháng"
+            ]
+          },
+          {
+            "name": "GÓI SCALE",
+            "price": "Liên hệ Tư Vấn",
+            "features": [
+              "Full Setup tăng trưởng",
+              "Không giới hạn chiến dịch: Display, Demand Gen, Video, Pmax...",
+              "Cài đặt và tối ưu chuyển đổi",
+              "Phù hợp ngân sách lớn",
+              "Cố vấn chiến lược Google ADS 1:1",
+              "Tập chung đẩy mạnh doanh số",
+              "Tư vấn chính sửa, tối ưu, test quảng cáo",
+              "Chạy theo KPIs: CPA, Conversion..."
+            ]
+          }
+        ]
+      },
+      "benefits": [
+        "Tăng traffic website chất lượng cao",
+        "Tối ưu chi phí quảng cáo hiệu quả",
+        "Đo lường ROI chính xác",
+        "Tiếp cận đúng khách hàng mục tiêu"
+      ],
+      "quickGuide": {
+        "title": "Hướng dẫn nhanh để bắt đầu",
+        "intro": "Để bắt đầu chiến dịch Google Ads hiệu quả, bạn chỉ cần vài bước đơn giản:",
+        "steps": [
+          "Liên hệ Hotdeal Media qua hotline, email hoặc form đăng ký trực tuyến.",
+          "Tư vấn miễn phí về mục tiêu và ngân sách phù hợp.",
+          "Lựa chọn gói dịch vụ và ký hợp đồng.",
+          "Nhận chiến lược chi tiết và bắt đầu chiến dịch ngay!"
+        ]
+      },
+      "finalCTA": {
+        "title": "Đừng Để Đối Thủ Xuất Hiện Trước Bạn Trên Google!",
+        "description": "Trong khi bạn đang đọc bài viết này, đối thủ của bạn có thể đang chạy quảng cáo và thu hút chính khách hàng của bạn. Cơ hội không chờ đợi — hãy hành động ngay hôm nay để dẫn đầu thị trường. Liên hệ Hotdeal Media để được:",
+        "bullets": [
+          "Tư vấn 1:1 miễn phí cùng chuyên gia quảng cáo Google.",
+          "Audit miễn phí tài khoản Google Ads hiện có.",
+          "Nhận chiến lược cá nhân hóa phù hợp với mục tiêu doanh nghiệp."
+        ],
+        "footer": "Hotdeal Media – đối tác Google Ads đáng tin cậy, đồng hành cùng thành công bền vững của bạn. Khi quảng cáo được tối ưu đúng cách, mỗi click đều có giá trị – và mỗi đồng chi tiêu là một khoản đầu tư sinh lời."
+      }
+    },
+    "websiteDesign": {
+      "shortName": "Thiết kế Website",
+      "hero": {
+        "heading": "Dịch vụ Thiết kế Website Chuyên nghiệp tại Hotdeal Media"
+      },
+      "heroDescription": {
+        "context": "Trong thời đại chuyển đổi số, website không chỉ là công cụ giới thiệu sản phẩm, dịch vụ đơn thuần mà đã trở thành nền tảng kinh doanh cốt lõi giúp doanh nghiệp xây dựng thương hiệu, tiếp cận khách hàng và tạo doanh thu bền vững.",
+        "challenge": "Một website được thiết kế chỉn chu giống như bộ mặt thương hiệu trong môi trường trực tuyến. Khi khách hàng truy cập, họ không chỉ tìm thông tin mà còn đánh giá mức độ uy tín và chuyên nghiệp của bạn thông qua trải nghiệm đó.",
+        "solution": "Hotdeal Media mang đến dịch vụ thiết kế website chuyên nghiệp, tối ưu toàn diện từ giao diện, trải nghiệm người dùng cho đến chuẩn SEO — giúp doanh nghiệp của bạn thực sự bứt phá trên thị trường số."
+      },
+      "aboutService": {
+        "title": "Vì sao doanh nghiệp cần một website chuyên nghiệp?",
+        "description": "Một website được thiết kế chỉn chu giống như bộ mặt thương hiệu trong môi trường trực tuyến. Khi khách hàng truy cập, họ không chỉ tìm thông tin mà còn đánh giá mức độ uy tín và chuyên nghiệp của bạn thông qua trải nghiệm đó.",
+        "benefits": [
+          "Tỷ lệ chuyển đổi cao hơn: Giao diện đẹp, thân thiện giúp giữ chân người dùng lâu hơn và gia tăng đơn hàng.",
+          "Thể hiện uy tín thương hiệu: Website chuyên nghiệp giúp tạo niềm tin, khẳng định vị thế doanh nghiệp.",
+          "Tối ưu chi phí marketing: Một website chuẩn SEO giúp giảm chi phí quảng cáo, tăng thứ hạng tự nhiên trên Google."
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Lợi ích vượt trội khi sử dụng dịch vụ thiết kế website tại Hotdeal Media",
+        "description": "Chúng tôi không chỉ thiết kế website đẹp mà còn tập trung vào hiệu quả kinh doanh thực tế cho doanh nghiệp.",
+        "points": [
+          {
+            "title": "1. Tiếp cận khách hàng mục tiêu chính xác",
+            "description": "Website được xây dựng theo chiến lược rõ ràng giúp doanh nghiệp xác định đúng đối tượng khách hàng, mở rộng thị trường và nâng cao hiệu quả truyền thông."
+          },
+          {
+            "title": "2. Tăng sức cạnh tranh trên thị trường số",
+            "description": "Trong bối cảnh hàng ngàn thương hiệu xuất hiện mỗi ngày, một website đẹp – chuẩn – nhanh – bảo mật chính là lợi thế vượt trội giúp bạn nổi bật và khẳng định vị thế."
+          },
+          {
+            "title": "3. Tối ưu trải nghiệm người dùng (UX/UI)",
+            "description": "Hotdeal Media chú trọng thiết kế giao diện trực quan, dễ sử dụng, tốc độ tải nhanh, tương thích hoàn hảo với mọi thiết bị. Trải nghiệm tốt giúp tăng tỉ lệ chuyển đổi tự nhiên."
+          },
+          {
+            "title": "4. Hỗ trợ hiệu quả chiến lược marketing – bán hàng",
+            "description": "Chúng tôi không chỉ thiết kế website, mà còn tích hợp các giải pháp marketing thông minh, hỗ trợ chạy quảng cáo, tối ưu SEO và đo lường hiệu quả kinh doanh."
+          }
+        ]
+      },
+      "features": {
+        "title": "Điểm mạnh khác biệt của Hotdeal Media",
+        "items": [
+          {
+            "name": "Đội ngũ thiết kế chuyên nghiệp, sáng tạo và giàu kinh nghiệm",
+            "description": "Hotdeal Media quy tụ đội ngũ chuyên viên thiết kế UI/UX, lập trình viên và chuyên gia SEO nhiều năm kinh nghiệm. Chúng tôi luôn cập nhật các xu hướng thiết kế hiện đại để mang lại website đẳng cấp – chuẩn xu hướng – tối ưu hiệu năng."
+          },
+          {
+            "name": "Giao diện độc quyền, mang dấu ấn thương hiệu",
+            "description": "Mỗi website được tạo ra đều phản ánh phong cách riêng của từng doanh nghiệp. Không có sự sao chép, chỉ có bản sắc thương hiệu được thể hiện rõ nét."
+          },
+          {
+            "name": "Tối ưu chuẩn SEO toàn diện từ đầu đến cuối",
+            "description": "Từ cấu trúc chuyên nghiệp, tối ưu tốc độ, code chuẩn, bố cục nội dung hợp lý đến thẻ meta, hình ảnh, liên kết nội bộ — tất cả đều được chuẩn hóa để giúp website dễ dàng lên top Google, mang lại lượng truy cập tự nhiên bền vững."
+          },
+          {
+            "name": "Bảo mật và tốc độ vượt trội",
+            "description": "Hotdeal Media cam kết website bạn luôn hoạt động tối ưu, tốc độ tải nhanh, mã nguồn sạch và bảo mật tuyệt đối – đảm bảo an toàn thông tin và dữ liệu khách hàng."
+          },
+          {
+            "name": "Hỗ trợ bảo trì – nâng cấp dài hạn",
+            "description": "Chúng tôi không chỉ bàn giao sản phẩm mà còn đồng hành lâu dài, hỗ trợ kỹ thuật nhanh chóng và cập nhật các tính năng mới khi doanh nghiệp phát triển."
+          }
+        ]
+      },
+      "process": {
+        "title": "Quy trình thiết kế website chuẩn chuyên nghiệp",
+        "steps": [
+          {
+            "title": "Bước 1: Tư vấn & Khảo sát nhu cầu",
+            "description": "Chúng tôi lắng nghe và phân tích kỹ mục tiêu, đối tượng và lĩnh vực kinh doanh của bạn để định hướng chiến lược thiết kế hiệu quả."
+          },
+          {
+            "title": "Bước 2: Nghiên cứu thị trường & đối thủ",
+            "description": "Đội ngũ chuyên gia của Hotdeal Media tiến hành phân tích sâu thị trường và xu hướng để tạo lợi thế cạnh tranh mạnh mẽ cho website."
+          },
+          {
+            "title": "Bước 3: Lên kế hoạch & kiến trúc website",
+            "description": "Tất cả cấu trúc trang, luồng tương tác và tính năng đều được định hình cẩn thận nhằm đạt mục tiêu kinh doanh của doanh nghiệp."
+          },
+          {
+            "title": "Bước 4: Thiết kế giao diện (UI/UX)",
+            "description": "Xây dựng giao diện độc quyền, thân thiện, chuẩn responsive cho mọi thiết bị: máy tính, di động, máy tính bảng."
+          },
+          {
+            "title": "Bước 5: Lập trình & kiểm thử",
+            "description": "Phát triển website bằng công nghệ hiện đại, tích hợp tính năng cần thiết, kiểm tra chất lượng trước khi bàn giao."
+          },
+          {
+            "title": "Bước 6: Bàn giao & hướng dẫn sử dụng",
+            "description": "Chúng tôi cung cấp tài liệu hướng dẫn chi tiết và đào tạo quản trị web để bạn chủ động vận hành."
+          },
+          {
+            "title": "Bước 7: Hỗ trợ – bảo trì định kỳ",
+            "description": "Hotdeal Media luôn sẵn sàng hỗ trợ kỹ thuật, cập nhật xu hướng thiết kế mới để website của bạn luôn hoạt động hiệu quả."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Bảng Giá Dịch Vụ Thiết Kế Website Tại Hotdeal Media",
+        "plans": [
+          {
+            "name": "Basic",
+            "price": "5.000.000đ - 7.000.000đ",
+            "features": [
+              "Thiết kế website thông tin cơ bản",
+              "Miễn phí miền .com năm đầu",
+              "Miễn phí hosting năm đầu",
+              "Băng thông không giới hạn",
+              "Website chuẩn SEO",
+              "Hỗ trợ cài đặt SSL free",
+              "Tối ưu tốc độ load trang",
+              "Giao diện chuẩn UX/UI",
+              "Tối ưu giao diện máy tính",
+              "Tối ưu giao diện điện thoại",
+              "Bảo hành miễn phí 1 năm",
+              "Hỗ trợ setup 1 chiến dịch Google Ads",
+              "Data giới hạn 3GB",
+              "Hỗ trợ backup website 1 lần/ tháng"
+            ]
+          },
+          {
+            "name": "Medium",
+            "price": "8.000.000đ - 10.000.000đ",
+            "features": [
+              "Thiết kế website giỏ hàng, nâng cao",
+              "Miễn phí miền .com năm đầu",
+              "Miễn phí hosting năm đầu",
+              "Băng thông không giới hạn",
+              "Website chuẩn SEO",
+              "Hỗ trợ cài đặt SSL free",
+              "Tối ưu tốc độ load trang",
+              "Giao diện chuẩn UX/UI",
+              "Tối ưu giao diện máy tính",
+              "Tối ưu giao diện điện thoại",
+              "Bảo hành miễn phí 1 năm",
+              "Hỗ trợ setup 2 chiến dịch Google Ads",
+              "Data giới hạn 5GB",
+              "Hỗ trợ đăng 5 bài viết/ sản phẩm",
+              "Hỗ trợ backup website 1 lần/ tháng"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": "Tư vấn chi tiết",
+            "features": [
+              "Thiết kế website theo yêu cầu",
+              "Miễn phí miền .com năm đầu",
+              "Miễn phí hosting năm đầu",
+              "Băng thông không giới hạn",
+              "Website chuẩn SEO",
+              "Hỗ trợ cài đặt SSL free",
+              "Tối ưu tốc độ load trang",
+              "Giao diện chuẩn UX/UI",
+              "Tối ưu giao diện máy tính",
+              "Tối ưu giao diện điện thoại",
+              "Bảo hành miễn phí 1 năm",
+              "Hỗ trợ setup 3 chiến dịch Google Ads",
+              "Data giới hạn 7GB",
+              "Hỗ trợ đăng 10 bài viết/ sản phẩm",
+              "Hỗ trợ backup website 1 lần/ tháng"
+            ]
+          }
+        ]
+      },
+      "benefits": [
+        "Tư vấn song hành giữa thiết kế website và chiến lược marketing số.",
+        "Ứng dụng công nghệ thiết kế hiện đại, dễ mở rộng và nâng cấp.",
+        "Thiết kế theo xu hướng mới nhất, tạo trải nghiệm khác biệt.",
+        "Cam kết bảo mật và an toàn tuyệt đối dữ liệu khách hàng.",
+        "Hỗ trợ nâng cấp và tối ưu hiệu suất lâu dài."
+      ]
+    },
+    "landingPage": {
+      "shortName": "Landing Page",
+      "hero": {
+        "heading": "Dịch vụ Thiết kế Landing Page Chuyên Nghiệp"
+      },
+      "heroDescription": {
+        "context": "Trong thời đại số 4.0, Landing Page không chỉ là công cụ tiếp thị mà còn là \"vũ khí bí mật\" giúp doanh nghiệp tăng tỉ lệ chuyển đổi, thu hút khách hàng tiềm năng, và tối ưu chi phí quảng cáo.",
+        "challenge": "Landing Page chuyên nghiệp là chìa khóa để biến lượt truy cập thành khách hàng tiềm năng và tối ưu hóa chi phí quảng cáo cho doanh nghiệp trong thị trường cạnh tranh.",
+        "solution": "Tại Hotdeal Media, chúng tôi cung cấp dịch vụ thiết kế Landing Page chuyên nghiệp – sáng tạo, đậm bản sắc thương hiệu và chuẩn SEO, giúp doanh nghiệp của bạn vươn xa hơn trong thị trường trực tuyến đầy cạnh tranh."
+      },
+      "aboutService": {
+        "title": "Landing Page là gì?",
+        "description": "Landing Page (trang đích) là trang web độc lập, được xây dựng với một mục tiêu duy nhất: thuyết phục người truy cập thực hiện hành động cụ thể như điền form, đăng ký mua hàng, hoặc tải tài liệu.",
+        "benefits": [
+          "Khác với website doanh nghiệp truyền thống có quá nhiều thông tin, Landing Page chỉ tập trung vào một thông điệp mạnh mẽ và một lời kêu gọi hành động rõ ràng – giúp tối ưu hiệu quả chuyển đổi khách hàng."
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Vì Sao Nên Chọn Dịch Vụ Thiết Kế Landing Page của Hotdeal Media?",
+        "description": "Ngoài việc tạo nên các Landing Page đẹp mắt, Hotdeal Media tập trung mang đến giải pháp chuyển đổi toàn diện. Chúng tôi không chỉ \"thiết kế\", mà còn đồng hành chiến lược cùng doanh nghiệp để đạt kết quả tối ưu nhất.",
+        "points": [
+          {
+            "title": "Đội ngũ thiết kế và marketing giàu kinh nghiệm",
+            "description": "Với nhiều năm hoạt động trong lĩnh vực Digital Marketing, đội ngũ chuyên gia của Hotdeal Media hiểu rõ hành vi người tiêu dùng và xu hướng thiết kế hiện đại. Chúng tôi tạo ra các Landing Page thẩm mỹ – chuẩn UX/UI – đúng insight khách hàng."
+          },
+          {
+            "title": "Thiết kế theo yêu cầu và mục tiêu riêng",
+            "description": "Mỗi Landing Page được thiết kế độc quyền cho doanh nghiệp, thể hiện đúng thông điệp thương hiệu, sản phẩm và đối tượng khách hàng mục tiêu. Không rập khuôn, không bản mẫu đại trà – mọi chi tiết được cá nhân hóa để đem lại tỷ lệ chuyển đổi cao nhất."
+          },
+          {
+            "title": "Chuẩn SEO – Tối ưu hiệu suất tìm kiếm",
+            "description": "Hotdeal Media tuân thủ nghiêm ngặt các tiêu chuẩn SEO kỹ thuật và Onpage. Landing Page của bạn sẽ tải nhanh, thân thiện với Google, và dễ dàng lên top từ khóa, giúp tăng lưu lượng truy cập tự nhiên lâu dài."
+          },
+          {
+            "title": "Quy trình làm việc minh bạch và chuyên nghiệp",
+            "description": "Chúng tôi áp dụng quy trình 5 bước chuẩn hóa giúp khách hàng nắm rõ từng giai đoạn, đảm bảo sản phẩm cuối cùng vượt mong đợi."
+          }
+        ]
+      },
+      "features": {
+        "title": "Lợi Ích Khi Sở Hữu Landing Page Chuyên Nghiệp",
+        "intro": "Một Landing Page được thiết kế bài bản không đơn thuần là đẹp mắt, mà còn là công cụ bán hàng tự động hoạt động 24/7. Dưới đây là các lợi ích nổi bật doanh nghiệp nhận được khi hợp tác với Hotdeal Media:",
+        "items": [
+          {
+            "name": "Tăng tỷ lệ chuyển đổi vượt trội",
+            "description": "Tối ưu bố cục, CTA và thông điệp, giúp khách truy cập biến thành khách hàng tiềm năng nhanh chóng."
+          },
+          {
+            "name": "Tiết kiệm chi phí quảng cáo",
+            "description": "Nhờ thiết kế tối ưu trải nghiệm người dùng và hành trình chuyển đổi, bạn giảm đáng kể chi phí cho mỗi chuyển đổi."
+          },
+          {
+            "name": "Thu thập dữ liệu khách hàng hiệu quả",
+            "description": "Tích hợp form, khảo sát, CRM giúp dễ dàng phân tích hành vi và tái tiếp cận đúng tệp khách hàng tiềm năng."
+          },
+          {
+            "name": "Gia tăng uy tín và niềm tin thương hiệu",
+            "description": "Giao diện chuyên nghiệp, rõ ràng và hiện đại giúp khách hàng tin tưởng hơn ngay từ cái nhìn đầu tiên."
+          },
+          {
+            "name": "Hiển thị hoàn hảo trên mọi thiết bị",
+            "description": "Thiết kế responsive chuẩn SEO, đảm bảo trải nghiệm mượt mà trên cả máy tính, tablet, và điện thoại."
+          }
+        ]
+      },
+      "process": {
+        "title": "Quy Trình Thiết Kế Landing Page Tại Hotdeal Media",
+        "steps": [
+          {
+            "title": "Tiếp nhận và phân tích yêu cầu",
+            "description": "Xác định mục tiêu chiến dịch, đối tượng khách hàng, và đặc tính sản phẩm/dịch vụ để định hướng thiết kế phù hợp."
+          },
+          {
+            "title": "Lên ý tưởng và phác thảo giao diện",
+            "description": "Thiết kế bố cục, lựa chọn tông màu và CTA, đảm bảo tính thẩm mỹ và thao tác dễ dàng."
+          },
+          {
+            "title": "Lập trình và tối ưu kỹ thuật",
+            "description": "Sử dụng mã nguồn chuẩn SEO, tốc độ tải nhanh, hiển thị tương thích mọi thiết bị."
+          },
+          {
+            "title": "Kiểm thử và hiệu chỉnh",
+            "description": "Đo lường hiệu suất, chỉnh sửa bố cục hoặc CTA để tối đa hóa tỷ lệ chuyển đổi."
+          },
+          {
+            "title": "Bàn giao và hỗ trợ hậu mãi",
+            "description": "Cung cấp hướng dẫn sử dụng chi tiết, hỗ trợ kỹ thuật và bảo trì định kỳ theo yêu cầu khách hàng."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Bảng Giá Dịch Vụ Thiết Kế Landing Page",
+        "plans": [
+          {
+            "name": "Basic",
+            "price": "1.500.000đ",
+            "features": [
+              "Thiết kế Landing page cơ bản theo mẫu có sẵn",
+              "Tặng hosting năm đầu",
+              "Băng thông không giới hạn",
+              "Giao diện chuẩn UX/UI",
+              "Thiết kế responsive trên các thiết bị",
+              "Bảo hành miễn phí 1 năm"
+            ]
+          },
+          {
+            "name": "Medium",
+            "price": "2.500.000đ",
+            "features": [
+              "Thiết kế Landing page nâng cao theo mẫu có sẵn",
+              "Tặng hosting năm đầu",
+              "Băng thông không giới hạn",
+              "Giao diện chuẩn UX/UI",
+              "Thiết kế responsive trên các thiết bị",
+              "Bảo hành miễn phí 1 năm",
+              "Hỗ trợ setup 1 chiến dịch Google Ads"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": "Từ 3.500.000đ",
+            "features": [
+              "Thiết kế Landing page theo yêu cầu",
+              "Tặng hosting năm đầu",
+              "Băng thông không giới hạn",
+              "Giao diện chuẩn UX/UI",
+              "Thiết kế responsive trên các thiết bị",
+              "Bảo hành miễn phí 1 năm",
+              "Hỗ trợ setup 1 chiến dịch Google Ads"
+            ]
+          }
+        ]
+      },
+      "benefits": [
+        "Thiết kế thẩm mỹ và chuẩn SEO: Tối ưu nội dung, tốc độ và trải nghiệm, giúp Landing Page nhanh chóng lên top Google.",
+        "Giá thành cạnh tranh, minh bạch: Nhiều gói dịch vụ phù hợp với nhu cầu và ngân sách khác nhau – không chi phí ẩn.",
+        "Hỗ trợ tận tâm, hợp tác dài lâu: Chúng tôi không chỉ thiết kế – mà còn đồng hành cùng doanh nghiệp trong từng chiến dịch marketing, đảm bảo Landing Page luôn hoạt động hiệu quả và được cập nhật theo xu hướng mới nhất."
+      ],
+      "finalCTA": {
+        "title": "Hãy Để Hotdeal Media Giúp Bạn Bứt Phá!",
+        "description": "Đừng để chiến dịch quảng cáo của bạn lãng phí vì Landing Page kém hiệu quả. Hãy để Hotdeal Media giúp bạn xây dựng trang đích chuyển đổi mạnh mẽ, ấn tượng và sinh lời thực sự.",
+        "bullets": [
+          "Liên hệ ngay hôm nay để được tư vấn miễn phí và nhận bản thiết kế thử theo mục tiêu doanh nghiệp của bạn!"
+        ],
+        "footer": "Hotdeal Media – Chuyên nghiệp, sáng tạo, và tận tâm đồng hành cùng thành công của bạn."
+      }
+    }
   }
 }

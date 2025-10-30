@@ -26,39 +26,52 @@ interface LocaleProviderProps {
 }
 
 export default function LocaleProvider({ children, initialLocale = 'vi' }: LocaleProviderProps) {
-  const [locale, setLocaleState] = useState<Locale>(initialLocale);
+  // Initialize locale from localStorage first, then fallback to initialLocale
+  const [locale, setLocaleState] = useState<Locale>(() => {
+    if (typeof window !== 'undefined') {
+      const savedLocale = localStorage.getItem('locale') as Locale;
+      if (savedLocale && (savedLocale === 'vi' || savedLocale === 'en')) {
+        return savedLocale;
+      }
+    }
+    return initialLocale;
+  });
+
   const [messages, setMessages] = useState<Record<string, unknown> | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Load messages when locale changes
   useEffect(() => {
     async function loadMessages() {
-      const msgs = await import(`@/messages/${locale}.json`);
-      setMessages(msgs.default);
-    }
-    loadMessages();
+      setIsLoading(true);
+      try {
+        const msgs = await import(`@/messages/${locale}.json`);
+        setMessages(msgs.default);
+      } catch (error) {
+        console.error('Failed to load messages:', error);
+      } finally {
+        setIsLoading(false);
+      }
 
-    // Save to localStorage
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('locale', locale);
-    }
-  }, [locale]);
-
-  // Load locale from localStorage on mount
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const savedLocale = localStorage.getItem('locale') as Locale;
-      if (savedLocale && (savedLocale === 'vi' || savedLocale === 'en')) {
-        setLocaleState(savedLocale);
+      // Save to localStorage
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('locale', locale);
       }
     }
-  }, []);
+    loadMessages();
+  }, [locale]);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
   };
 
-  if (!messages) {
-    return null; // or a loading spinner
+  if (isLoading || !messages) {
+    // Show a minimal loading state to prevent flash
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red-600"></div>
+      </div>
+    );
   }
 
   return (

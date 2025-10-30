@@ -1,32 +1,13 @@
-import { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useLocale } from '@/components/LocaleProvider';
 import { services } from './services-data';
 
-export const metadata: Metadata = {
-  title: "Dịch Vụ Digital Marketing",
-  description: "Khám phá các dịch vụ Digital Marketing chuyên nghiệp tại HotDeal Media: Google Ads, Facebook Ads, SEO, thiết kế website, landing page. Giải pháp toàn diện giúp doanh nghiệp tăng trưởng bền vững và hiệu quả.",
-  keywords: [
-    "dịch vụ marketing",
-    "digital marketing services",
-    "dịch vụ google ads",
-    "dịch vụ facebook ads",
-    "dịch vụ seo",
-    "thiết kế website",
-    "thiết kế landing page",
-    "marketing online",
-    "quảng cáo trực tuyến"
-  ],
-  openGraph: {
-    title: "Dịch Vụ Digital Marketing - HotDeal Media",
-    description: "Giải pháp Marketing toàn diện: Google Ads, SEO, thiết kế website. Tăng trưởng bền vững cho doanh nghiệp.",
-    url: "/dich-vu",
-  },
-  alternates: {
-    canonical: "/dich-vu",
-  },
-};
-
 export default function ServicesPage() {
+  const t = useTranslations('servicesPage');
+  const { locale } = useLocale();
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -41,14 +22,14 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6">
               <span className="bg-red-50 text-red-600 px-4 py-2 rounded-full text-sm font-semibold">
-                Dịch vụ chuyên nghiệp
+                {t('hero.badge')}
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 leading-relaxed">
-              Dịch Vụ Của Chúng Tôi
+              {t('hero.heading')}
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              Giải pháp Marketing toàn diện giúp doanh nghiệp tăng trưởng bền vững
+              {t('hero.description')}
             </p>
           </div>
         </div>
@@ -58,41 +39,46 @@ export default function ServicesPage() {
       <section className="py-20">
         <div className="w-full md:w-[90%] max-w-[1440px] mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {services.map((service) => (
-              <Link
-                key={service.slug}
-                href={`/dich-vu/${service.slug}`}
-                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
-              >
-                <div className="p-8">
-                  <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
-                    <span className="text-3xl">{service.icon}</span>
+            {services.map((service) => {
+              const serviceName = t(`serviceDetails.${service.slug}.name`) || service.name;
+              const serviceDesc = t(`serviceDetails.${service.slug}.description`) || service.description;
+
+              return (
+                <Link
+                  key={service.slug}
+                  href={`/dich-vu/${service.slug}`}
+                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
+                >
+                  <div className="p-8">
+                    <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
+                      <span className="text-3xl">{service.icon}</span>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-red-600 transition-colors leading-relaxed">
+                      {serviceName}
+                    </h3>
+                    <p className="text-gray-600 mb-6 line-clamp-3">
+                      {serviceDesc}
+                    </p>
+                    <div className="flex items-center text-red-600 font-semibold">
+                      {t('viewDetails')}
+                      <svg
+                        className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-red-600 transition-colors leading-relaxed">
-                    {service.name}
-                  </h3>
-                  <p className="text-gray-600 mb-6 line-clamp-3">
-                    {service.description}
-                  </p>
-                  <div className="flex items-center text-red-600 font-semibold">
-                    Xem chi tiết
-                    <svg
-                      className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -101,16 +87,16 @@ export default function ServicesPage() {
       <section className="bg-gray-900 text-white py-16">
         <div className="w-full md:w-[90%] max-w-[1440px] mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 leading-relaxed">
-            Sẵn sàng bắt đầu?
+            {t('cta.heading')}
           </h2>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Liên hệ với chúng tôi ngay để được tư vấn miễn phí và nhận báo giá chi tiết
+            {t('cta.description')}
           </p>
           <Link
             href="#contact"
             className="inline-block px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:scale-105"
           >
-            Tư vấn miễn phí
+            {t('cta.button')}
           </Link>
         </div>
       </section>

@@ -195,5 +195,1121 @@
       "contact": "Contact",
       "blog": "Blog"
     }
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "About Us - HotDeal Media | Digital Marketing Agency",
+      "description": "HotDeal Media - Trusted partner of 300+ businesses. Digital Marketing solutions expert with 5+ years of experience, average ROI 150%+."
+    },
+    "hero": {
+      "badge": "About Us",
+      "heading1": "We Are",
+      "heading2": "HotDeal Media",
+      "description": "Trusted partner of over 300 businesses, helping them achieve exceptional revenue growth through effective and sustainable Digital Marketing solutions."
+    },
+    "story": {
+      "heading1": "Our",
+      "heading2": "Story",
+      "paragraph1": "Founded in 2019, HotDeal Media started as a small team with passion and ambition to deliver effective Online Marketing solutions for Vietnamese businesses.",
+      "paragraph2": "After 5 years of development, we are proud to have partnered with over 300 businesses from startups to large corporations, helping them achieve business goals and sustainable growth.",
+      "paragraph3": "With an experienced team of experts, modern technology, and professional working methods, HotDeal Media is committed to delivering superior ROI for every Marketing campaign.",
+      "stats": {
+        "experience": "Years of Experience",
+        "clients": "Clients",
+        "projects": "Projects",
+        "roi": "Average ROI"
+      }
+    },
+    "mission": {
+      "heading": "Mission & Vision",
+      "missionTitle": "Mission",
+      "missionDesc": "Help Vietnamese businesses access and successfully apply modern Digital Marketing solutions, achieve sustainable revenue growth and build strong brands in the digital era.",
+      "visionTitle": "Vision",
+      "visionDesc": "Become Vietnam's leading Digital Marketing agency, recognized for superior service quality, experienced team of experts, and commitment to delivering real value to customers."
+    },
+    "coreValues": {
+      "heading": "Core Values",
+      "description": "The values that guide all our actions and decisions",
+      "values": {
+        "efficiency": {
+          "title": "Efficiency",
+          "description": "Committed to delivering measurable results and superior ROI for every campaign."
+        },
+        "credibility": {
+          "title": "Credibility",
+          "description": "Building trust through each project with transparency and high responsibility."
+        },
+        "creativity": {
+          "title": "Creativity",
+          "description": "Constantly innovating and creating to deliver the most optimal solutions."
+        },
+        "dedication": {
+          "title": "Dedication",
+          "description": "Putting customer interests first, accompanying from A to Z."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "heading1": "Why Choose",
+      "heading2": "HotDeal Media?",
+      "reasons": {
+        "experience": {
+          "title": "Team of experienced experts",
+          "description": "Over 5 years of experience with 500+ successful projects across diverse industries."
+        },
+        "methodology": {
+          "title": "Professional working methodology",
+          "description": "Standardized processes, transparent reporting and continuous optimization."
+        },
+        "technology": {
+          "title": "Modern technology & tools",
+          "description": "Using the most advanced Marketing technologies and tools."
+        },
+        "roi": {
+          "title": "Committed ROI",
+          "description": "Committed to delivering average ROI of 150%+ for every campaign."
+        },
+        "support": {
+          "title": "24/7 Support",
+          "description": "Support team ready to answer all questions anytime."
+        },
+        "cost": {
+          "title": "Optimal cost",
+          "description": "Solutions suitable for all scales from startups to large enterprises."
+        }
+      }
+    },
+    "team": {
+      "heading": "Expert Team",
+      "description": "The talented and passionate people behind every successful campaign",
+      "members": {
+        "ceo": {
+          "name": "Nguyen Van A",
+          "position": "CEO & Founder",
+          "description": "10+ years of Digital Marketing experience, worked at leading agencies."
+        },
+        "director": {
+          "name": "Tran Thi B",
+          "position": "Marketing Director",
+          "description": "Facebook & Google Ads expert with 200+ successful campaigns."
+        },
+        "seoLead": {
+          "name": "Le Van C",
+          "position": "SEO Lead",
+          "description": "SEO expert with 100+ keywords in top 3 Google across different industries."
+        }
+      }
+    },
+    "cta": {
+      "heading1": "Ready to Start the",
+      "heading2": "Journey",
+      "heading3": "With Us?",
+      "description": "Let HotDeal Media accompany you to create exceptional success in business",
+      "primaryButton": "Get Free Consultation",
+      "secondaryButton": "View Services"
+    }
+  },
+  "blogPage": {
+    "metadata": {
+      "title": "Blog - HotDeal Media | Insights & Tips",
+      "description": "Discover the latest articles, tips and marketing strategies from HotDeal Media. Stay updated with effective Digital Marketing trends."
+    },
+    "hero": {
+      "badge": "Blog & Insights",
+      "description": "Discover the latest articles, tips and marketing strategies from HotDeal Media's expert team"
+    },
+    "post": {
+      "readMore": "Read more"
+    },
+    "newsletter": {
+      "heading1": "Subscribe to",
+      "heading2": "new articles",
+      "description": "Get the latest tips and insights about Digital Marketing via email",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    }
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "Digital Marketing Services",
+      "description": "Explore professional Digital Marketing services at HotDeal Media: Google Ads, Facebook Ads, SEO, website design, landing pages. Comprehensive solutions to help businesses grow sustainably and effectively."
+    },
+    "hero": {
+      "badge": "Professional Services",
+      "heading": "Our Services",
+      "description": "Comprehensive Marketing solutions to help businesses grow sustainably"
+    },
+    "viewDetails": "View Details",
+    "cta": {
+      "heading": "Ready to get started?",
+      "description": "Contact us now for free consultation and detailed quote",
+      "button": "Free Consultation"
+    },
+    "serviceDetails": {
+      "quang-cao-google-ads": {
+        "name": "Google Ads Advertising Service",
+        "shortName": "Google Ads",
+        "description": "Set up and optimize effective Google Ads campaigns, helping businesses reach the right potential customers."
+      },
+      "thue-tai-khoan-google-ads-vnd": {
+        "name": "Google Ads Account Rental Service",
+        "shortName": "Google Ads Account VND",
+        "description": "Provide highly reliable Google Ads accounts with VND payment, helping Vietnamese businesses easily pay and manage advertising budgets effectively."
+      },
+      "thiet-ke-website": {
+        "name": "Professional Website Design Service",
+        "shortName": "Website Design",
+        "description": "Professional website design, comprehensive optimization from interface, user experience to SEO standards — helping businesses truly break through in the digital market."
+      },
+      "thiet-ke-landing-page": {
+        "name": "Professional Landing Page Design Service",
+        "shortName": "Landing Page",
+        "description": "Professional Landing Page design – creative, brand-focused and SEO-optimized, helping businesses increase conversion rates and optimize advertising costs."
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Contact",
+      "heading1": "Connect With",
+      "heading2": "Us",
+      "description": "Ready to provide free consultation and answer all your questions about Digital Marketing"
+    },
+    "form": {
+      "heading": "Send Us A Message",
+      "successMessage": "Thank you! We will get back to you as soon as possible.",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "service": "Interested Service",
+      "message": "Message",
+      "required": "*",
+      "namePlaceholder": "Enter your full name",
+      "emailPlaceholder": "example@email.com",
+      "phonePlaceholder": "0123 456 789",
+      "messagePlaceholder": "Describe your needs in detail...",
+      "selectService": "Select Service",
+      "services": {
+        "googleAds": "Service (Google Ads Advertising)",
+        "googleAdsRental": "Service (Google Ads Account Rental)",
+        "websiteDesign": "Service (Website Design)",
+        "landingPageDesign": "Service (Landing Page Design)"
+      },
+      "submit": "Send message",
+      "submitting": "Sending..."
+    },
+    "info": {
+      "heading": "Contact Information",
+      "address": "Address",
+      "addressValue": "332 Luy Ban Bich, Hoa Thanh Ward, Tan Phu District, Ho Chi Minh City",
+      "hotline": "Hotline",
+      "hotlineValue": "(028) 7300 5757",
+      "email": "Email",
+      "emailValue": "contact@hotdealmedia.vn",
+      "messenger": "Zalo/WhatsApp",
+      "messengerValue": "0909 xxx xxx"
+    },
+    "hours": {
+      "heading": "Working Hours",
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "8:00 AM - 6:00 PM",
+      "saturday": "Saturday",
+      "saturdayHours": "8:00 AM - 12:00 PM",
+      "sunday": "Sunday",
+      "sundayHours": "Closed"
+    },
+    "social": {
+      "heading": "Follow Us"
+    },
+    "map": {
+      "placeholder": "Google Maps Embed",
+      "instruction": "Add Google Maps embed URL here"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "questions": {
+        "q1": {
+          "question": "What do I need to prepare when contacting HotDeal Media?",
+          "answer": "You just need to prepare basic information about your business, business goals and estimated budget. Our team of experts will provide detailed advice and build the most suitable strategy."
+        },
+        "q2": {
+          "question": "What is the response time?",
+          "answer": "We are committed to responding within 24 working hours. For urgent cases, you can call our hotline for immediate support."
+        },
+        "q3": {
+          "question": "What are the service costs?",
+          "answer": "Costs depend on the type of service, campaign scale and specific goals. We have service packages suitable for all sizes from startups to large enterprises. Contact us for detailed quotes."
+        },
+        "q4": {
+          "question": "Does HotDeal Media work with small businesses?",
+          "answer": "Yes, we serve all business sizes. We have many flexible service packages suitable for budgets of startups and small and medium enterprises."
+        },
+        "q5": {
+          "question": "Can I come to the office to discuss directly?",
+          "answer": "We welcome you! Please make an appointment in advance via hotline or contact form to ensure the right expert will consult with you."
+        }
+      }
+    }
+  },
+  "serviceDetailPage": {
+    "heroSteps": {
+      "context": {
+        "title": "Market Context",
+        "badge": "CONTEXT",
+        "icon": "💡"
+      },
+      "challenge": {
+        "title": "Key to Success",
+        "titleAlt": "Challenge",
+        "badge": "KEY TO SUCCESS",
+        "badgeAlt": "CHALLENGE",
+        "icon": "⚡"
+      },
+      "solution": {
+        "title": "Hotdeal's Solution",
+        "badge": "SOLUTION",
+        "icon": "✨"
+      }
+    },
+    "rentalHeroCards": {
+      "context": {
+        "badge": "CONTEXT",
+        "text": "In the digital era, online advertising has become a key factor helping businesses grow, expand market share and reach customers more accurately than ever before."
+      },
+      "challenge": {
+        "badge": "CHALLENGE",
+        "text": "However, launching effective advertising campaigns requires a stable Google Ads account, flexible budget and professional management."
+      },
+      "solution": {
+        "badge": "SOLUTION",
+        "text": "Hotdeal Media is proud to bring reputable, safe and cost-optimized Google Ads account rental service – a comprehensive solution helping businesses start advertising immediately without worrying about technical issues or account limits."
+      }
+    },
+    "sections": {
+      "aboutService": {
+        "badge": "Service Introduction"
+      },
+      "whyChooseUs": {
+        "badge": "Why Choose Us"
+      },
+      "accountTypes": {
+        "badge": "Account Types",
+        "note": "All accounts from Hotdeal Media are legally authorized with transparent activity history"
+      },
+      "rentalModel": {
+        "badge": "Rental Model",
+        "heading": "Account Rental Model",
+        "subheading": "Simple, transparent and effective"
+      },
+      "benefits": {
+        "badge": "Outstanding Benefits",
+        "heading": "Benefits of Using Our Service",
+        "description": "We are committed to delivering the best experience for our customers"
+      },
+      "packages": {
+        "rentalIntro": "Google Ads VND account from Google's reputable partner with full advertiser verification.",
+        "features": {
+          "allIndustries": "Suitable for all industries",
+          "transparent": "Transparent and clear service",
+          "noIllegal": "Say \"No\" to illegal products/services",
+          "supportSuspension": "Support for account suspension issues",
+          "invoice": "Full VAT invoicing"
+        }
+      }
+    },
+    "cta": {
+      "heading": "Get started with {serviceName} today",
+      "description": "Contact us for free consultation and detailed quote",
+      "primaryButton": "Free Consultation",
+      "secondaryButton": "View other services"
+    },
+    "common": {
+      "contactNow": "Contact Now",
+      "popularPackage": "Most Popular",
+      "importantNote": "Important Note"
+    },
+    "rental": {
+      "shortName": "Google Ads Account VND",
+      "sections": {
+        "rentalModel": {
+          "heading": "Account Rental Model",
+          "subheading": "Simple, transparent and effective"
+        }
+      },
+      "hero": {
+        "heading": "Google Ads VND Account Rental Service"
+      },
+      "heroDescription": {
+        "context": "In the digital era, online advertising has become a key factor helping businesses grow, expand market share and reach customers more accurately than ever before.",
+        "challenge": "However, launching effective advertising campaigns requires a stable Google Ads account, flexible budget and professional management.",
+        "solution": "Hotdeal Media is proud to bring reputable, safe and cost-optimized Google Ads account rental service – a comprehensive solution helping businesses start advertising immediately without worrying about technical issues or account limits."
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Hotdeal Media?",
+        "description": "We don't just provide accounts but also accompany you throughout your advertising journey.",
+        "points": [
+          {
+            "title": "Extensive experience",
+            "description": "Hotdeal Media has accompanied hundreds of businesses achieving advertising results beyond expectations."
+          },
+          {
+            "title": "Safe and transparent",
+            "description": "No fake vouchers, counterfeit Visas or any form of fraud."
+          },
+          {
+            "title": "Comprehensive marketing support",
+            "description": "Besides account rental, we also provide professional Google advertising services, conversion optimization and detailed reporting."
+          },
+          {
+            "title": "Reasonable costs, long-term effectiveness",
+            "description": "You only pay rental fee – no hidden fees, no risks."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Google Ads Account Rental Pricing",
+        "plans": [
+          {
+            "name": "PERSONAL PACKAGE",
+            "price": "Contact for consultation",
+            "features": [
+              "Invoice VND Account",
+              "Suitable for individuals & small businesses",
+              "Basic technical support",
+              "Account warranty",
+              "Detailed usage instructions"
+            ]
+          },
+          {
+            "name": "BUSINESS PACKAGE",
+            "price": "Contact for consultation",
+            "features": [
+              "Premium Invoice VND Account",
+              "Suitable for medium & large businesses",
+              "24/7 technical support",
+              "Lifetime warranty",
+              "Advertising strategy consulting",
+              "Periodic reporting"
+            ]
+          },
+          {
+            "name": "AGENCY PACKAGE",
+            "price": "Contact for consultation",
+            "features": [
+              "Multiple Invoice VND Accounts",
+              "Multi-campaign management",
+              "24/7 priority support",
+              "Lifetime warranty",
+              "In-depth consulting",
+              "Centralized management dashboard",
+              "Special discount"
+            ]
+          }
+        ]
+      },
+      "aboutService": {
+        "title": "What is Google Ads and why do businesses need it?",
+        "description": "Google Ads is the world's leading online advertising platform, allowing businesses to display products and services to potential users through Google search network, YouTube, Gmail and partner systems. This is the optimal tool for businesses to:",
+        "platforms": {
+          "searchAds": {
+            "name": "Search Ads",
+            "desc": "Google Search Engine"
+          },
+          "displayAds": {
+            "name": "Display Ads",
+            "desc": "Partner Display Network"
+          },
+          "videoAds": {
+            "name": "Video Ads",
+            "desc": "YouTube"
+          },
+          "shoppingAds": {
+            "name": "Shopping Ads",
+            "desc": "Google Shopping"
+          },
+          "appCampaigns": {
+            "name": "App Campaigns",
+            "desc": "Mobile Applications"
+          },
+          "performanceMax": {
+            "name": "Performance Max",
+            "desc": "Revenue & Sales Growth"
+          }
+        },
+        "benefits": [
+          "Increase brand visibility.",
+          "Increase quality website traffic.",
+          "Increase conversion for website.",
+          "Enhance sales revenue."
+        ],
+        "additionalText": "However, to operate effectively, businesses need a \"clean\" Google Ads account with good activity history, fully verified and meeting Google's standards. Many businesses face difficulties because accounts are blocked, spending limited or cannot run large budgets. That is why Google Ads account rental service at Hotdeal Media was created."
+      },
+      "accountTypes": {
+        "title": "Account types for rent at Hotdeal Media",
+        "description": "Hotdeal Media currently provides various Google Ads account packages to meet diverse customer needs.",
+        "invoiceAccount": {
+          "name": "Invoice account",
+          "description": "For Individuals, Small & Medium Enterprises, and even Agencies or large enterprises that want to manage multiple accounts simultaneously, implement multi-channel campaigns, run large advertising budgets."
+        },
+        "note": "All accounts from Hotdeal Media are legally authorized with transparent activity history and fully meet Google's standards."
+      },
+      "rentalModel": {
+        "points": [
+          {
+            "title": "Full usage rights",
+            "description": "You have full usage rights of the account, set up campaigns as needed."
+          },
+          {
+            "title": "Flexible rental period",
+            "description": "Can be weekly, monthly or quarterly, depending on advertising objectives."
+          },
+          {
+            "title": "Complete warranty",
+            "description": "If account encounters errors or is blocked, Hotdeal Media supports quick replacement within 24 hours."
+          }
+        ]
+      },
+      "features": {
+        "title": "Outstanding benefits when renting Google Ads account",
+        "intro": "When choosing Hotdeal Media, you not only rent an advertising account, but also receive a complete solution to help campaigns achieve maximum effectiveness:",
+        "items": [
+          {
+            "name": "Reputable, verified account",
+            "description": "Stable operation, no budget limitations or account blocks."
+          },
+          {
+            "name": "Run large budgets comfortably",
+            "description": "Suitable for both small and medium enterprises (SMB) and Agencies needing large-scale campaigns."
+          },
+          {
+            "name": "24/7 technical support",
+            "description": "Expert team always ready to support troubleshooting and optimize advertising."
+          },
+          {
+            "name": "Personalized consulting",
+            "description": "Guide setup, operation and measure campaign effectiveness."
+          },
+          {
+            "name": "Flexible, clear costs",
+            "description": "Transparent commitment, suitable for all business models."
+          }
+        ]
+      },
+      "process": {
+        "title": "Google Ads account rental process at Hotdeal Media",
+        "steps": [
+          {
+            "title": "Contact consultation",
+            "description": "Send request via hotline, email or registration form."
+          },
+          {
+            "title": "Choose account type",
+            "description": "Identify appropriate needs and budget."
+          },
+          {
+            "title": "Sign contract and pay rental fee",
+            "description": ""
+          },
+          {
+            "title": "Receive account access",
+            "description": "Get detailed instructions on usage."
+          },
+          {
+            "title": "Operation support & campaign optimization",
+            "description": "Technical team accompanies throughout."
+          }
+        ],
+        "note": "Everything happens quickly – securely – professionally."
+      },
+      "benefits": [
+        "Extensive experience: Hotdeal Media has accompanied hundreds of businesses achieving advertising results beyond expectations.",
+        "Safe and transparent: No fake vouchers, counterfeit Visas or any form of fraud.",
+        "Comprehensive marketing support: Besides account rental, we also provide professional Google advertising services, conversion optimization and detailed reporting. We also support overall marketing strategy consulting to make your campaign most effective.",
+        "Reasonable costs, long-term effectiveness: You only pay rental fee – no hidden fees, no risks.",
+        "Effectiveness commitment: Each customer has a dedicated consultant, accompanying from setup to results."
+      ],
+      "quickGuide": {
+        "title": "Quick guide to get started",
+        "intro": "To own a quality Google Ads account, you only need a few minutes:",
+        "steps": [
+          "Contact Hotdeal Media via hotline, email or online registration form.",
+          "Prepare necessary information (e.g., business license if any).",
+          "Choose a rental package suitable for campaign scale.",
+          "Sign contract – receive account – start advertising immediately!"
+        ]
+      },
+      "finalCTA": {
+        "title": "Contact now to receive special offers",
+        "description": "Don't let advertising account issues interrupt your marketing campaign. With Google Ads account rental service at Hotdeal Media, you can advertise effectively, save costs and achieve results quickly.",
+        "bullets": [
+          "Free consultation on the account type suitable for your needs.",
+          "Receive reputable, fully verified Google Ads account.",
+          "24/7 technical support throughout the usage period."
+        ],
+        "footer": "Hotdeal Media – Reputation is advantage, effectiveness is commitment!"
+      }
+    },
+    "googleAds": {
+      "shortName": "Google Ads",
+      "sections": {
+        "rentalModel": {
+          "heading": "Working Model",
+          "subheading": "Professional implementation process"
+        }
+      },
+      "hero": {
+        "heading1": "Professional Google Ads Advertising Service",
+        "heading2": "Fast Revenue Growth Solution with Hotdeal Media"
+      },
+      "heroDescription": {
+        "context": "In the digital era, when consumers \"Google\" everything before making a purchase decision, appearing at the right time and place on search engines is not just an advantage but a vital factor for every business.",
+        "challenge": "Among thousands of competing brands, Google Ads is the \"growth weapon\" that helps businesses expand visibility, attract potential customers, and boost revenue remarkably.",
+        "solution": "With over 10 years of experience in Digital Marketing, Hotdeal Media is proud to be Google's strategic partner in Vietnam, providing professional Google Ads advertising services – customized for each industry, ensuring optimal costs and maximum profits."
+      },
+      "aboutService": {
+        "title": "What is Google Ads and Why Do Businesses Need It?",
+        "description": "Google Ads is Google's online advertising platform, allowing businesses to display their products or services across multiple channels:",
+        "platforms": {
+          "searchAds": {
+            "name": "Search Ads",
+            "desc": "Google Search Engine"
+          },
+          "displayAds": {
+            "name": "Display Ads",
+            "desc": "Partner Display Network"
+          },
+          "videoAds": {
+            "name": "Video Ads",
+            "desc": "YouTube"
+          },
+          "shoppingAds": {
+            "name": "Shopping Ads",
+            "desc": "Google Shopping"
+          },
+          "appCampaigns": {
+            "name": "App Campaigns",
+            "desc": "Mobile Applications"
+          },
+          "performanceMax": {
+            "name": "Performance Max",
+            "desc": "Revenue & Sales Growth"
+          }
+        },
+        "benefits": [
+          "Reach the right target customers: display to people actively searching for your products/services.",
+          "Smart cost optimization: only pay when someone clicks on your ad (CPC).",
+          "Transparent measurement: accurately track every click, conversion, ROI rate.",
+          "Rapid revenue growth: suitable for businesses of all sizes.",
+          "Strong brand building: maintain sustainable recognition on a global platform."
+        ],
+        "additionalText": "If SEO helps you develop long-term, Google Ads is the way to break through today – and to avoid \"burning money,\" you need a partner who understands Google: Hotdeal Media."
+      },
+      "accountTypes": {
+        "title": "Google Ads Account Types",
+        "description": "We support setting up and managing various Google Ads account types to suit your needs.",
+        "invoiceAccount": {
+          "name": "Invoice Account",
+          "description": "For individuals, small & medium enterprises, and even agencies or large enterprises that want to manage multiple accounts simultaneously, implement multi-channel campaigns."
+        },
+        "note": "All accounts from Hotdeal Media are legally authorized with transparent activity history and fully meet Google's standards."
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Hotdeal Media as Your Google Ads Partner?",
+        "description": "Hotdeal Media is not just an advertising agency – we are practical revenue growth experts. As a Google Certified Partner in Vietnam, Hotdeal Media is committed to delivering effective advertising campaigns with 5 key differentiators:",
+        "points": [
+          {
+            "title": "Google Partner Certified Experts",
+            "description": "Deep industry understanding, grasp customer behavior."
+          },
+          {
+            "title": "Data-driven Strategy",
+            "description": "Optimize by keywords, devices, display timing and search behavior."
+          },
+          {
+            "title": "100% Transparency",
+            "description": "Detailed reports, you know exactly how every dollar is spent."
+          },
+          {
+            "title": "Continuous Optimization",
+            "description": "Daily monitoring, adjustments to achieve the best performance."
+          },
+          {
+            "title": "Full-service & 24/7 Support",
+            "description": "From campaign setup, SEO-standard content writing, landing page optimization to after-sale care – all consistently guaranteed."
+          }
+        ]
+      },
+      "rentalModel": {
+        "heading": "Working Model",
+        "subheading": "Professional and effective Google Ads campaign implementation process",
+        "points": [
+          {
+            "title": "Consultation & Planning",
+            "description": "Analyze objectives, budget and build appropriate strategies."
+          },
+          {
+            "title": "Setup & Implementation",
+            "description": "Set up account, create campaigns and launch advertising."
+          },
+          {
+            "title": "Optimization & Reporting",
+            "description": "Monitor performance, continuous adjustments and periodic reporting."
+          }
+        ]
+      },
+      "features": {
+        "title": "Campaign Types",
+        "intro": "Google Ads provides various campaign types to meet your diverse business objectives:",
+        "items": [
+          {
+            "name": "Search Ads",
+            "description": "Search advertising on Google Search"
+          },
+          {
+            "name": "Display Ads",
+            "description": "Display advertising on Google partner network"
+          },
+          {
+            "name": "YouTube Ads",
+            "description": "Video advertising on YouTube"
+          },
+          {
+            "name": "Shopping Ads",
+            "description": "Product advertising for E-commerce"
+          },
+          {
+            "name": "App Campaigns",
+            "description": "Mobile app advertising"
+          },
+          {
+            "name": "Performance Max",
+            "description": "Automated performance optimization campaign"
+          }
+        ]
+      },
+      "process": {
+        "title": "Google Ads Implementation Process at Hotdeal Media",
+        "steps": [
+          {
+            "title": "Consultation & Goal Setting",
+            "description": "Listen, analyze customer journey, define clear KPIs (conversion, revenue, leads, brand)."
+          },
+          {
+            "title": "Market & Competitor Research",
+            "description": "Use keyword analysis tools, identify search trends and competitive opportunities."
+          },
+          {
+            "title": "Strategy & Campaign Setup",
+            "description": "Choose suitable ad types (Search, Video, Shopping…), write compelling and SEO-friendly content."
+          },
+          {
+            "title": "Monitor – Optimize – Test",
+            "description": "Continuously adjust bidding, ad groups, display positions to increase conversion rates."
+          },
+          {
+            "title": "Reporting & Expansion Strategy",
+            "description": "Provide periodic reports, along with expansion plans to maximize long-term profits."
+          }
+        ],
+        "note": "Each project has a dedicated specialist, ensuring fast progress, transparency and highest efficiency for businesses."
+      },
+      "packages": {
+        "title": "Google Ads Service Pricing",
+        "plans": [
+          {
+            "name": "SETUP PACKAGE",
+            "price": "3,500,000 VND/time",
+            "features": [
+              "Full Standard Google Ads Setup",
+              "3 Google Search or Display campaigns",
+              "1 Remarketing campaign",
+              "Conversion & remarketing setup",
+              "Account handover",
+              "Usage instructions"
+            ]
+          },
+          {
+            "name": "CARE PACKAGE",
+            "price": "5,500,000 VND/month",
+            "features": [
+              "Advanced Full Google Ads Setup",
+              "5+ Search & Remarketing campaigns",
+              "10+ Display, Demand Gen, Video, Pmax campaigns",
+              "Suitable for small & medium budgets",
+              "Conversion setup & tracking",
+              "Daily ad optimization",
+              "For budgets under 50M/month"
+            ]
+          },
+          {
+            "name": "SCALE PACKAGE",
+            "price": "Contact for Consultation",
+            "features": [
+              "Full Growth Setup",
+              "Unlimited campaigns: Display, Demand Gen, Video, Pmax...",
+              "Conversion setup & optimization",
+              "Suitable for large budgets",
+              "1:1 Google ADS strategy advisor",
+              "Focus on boosting sales",
+              "Editing, optimization, ad testing consultation",
+              "KPIs-based: CPA, Conversion..."
+            ]
+          }
+        ]
+      },
+      "benefits": [
+        "Increase high-quality website traffic",
+        "Effectively optimize advertising costs",
+        "Accurately measure ROI",
+        "Reach the right target customers"
+      ],
+      "quickGuide": {
+        "title": "Quick guide to get started",
+        "intro": "To start an effective Google Ads campaign, you just need a few simple steps:",
+        "steps": [
+          "Contact Hotdeal Media via hotline, email or online registration form.",
+          "Free consultation on appropriate goals and budget.",
+          "Choose service package and sign contract.",
+          "Receive detailed strategy and start campaign immediately!"
+        ]
+      },
+      "finalCTA": {
+        "title": "Don't Let Competitors Appear Before You on Google!",
+        "description": "While you're reading this article, your competitors may be running ads and attracting your customers. Opportunity doesn't wait — act today to lead the market. Contact Hotdeal Media to receive:",
+        "bullets": [
+          "Free 1:1 consultation with Google advertising expert.",
+          "Free audit of your existing Google Ads account.",
+          "Receive personalized strategy tailored to your business goals."
+        ],
+        "footer": "Hotdeal Media – trusted Google Ads partner, accompanying your sustainable success. When ads are optimized correctly, every click has value – and every dollar spent is a profitable investment."
+      },
+      "cta": {
+        "heading": "Get started with {service} today",
+        "description": "Contact us for free consultation and detailed quote",
+        "primaryButton": "Free Consultation",
+        "secondaryButton": "View other services"
+      }
+    },
+    "websiteDesign": {
+      "shortName": "Website Design",
+      "hero": {
+        "heading": "Professional Website Design Service at Hotdeal Media"
+      },
+      "heroDescription": {
+        "context": "In the digital transformation era, a website is not just a tool to introduce products and services, but has become a core business platform helping businesses build brands, reach customers and create sustainable revenue.",
+        "challenge": "A meticulously designed website is like a brand's face in the online environment. When customers visit, they not only look for information but also assess the credibility and professionalism of your business through that experience.",
+        "solution": "Hotdeal Media brings professional website design services, comprehensively optimized from interface, user experience to SEO standards — helping your business truly break through in the digital market."
+      },
+      "aboutService": {
+        "title": "Why do businesses need a professional website?",
+        "description": "A meticulously designed website is like a brand's face in the online environment. When customers visit, they not only look for information but also assess the credibility and professionalism of your business through that experience.",
+        "benefits": [
+          "Higher conversion rates: Beautiful, user-friendly interface helps retain users longer and increase orders.",
+          "Demonstrate brand credibility: Professional websites help build trust and affirm business position.",
+          "Optimize marketing costs: An SEO-standard website helps reduce advertising costs and increase organic rankings on Google."
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Outstanding benefits when using website design services at Hotdeal Media",
+        "description": "We not only design beautiful websites but also focus on actual business effectiveness for businesses.",
+        "points": [
+          {
+            "title": "1. Precisely reach target customers",
+            "description": "Websites built with clear strategies help businesses identify the right target customers, expand markets and enhance communication effectiveness."
+          },
+          {
+            "title": "2. Increase competitiveness in the digital market",
+            "description": "In the context of thousands of brands appearing every day, a beautiful – standard – fast – secure website is the outstanding advantage that helps you stand out and affirm your position."
+          },
+          {
+            "title": "3. Optimize user experience (UX/UI)",
+            "description": "Hotdeal Media focuses on designing intuitive, easy-to-use interfaces, fast loading speed, perfect compatibility with all devices. Good experience helps increase natural conversion rates."
+          },
+          {
+            "title": "4. Effectively support marketing – sales strategies",
+            "description": "We not only design websites, but also integrate smart marketing solutions, support advertising, optimize SEO and measure business effectiveness."
+          }
+        ]
+      },
+      "features": {
+        "title": "Distinctive strengths of Hotdeal Media",
+        "items": [
+          {
+            "name": "Professional, creative and experienced design team",
+            "description": "Hotdeal Media gathers UI/UX design specialists, programmers and SEO experts with years of experience. We always update modern design trends to deliver world-class websites – on-trend – optimized performance."
+          },
+          {
+            "name": "Exclusive interface with brand identity",
+            "description": "Each website created reflects the unique style of each business. No copying, only brand identity clearly expressed."
+          },
+          {
+            "name": "Comprehensive SEO optimization from start to finish",
+            "description": "From professional structure, speed optimization, standard code, reasonable content layout to meta tags, images, internal links — everything is standardized to help websites easily reach top Google, bringing sustainable organic traffic."
+          },
+          {
+            "name": "Outstanding security and speed",
+            "description": "Hotdeal Media commits that your website always operates optimally, fast loading speed, clean source code and absolute security – ensuring information and customer data safety."
+          },
+          {
+            "name": "Long-term maintenance – upgrade support",
+            "description": "We not only deliver products but also accompany long-term, provide quick technical support and update new features when businesses grow."
+          }
+        ]
+      },
+      "process": {
+        "title": "Professional standard website design process",
+        "steps": [
+          {
+            "title": "Step 1: Consultation & Needs assessment",
+            "description": "We listen and carefully analyze your goals, audience and business field to direct effective design strategies."
+          },
+          {
+            "title": "Step 2: Market & competitor research",
+            "description": "Hotdeal Media's expert team conducts deep market and trend analysis to create strong competitive advantages for the website."
+          },
+          {
+            "title": "Step 3: Planning & website architecture",
+            "description": "All page structures, interaction flows and features are carefully shaped to achieve business goals."
+          },
+          {
+            "title": "Step 4: Interface design (UI/UX)",
+            "description": "Build exclusive, user-friendly, responsive interface for all devices: computers, mobile, tablets."
+          },
+          {
+            "title": "Step 5: Programming & testing",
+            "description": "Develop websites with modern technology, integrate necessary features, check quality before delivery."
+          },
+          {
+            "title": "Step 6: Handover & user guide",
+            "description": "We provide detailed instruction documents and web administration training so you can operate independently."
+          },
+          {
+            "title": "Step 7: Support – regular maintenance",
+            "description": "Hotdeal Media is always ready to provide technical support, update new design trends so your website always operates effectively."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Website Design Service Pricing at Hotdeal Media",
+        "plans": [
+          {
+            "name": "Basic",
+            "price": "5,000,000 - 7,000,000 VND",
+            "features": [
+              "Basic information website design",
+              "Free .com domain first year",
+              "Free hosting first year",
+              "Unlimited bandwidth",
+              "SEO-standard website",
+              "Free SSL installation support",
+              "Page load speed optimization",
+              "UX/UI standard interface",
+              "Desktop interface optimization",
+              "Mobile interface optimization",
+              "Free 1-year warranty",
+              "Support setup 1 Google Ads campaign",
+              "Data limit 3GB",
+              "Support website backup 1 time/month"
+            ]
+          },
+          {
+            "name": "Medium",
+            "price": "8,000,000 - 10,000,000 VND",
+            "features": [
+              "Shopping cart, advanced website design",
+              "Free .com domain first year",
+              "Free hosting first year",
+              "Unlimited bandwidth",
+              "SEO-standard website",
+              "Free SSL installation support",
+              "Page load speed optimization",
+              "UX/UI standard interface",
+              "Desktop interface optimization",
+              "Mobile interface optimization",
+              "Free 1-year warranty",
+              "Support setup 2 Google Ads campaigns",
+              "Data limit 5GB",
+              "Support post 5 articles/products",
+              "Support website backup 1 time/month"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": "Detailed consultation",
+            "features": [
+              "Custom website design",
+              "Free .com domain first year",
+              "Free hosting first year",
+              "Unlimited bandwidth",
+              "SEO-standard website",
+              "Free SSL installation support",
+              "Page load speed optimization",
+              "UX/UI standard interface",
+              "Desktop interface optimization",
+              "Mobile interface optimization",
+              "Free 1-year warranty",
+              "Support setup 3 Google Ads campaigns",
+              "Data limit 7GB",
+              "Support post 10 articles/products",
+              "Support website backup 1 time/month"
+            ]
+          }
+        ]
+      },
+      "benefits": [
+        "Consulting combining website design and digital marketing strategies.",
+        "Apply modern design technology, easy to expand and upgrade.",
+        "Design following latest trends, creating different experiences.",
+        "Commit to absolute security and safety of customer data.",
+        "Support long-term upgrades and performance optimization."
+      ]
+    },
+    "landingPage": {
+      "shortName": "Landing Page",
+      "hero": {
+        "heading": "Professional Landing Page Design Service"
+      },
+      "heroDescription": {
+        "context": "In the digital 4.0 era, Landing Pages are not just marketing tools but also \"secret weapons\" that help businesses increase conversion rates, attract potential customers, and optimize advertising costs.",
+        "challenge": "A professional Landing Page is the key to converting visitors into potential customers and optimizing advertising costs for businesses in a competitive market.",
+        "solution": "At Hotdeal Media, we provide professional Landing Page design services – creative, brand-focused and SEO-optimized, helping your business go further in the competitive online market."
+      },
+      "aboutService": {
+        "title": "What is a Landing Page?",
+        "description": "A Landing Page is an independent web page built with a single goal: to persuade visitors to take a specific action such as filling out a form, signing up for purchases, or downloading materials.",
+        "benefits": [
+          "Unlike traditional business websites with too much information, Landing Pages focus on one powerful message and one clear call-to-action – helping optimize customer conversion effectiveness."
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Hotdeal Media's Landing Page Design Service?",
+        "description": "Beyond creating beautiful Landing Pages, Hotdeal Media focuses on delivering comprehensive conversion solutions. We don't just \"design\", but also strategically accompany businesses to achieve optimal results.",
+        "points": [
+          {
+            "title": "Experienced design and marketing team",
+            "description": "With many years of operation in Digital Marketing, Hotdeal Media's expert team understands consumer behavior and modern design trends. We create aesthetically pleasing Landing Pages – UX/UI standard – with the right customer insights."
+          },
+          {
+            "title": "Custom design according to specific requirements and goals",
+            "description": "Each Landing Page is exclusively designed for businesses, accurately expressing brand message, products and target customer audience. No templates, no mass patterns – every detail is personalized to deliver the highest conversion rate."
+          },
+          {
+            "title": "SEO standard – Optimized search performance",
+            "description": "Hotdeal Media strictly adheres to technical and Onpage SEO standards. Your Landing Page will load fast, be Google-friendly, and easily rank for keywords, helping increase long-term natural traffic."
+          },
+          {
+            "title": "Transparent and professional working process",
+            "description": "We apply a standardized 5-step process to help customers understand each stage, ensuring the final product exceeds expectations."
+          }
+        ]
+      },
+      "features": {
+        "title": "Benefits of Owning a Professional Landing Page",
+        "intro": "A professionally designed Landing Page is not just beautiful, but also an automated sales tool operating 24/7. Here are the outstanding benefits businesses receive when partnering with Hotdeal Media:",
+        "items": [
+          {
+            "name": "Outstanding conversion rate increase",
+            "description": "Optimize layout, CTA and messaging, helping visitors become potential customers quickly."
+          },
+          {
+            "name": "Save advertising costs",
+            "description": "Thanks to optimized user experience design and conversion journey, you significantly reduce cost per conversion."
+          },
+          {
+            "name": "Effective customer data collection",
+            "description": "Integrated forms, surveys, CRM help easily analyze behavior and re-target the right potential customer segment."
+          },
+          {
+            "name": "Increase brand credibility and trust",
+            "description": "Professional, clear and modern interface helps customers trust more from the first glance."
+          },
+          {
+            "name": "Perfect display on all devices",
+            "description": "Responsive design with SEO standards, ensuring smooth experience on computers, tablets, and phones."
+          }
+        ]
+      },
+      "process": {
+        "title": "Landing Page Design Process at Hotdeal Media",
+        "steps": [
+          {
+            "title": "Receive and analyze requirements",
+            "description": "Identify campaign objectives, target customers, and product/service characteristics to direct appropriate design."
+          },
+          {
+            "title": "Develop ideas and interface sketches",
+            "description": "Design layout, select color tones and CTAs, ensuring aesthetics and easy operation."
+          },
+          {
+            "title": "Programming and technical optimization",
+            "description": "Use SEO-standard source code, fast loading speed, compatible display on all devices."
+          },
+          {
+            "title": "Testing and adjustments",
+            "description": "Measure performance, adjust layout or CTA to maximize conversion rates."
+          },
+          {
+            "title": "Handover and after-sales support",
+            "description": "Provide detailed usage instructions, technical support and periodic maintenance as requested by customers."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Landing Page Design Service Pricing",
+        "plans": [
+          {
+            "name": "Basic",
+            "price": "1,500,000 VND",
+            "features": [
+              "Basic Landing page design from available templates",
+              "Free hosting first year",
+              "Unlimited bandwidth",
+              "UX/UI standard interface",
+              "Responsive design on devices",
+              "Free 1-year warranty"
+            ]
+          },
+          {
+            "name": "Medium",
+            "price": "2,500,000 VND",
+            "features": [
+              "Advanced Landing page design from available templates",
+              "Free hosting first year",
+              "Unlimited bandwidth",
+              "UX/UI standard interface",
+              "Responsive design on devices",
+              "Free 1-year warranty",
+              "Support setup 1 Google Ads campaign"
+            ]
+          },
+          {
+            "name": "Premium",
+            "price": "From 3,500,000 VND",
+            "features": [
+              "Custom Landing page design",
+              "Free hosting first year",
+              "Unlimited bandwidth",
+              "UX/UI standard interface",
+              "Responsive design on devices",
+              "Free 1-year warranty",
+              "Support setup 1 Google Ads campaign"
+            ]
+          }
+        ]
+      },
+      "benefits": [
+        "Aesthetic and SEO-standard design: Optimize content, speed and experience, helping Landing Pages quickly rank on Google.",
+        "Competitive, transparent pricing: Multiple service packages suitable for different needs and budgets – no hidden costs.",
+        "Dedicated support, long-term cooperation: We not only design – but also accompany businesses in every marketing campaign, ensuring Landing Pages always operate effectively and are updated with the latest trends."
+      ],
+      "finalCTA": {
+        "title": "Let Hotdeal Media Help You Break Through!",
+        "description": "Don't let your advertising campaign go to waste due to ineffective Landing Pages. Let Hotdeal Media help you build powerful, impressive and truly profitable landing pages.",
+        "bullets": [
+          "Contact us today for free consultation and receive a trial design according to your business goals!"
+        ],
+        "footer": "Hotdeal Media – Professional, creative, and dedicated to accompanying your success."
+      }
+    }
   }
 }

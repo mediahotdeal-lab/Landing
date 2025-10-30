@@ -1,19 +1,11 @@
-import { Metadata } from 'next';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: "Về Chúng Tôi - HotDeal Media | Digital Marketing Agency",
-  description: "HotDeal Media - Đối tác tin cậy của 300+ doanh nghiệp. Chuyên gia giải pháp Marketing Online với 5+ năm kinh nghiệm, ROI trung bình 150%+.",
-  keywords: ["về chúng tôi", "hotdeal media", "digital marketing agency", "marketing agency vietnam"],
-  openGraph: {
-    title: "Về Chúng Tôi - HotDeal Media",
-    description: "Đối tác tin cậy của 300+ doanh nghiệp",
-    type: "website",
-    locale: "vi_VN",
-  },
-};
-
 export default function AboutPage() {
+  const t = useTranslations('aboutPage');
+
   return (
     <main className="min-h-screen bg-white">
       {/* Subtle grid background */}
@@ -27,14 +19,14 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-[1400px] text-center">
           <div className="inline-block mb-4 sm:mb-6">
             <span className="bg-red-50 text-red-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-              Về Chúng Tôi
+              {t('hero.badge')}
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gray-900 px-4">
-            Chúng Tôi Là <span className="text-red-600">HotDeal Media</span>
+            {t('hero.heading1')} <span className="text-red-600">{t('hero.heading2')}</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Đối tác tin cậy của hơn 300 doanh nghiệp, giúp họ tăng trưởng doanh thu vượt bậc thông qua các giải pháp Digital Marketing hiệu quả và bền vững.
+            {t('hero.description')}
           </p>
         </div>
       </section>
@@ -45,18 +37,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
-                Câu Chuyện Của <span className="text-red-600">Chúng Tôi</span>
+                {t('story.heading1')} <span className="text-red-600">{t('story.heading2')}</span>
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  Được thành lập vào năm 2019, HotDeal Media bắt đầu từ một đội ngũ nhỏ với niềm đam mê và khát vọng mang đến những giải pháp Marketing Online hiệu quả cho doanh nghiệp Việt.
-                </p>
-                <p>
-                  Sau 5 năm phát triển, chúng tôi tự hào đã đồng hành cùng hơn 300 doanh nghiệp từ startup đến các tập đoàn lớn, giúp họ đạt được mục tiêu kinh doanh và tăng trưởng bền vững.
-                </p>
-                <p>
-                  Với đội ngũ chuyên gia giàu kinh nghiệm, công nghệ hiện đại và phương pháp làm việc chuyên nghiệp, HotDeal Media cam kết mang đến ROI vượt trội cho mọi chiến dịch Marketing.
-                </p>
+                <p>{t('story.paragraph1')}</p>
+                <p>{t('story.paragraph2')}</p>
+                <p>{t('story.paragraph3')}</p>
               </div>
             </div>
             <div className="relative">
@@ -64,19 +50,19 @@ export default function AboutPage() {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="text-4xl font-bold text-red-600 mb-2">5+</div>
-                    <div className="text-gray-600 font-medium">Năm kinh nghiệm</div>
+                    <div className="text-gray-600 font-medium">{t('story.stats.experience')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-4xl font-bold text-red-600 mb-2">300+</div>
-                    <div className="text-gray-600 font-medium">Khách hàng</div>
+                    <div className="text-gray-600 font-medium">{t('story.stats.clients')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-4xl font-bold text-red-600 mb-2">500+</div>
-                    <div className="text-gray-600 font-medium">Dự án</div>
+                    <div className="text-gray-600 font-medium">{t('story.stats.projects')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-4xl font-bold text-red-600 mb-2">150%</div>
-                    <div className="text-gray-600 font-medium">ROI trung bình</div>
+                    <div className="text-gray-600 font-medium">{t('story.stats.roi')}</div>
                   </div>
                 </div>
               </div>
@@ -90,7 +76,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-[1400px]">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Sứ Mệnh & Tầm Nhìn
+              {t('mission.heading')}
             </h2>
           </div>
 
@@ -102,9 +88,9 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sứ Mệnh</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('mission.missionTitle')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                Giúp doanh nghiệp Việt Nam tiếp cận và áp dụng thành công các giải pháp Digital Marketing hiện đại, tăng trưởng doanh thu bền vững và xây dựng thương hiệu mạnh mẽ trong thời đại số.
+                {t('mission.missionDesc')}
               </p>
             </div>
 
@@ -116,9 +102,9 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Tầm Nhìn</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('mission.visionTitle')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                Trở thành agency Digital Marketing hàng đầu Việt Nam, được công nhận bởi chất lượng dịch vụ vượt trội, đội ngũ chuyên gia giàu kinh nghiệm và cam kết mang lại giá trị thực sự cho khách hàng.
+                {t('mission.visionDesc')}
               </p>
             </div>
           </div>
@@ -130,15 +116,15 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-[1400px]">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Giá Trị Cốt Lõi
+              {t('coreValues.heading')}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những giá trị định hướng mọi hành động và quyết định của chúng tôi
+              {t('coreValues.description')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {coreValues.map((value, index) => (
+            {coreValuesData.map((value, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-xl p-6 hover:border-red-600 hover:shadow-xl transition-all group hover:-translate-y-2"
@@ -147,10 +133,10 @@ export default function AboutPage() {
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
-                  {value.title}
+                  {t(`coreValues.values.${value.key}.title`)}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  {value.description}
+                  {t(`coreValues.values.${value.key}.description`)}
                 </p>
               </div>
             ))}
@@ -163,12 +149,12 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-[1400px]">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Tại Sao Chọn <span className="text-red-600">HotDeal Media?</span>
+              {t('whyChooseUs.heading1')} <span className="text-red-600">{t('whyChooseUs.heading2')}</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {whyChooseUs.map((reason, index) => (
+            {whyChooseUsData.map((item, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-xl p-6 hover:border-red-600 hover:shadow-xl transition-all group"
@@ -181,10 +167,10 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
-                      {reason.title}
+                      {t(`whyChooseUs.reasons.${item}.title`)}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      {reason.description}
+                      {t(`whyChooseUs.reasons.${item}.description`)}
                     </p>
                   </div>
                 </div>
@@ -199,15 +185,15 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-[1400px]">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Đội Ngũ Chuyên Gia
+              {t('team.heading')}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những con người tài năng và nhiệt huyết đứng sau mỗi chiến dịch thành công
+              {t('team.description')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {teamMembers.map((member, index) => (
+            {teamMembersData.map((member, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-red-600 hover:shadow-xl transition-all group hover:-translate-y-2"
@@ -218,13 +204,13 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors">
-                  {member.name}
+                  {t(`team.members.${member}.name`)}
                 </h3>
                 <div className="text-sm text-red-600 font-semibold mb-3">
-                  {member.position}
+                  {t(`team.members.${member}.position`)}
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  {member.description}
+                  {t(`team.members.${member}.description`)}
                 </p>
               </div>
             ))}
@@ -244,17 +230,17 @@ export default function AboutPage() {
 
             <div className="relative">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-                Sẵn Sàng Bắt Đầu <span className="text-red-600">Hành Trình</span> Cùng Chúng Tôi?
+                {t('cta.heading1')} <span className="text-red-600">{t('cta.heading2')}</span> {t('cta.heading3')}
               </h2>
               <p className="text-lg mb-8 text-gray-600 max-w-2xl mx-auto">
-                Hãy để HotDeal Media đồng hành cùng bạn tạo nên những thành công vượt bậc trong kinh doanh
+                {t('cta.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/lien-he"
                   className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all hover:shadow-lg hover:scale-105"
                 >
-                  <span>Nhận tư vấn miễn phí</span>
+                  <span>{t('cta.primaryButton')}</span>
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -263,7 +249,7 @@ export default function AboutPage() {
                   href="/dich-vu"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-gray-300 text-gray-900 font-semibold rounded-xl hover:border-gray-900 transition-all hover:scale-105"
                 >
-                  Xem dịch vụ
+                  {t('cta.secondaryButton')}
                 </Link>
               </div>
             </div>
@@ -274,89 +260,44 @@ export default function AboutPage() {
   );
 }
 
-// Core Values Data
-const coreValues = [
+// Core Values Data with keys
+const coreValuesData = [
   {
+    key: 'efficiency',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
-    ),
-    title: "Hiệu Quả",
-    description: "Cam kết mang lại kết quả đo lường được và ROI vượt trội cho mọi chiến dịch."
+    )
   },
   {
+    key: 'credibility',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
-    ),
-    title: "Uy Tín",
-    description: "Xây dựng lòng tin qua từng dự án với sự minh bạch và trách nhiệm cao."
+    )
   },
   {
+    key: 'creativity',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
-    ),
-    title: "Sáng Tạo",
-    description: "Không ngừng đổi mới và sáng tạo để mang đến giải pháp tối ưu nhất."
+    )
   },
   {
+    key: 'dedication',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
-    ),
-    title: "Tận Tâm",
-    description: "Đặt lợi ích khách hàng lên hàng đầu, đồng hành từ A đến Z."
+    )
   }
 ];
 
-// Why Choose Us Data
-const whyChooseUs = [
-  {
-    title: "Đội ngũ chuyên gia giàu kinh nghiệm",
-    description: "Hơn 5 năm kinh nghiệm với 500+ dự án thành công trong đa dạng lĩnh vực."
-  },
-  {
-    title: "Phương pháp làm việc chuyên nghiệp",
-    description: "Quy trình chuẩn hóa, báo cáo minh bạch và tối ưu liên tục."
-  },
-  {
-    title: "Công nghệ & công cụ hiện đại",
-    description: "Sử dụng các công nghệ và tools Marketing tiên tiến nhất."
-  },
-  {
-    title: "ROI cam kết",
-    description: "Cam kết mang lại ROI trung bình 150%+ cho mọi chiến dịch."
-  },
-  {
-    title: "Hỗ trợ 24/7",
-    description: "Đội ngũ hỗ trợ sẵn sàng giải đáp mọi thắc mắc bất cứ lúc nào."
-  },
-  {
-    title: "Chi phí tối ưu",
-    description: "Giải pháp phù hợp với mọi quy mô từ startup đến doanh nghiệp lớn."
-  }
-];
+// Why Choose Us keys
+const whyChooseUsData = ['experience', 'methodology', 'technology', 'roi', 'support', 'cost'];
 
-// Team Members Data
-const teamMembers = [
-  {
-    name: "Nguyễn Văn A",
-    position: "CEO & Founder",
-    description: "10+ năm kinh nghiệm Digital Marketing, từng làm việc tại các agency hàng đầu."
-  },
-  {
-    name: "Trần Thị B",
-    position: "Marketing Director",
-    description: "Chuyên gia Facebook & Google Ads với 200+ chiến dịch thành công."
-  },
-  {
-    name: "Lê Văn C",
-    position: "SEO Lead",
-    description: "Expert SEO với hơn 100 keywords top 3 Google cho các ngành hàng khác nhau."
-  }
-];
+// Team Members keys
+const teamMembersData = ['ceo', 'director', 'seoLead'];

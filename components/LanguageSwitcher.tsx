@@ -36,10 +36,10 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-300 hover:border-red-600 transition-all hover:shadow-sm bg-white"
+        className="flex items-center gap-2 px-3 py-2.5 rounded-xl border border-gray-300 hover:border-red-600 transition-all hover:shadow-sm bg-white h-[42px]"
         aria-label="Change language"
       >
-        <span className="text-xl">{currentLanguage.flag}</span>
+        <span className="text-lg leading-none">{currentLanguage.flag}</span>
         <svg
           className={`w-4 h-4 text-gray-600 transition-transform ${
             isOpen ? 'rotate-180' : ''
