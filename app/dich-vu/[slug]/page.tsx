@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { services } from '../services-data';
+import { services, Platform } from '../services-data';
 import ProcessAccordion from '@/components/ProcessAccordion';
 import PricingTable from '@/components/PricingTable';
 
@@ -367,7 +367,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 {/* Platforms Grid - Only for services with platforms */}
                 {'platforms' in service.aboutService && service.aboutService.platforms && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
-                    {service.aboutService.platforms.map((platform: any, index: number) => (
+                    {service.aboutService.platforms.map((platform: Platform, index: number) => (
                       <div
                         key={index}
                         className="group relative"

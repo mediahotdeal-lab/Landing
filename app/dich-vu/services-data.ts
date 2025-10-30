@@ -1,3 +1,9 @@
+export interface Platform {
+  name: string;
+  desc: string;
+  icon: string;
+}
+
 export interface Service {
   slug: string;
   name: string;
@@ -16,6 +22,7 @@ export interface Service {
   aboutService?: {
     title: string;
     description: string;
+    platforms?: Platform[];
     benefits: string[];
     additionalText?: string; // Text after benefits
   };

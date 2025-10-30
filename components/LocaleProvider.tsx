@@ -27,7 +27,7 @@ interface LocaleProviderProps {
 
 export default function LocaleProvider({ children, initialLocale = 'vi' }: LocaleProviderProps) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale);
-  const [messages, setMessages] = useState<any>(null);
+  const [messages, setMessages] = useState<Record<string, unknown> | null>(null);
 
   // Load messages when locale changes
   useEffect(() => {
