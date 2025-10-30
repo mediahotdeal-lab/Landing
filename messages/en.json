@@ -164,12 +164,10 @@
       "messagePlaceholder": "Describe your needs in detail...",
       "selectService": "Select Service",
       "services": {
-        "facebookAds": "Facebook Ads",
-        "googleAds": "Google Ads",
-        "seo": "SEO Marketing",
-        "content": "Content Marketing",
-        "email": "Email Marketing",
-        "social": "Social Media"
+        "googleAds": "Service (Google Ads Advertising)",
+        "googleAdsRental": "Service (Google Ads Account Rental)",
+        "websiteDesign": "Service (Website Design)",
+        "landingPageDesign": "Service (Landing Page Design)"
       },
       "submit": "Send Information",
       "submitting": "Sending...",

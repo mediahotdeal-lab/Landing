@@ -164,12 +164,10 @@
       "messagePlaceholder": "Mô tả chi tiết nhu cầu của bạn...",
       "selectService": "Chọn dịch vụ",
       "services": {
-        "facebookAds": "Facebook Ads",
-        "googleAds": "Google Ads",
-        "seo": "SEO Marketing",
-        "content": "Content Marketing",
-        "email": "Email Marketing",
-        "social": "Social Media"
+        "googleAds": "Dịch vụ (Quảng Cáo Google Ads)",
+        "googleAdsRental": "Dịch vụ (Thuê tài khoản Google Ads)",
+        "websiteDesign": "Dịch vụ (Thiết kế Website)",
+        "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)"
       },
       "submit": "Gửi thông tin",
       "submitting": "Đang gửi...",
