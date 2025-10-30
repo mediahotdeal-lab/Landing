@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { submitContactForm, type ContactFormData } from '@/lib/api';
 
 export default function ContactPage() {
   const t = useTranslations('contactPage');
@@ -15,22 +16,37 @@ export default function ContactPage() {
 
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string>('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError('');
+    setSubmitted(false);
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      // Submit form to CRM API
+      await submitContactForm(formData as ContactFormData);
 
-    setLoading(false);
-    setSubmitted(true);
-
-    // Reset form after 3 seconds
-    setTimeout(() => {
+      // Success
+      setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-      setSubmitted(false);
-    }, 3000);
+
+      // Clear success message after 3 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 3000);
+    } catch (err) {
+      // Error
+      setError(err instanceof Error ? err.message : 'Có lỗi xảy ra. Vui lòng thử lại.');
+
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setError('');
+      }, 5000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -82,6 +98,15 @@ export default function ContactPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {t('form.successMessage')}
+                  </div>
+                )}
+
+                {error && (
+                  <div className="mb-6 p-4 bg-red-50 border-2 border-red-500 rounded-xl text-red-700 font-semibold flex items-center gap-2">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    {error}
                   </div>
                 )}
 
@@ -330,30 +355,18 @@ export default function ContactPage() {
       <section className="relative py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-[1400px]">
           <div className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
-            {/* Placeholder for Google Maps - Replace with actual embed */}
-            <div className="relative h-[400px] bg-gray-100 flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="text-gray-500">{t('map.placeholder')}</p>
-                <p className="text-sm text-gray-400 mt-2">
-                  {t('map.instruction')}
-                </p>
-              </div>
-
-              {/* Uncomment and add your Google Maps embed URL */}
-              {/* <iframe
-                src="YOUR_GOOGLE_MAPS_EMBED_URL"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe> */}
-            </div>
+            {/* Google Maps Embed */}
+            <iframe
+              src="https://maps.google.com/maps?q=332+L%C5%A9y+B%C3%A1n+B%C3%ADch,+Ph%C6%B0%E1%BB%9Dng+H%C3%B2a+Th%E1%BA%A1nh,+Qu%E1%BA%ADn+T%C3%A2n+Ph%C3%BA,+TP.HCM&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Bản đồ vị trí HotDeal Media"
+              className="w-full h-[400px]"
+            />
           </div>
         </div>
       </section>

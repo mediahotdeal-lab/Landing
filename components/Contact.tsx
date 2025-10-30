@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { submitContactForm, type ContactFormData } from '@/lib/api';
 
 export default function Contact() {
   const t = useTranslations('contact');
@@ -15,21 +16,39 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
+    setErrorMessage('');
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // Submit form to CRM API
+      await submitContactForm(formData as ContactFormData);
+
+      // Success
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
 
+      // Clear success message after 3 seconds
       setTimeout(() => {
         setSubmitStatus(null);
       }, 3000);
-    }, 1000);
+    } catch (error) {
+      // Error
+      setSubmitStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'Có lỗi xảy ra. Vui lòng thử lại.');
+
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null);
+        setErrorMessage('');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -216,12 +235,10 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
                 >
                   <option value="">{t('form.selectService')}</option>
-                  <option value="facebook-ads">{t('form.services.facebookAds')}</option>
-                  <option value="google-ads">{t('form.services.googleAds')}</option>
-                  <option value="seo">{t('form.services.seo')}</option>
-                  <option value="content">{t('form.services.content')}</option>
-                  <option value="email">{t('form.services.email')}</option>
-                  <option value="social">{t('form.services.social')}</option>
+                  <option value="quang-cao-google-ads">{t('form.services.googleAds')}</option>
+                  <option value="thue-tai-khoan-google-ads-vnd">{t('form.services.googleAdsRental')}</option>
+                  <option value="thiet-ke-website">{t('form.services.websiteDesign')}</option>
+                  <option value="thiet-ke-landing-page">{t('form.services.landingPageDesign')}</option>
                 </select>
               </div>
 
@@ -251,6 +268,12 @@ export default function Contact() {
               {submitStatus === 'success' && (
                 <div className="bg-green-100 text-green-700 p-4 rounded-lg text-center">
                   {t('form.success')}
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="bg-red-100 text-red-700 p-4 rounded-lg text-center">
+                  {errorMessage}
                 </div>
               )}
             </form>

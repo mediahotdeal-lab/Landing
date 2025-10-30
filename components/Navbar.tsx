@@ -251,8 +251,8 @@ export default function Navbar() {
                 {t('freeConsultation')}
               </Link>
 
-              <div className="mt-4 flex justify-center">
-                <LanguageSwitcher />
+              <div className="mt-4">
+                <LanguageSwitcher fullWidth />
               </div>
             </div>
           </div>

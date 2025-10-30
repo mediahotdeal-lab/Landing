@@ -16,7 +16,11 @@ const languages = [
   },
 ];
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  fullWidth?: boolean;
+}
+
+export default function LanguageSwitcher({ fullWidth = false }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const { locale, setLocale } = useLocale();
 
@@ -33,10 +37,10 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="relative">
+    <div className={`relative ${fullWidth ? 'w-full' : ''}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2.5 rounded-xl border border-gray-300 hover:border-red-600 transition-all hover:shadow-sm bg-white h-[42px]"
+        className={`flex items-center ${fullWidth ? 'justify-center w-full' : ''} gap-2 px-3 py-2.5 rounded-xl border border-gray-300 hover:border-red-600 transition-all hover:shadow-sm bg-white h-[42px]`}
         aria-label="Change language"
       >
         <span className="text-lg leading-none">{currentLanguage.flag}</span>
@@ -66,7 +70,7 @@ export default function LanguageSwitcher() {
           />
 
           {/* Dropdown */}
-          <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-xl z-50 overflow-hidden">
+          <div className={`absolute ${fullWidth ? 'left-0 right-0' : 'right-0'} top-full mt-2 ${fullWidth ? 'w-full' : 'w-48'} bg-white border border-gray-200 rounded-lg shadow-xl z-50 overflow-hidden`}>
             {languages.map((lang) => (
               <button
                 key={lang.code}
