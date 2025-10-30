@@ -32,45 +32,45 @@ export default function Contact() {
 
     // Name validation
     if (!formData.name.trim()) {
-      errors.name = 'Vui lòng nhập họ tên';
+      errors.name = t('form.validation.nameRequired');
     } else if (formData.name.trim().length < 2) {
-      errors.name = 'Họ tên phải có ít nhất 2 ký tự';
+      errors.name = t('form.validation.nameMinLength');
     } else if (formData.name.length > 255) {
-      errors.name = 'Họ tên không được vượt quá 255 ký tự';
+      errors.name = t('form.validation.nameMaxLength');
     }
 
     // Email validation
     if (!formData.email.trim()) {
-      errors.email = 'Vui lòng nhập email';
+      errors.email = t('form.validation.emailRequired');
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
-      errors.email = 'Email không hợp lệ';
+      errors.email = t('form.validation.emailInvalid');
     } else if (formData.email.length > 255) {
-      errors.email = 'Email không được vượt quá 255 ký tự';
+      errors.email = t('form.validation.emailMaxLength');
     }
 
     // Phone validation (Vietnamese format: 10-11 digits)
     if (!formData.phone.trim()) {
-      errors.phone = 'Vui lòng nhập số điện thoại';
+      errors.phone = t('form.validation.phoneRequired');
     } else if (!/^[0-9]{10,11}$/.test(formData.phone.replace(/\s/g, ''))) {
-      errors.phone = 'Số điện thoại phải có 10-11 chữ số';
+      errors.phone = t('form.validation.phoneInvalid');
     } else if (formData.phone.length > 20) {
-      errors.phone = 'Số điện thoại không được vượt quá 20 ký tự';
+      errors.phone = t('form.validation.phoneMaxLength');
     }
 
     // Service validation
     if (!formData.service.trim()) {
-      errors.service = 'Vui lòng chọn dịch vụ';
+      errors.service = t('form.validation.serviceRequired');
     } else if (formData.service.length > 100) {
-      errors.service = 'Dịch vụ không được vượt quá 100 ký tự';
+      errors.service = t('form.validation.serviceMaxLength');
     }
 
     // Message validation
     if (!formData.message.trim()) {
-      errors.message = 'Vui lòng nhập nội dung';
+      errors.message = t('form.validation.messageRequired');
     } else if (formData.message.trim().length < 10) {
-      errors.message = 'Nội dung phải có ít nhất 10 ký tự';
+      errors.message = t('form.validation.messageMinLength');
     } else if (formData.message.length > 5000) {
-      errors.message = 'Nội dung không được vượt quá 5000 ký tự';
+      errors.message = t('form.validation.messageMaxLength');
     }
 
     setValidationErrors(errors);

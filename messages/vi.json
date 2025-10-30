@@ -171,7 +171,23 @@
       },
       "submit": "Gửi thông tin",
       "submitting": "Đang gửi...",
-      "success": "✓ Gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất."
+      "success": "✓ Gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+      "validation": {
+        "nameRequired": "Vui lòng nhập họ tên",
+        "nameMinLength": "Họ tên phải có ít nhất 2 ký tự",
+        "nameMaxLength": "Họ tên không được vượt quá 255 ký tự",
+        "emailRequired": "Vui lòng nhập email",
+        "emailInvalid": "Email không hợp lệ",
+        "emailMaxLength": "Email không được vượt quá 255 ký tự",
+        "phoneRequired": "Vui lòng nhập số điện thoại",
+        "phoneInvalid": "Số điện thoại phải có 10-11 chữ số",
+        "phoneMaxLength": "Số điện thoại không được vượt quá 20 ký tự",
+        "serviceRequired": "Vui lòng chọn dịch vụ",
+        "serviceMaxLength": "Dịch vụ không được vượt quá 100 ký tự",
+        "messageRequired": "Vui lòng nhập nội dung",
+        "messageMinLength": "Nội dung phải có ít nhất 10 ký tự",
+        "messageMaxLength": "Nội dung không được vượt quá 5000 ký tự"
+      }
     }
   },
   "footer": {
@@ -394,7 +410,23 @@
         "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)"
       },
       "submit": "Gửi tin nhắn",
-      "submitting": "Đang gửi..."
+      "submitting": "Đang gửi...",
+      "validation": {
+        "nameRequired": "Vui lòng nhập họ tên",
+        "nameMinLength": "Họ tên phải có ít nhất 2 ký tự",
+        "nameMaxLength": "Họ tên không được vượt quá 255 ký tự",
+        "emailRequired": "Vui lòng nhập email",
+        "emailInvalid": "Email không hợp lệ",
+        "emailMaxLength": "Email không được vượt quá 255 ký tự",
+        "phoneRequired": "Vui lòng nhập số điện thoại",
+        "phoneInvalid": "Số điện thoại phải có 10-11 chữ số",
+        "phoneMaxLength": "Số điện thoại không được vượt quá 20 ký tự",
+        "serviceRequired": "Vui lòng chọn dịch vụ",
+        "serviceMaxLength": "Dịch vụ không được vượt quá 100 ký tự",
+        "messageRequired": "Vui lòng nhập tin nhắn",
+        "messageMinLength": "Tin nhắn phải có ít nhất 10 ký tự",
+        "messageMaxLength": "Tin nhắn không được vượt quá 5000 ký tự"
+      }
     },
     "info": {
       "heading": "Thông Tin Liên Hệ",
