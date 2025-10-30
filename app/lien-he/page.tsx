@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { submitContactForm, type ContactFormData } from '@/lib/api';
 import Swal from 'sweetalert2';
+import { Turnstile, TurnstileInstance } from '@marsidev/react-turnstile';
 
 interface ValidationErrors {
   name?: string;
@@ -11,6 +12,7 @@ interface ValidationErrors {
   phone?: string;
   service?: string;
   message?: string;
+  captcha?: string;
 }
 
 export default function ContactPage() {
@@ -25,6 +27,8 @@ export default function ContactPage() {
 
   const [loading, setLoading] = useState(false);
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
+  const [captchaToken, setCaptchaToken] = useState<string>('');
+  const turnstileRef = useRef<TurnstileInstance>(null);
 
   const validateForm = (): boolean => {
     const errors: ValidationErrors = {};
@@ -72,6 +76,11 @@ export default function ContactPage() {
       errors.message = t('form.validation.messageMaxLength');
     }
 
+    // Captcha validation
+    if (!captchaToken) {
+      errors.captcha = 'Vui lòng xác minh bạn không phải là robot';
+    }
+
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
   };
@@ -104,6 +113,8 @@ export default function ContactPage() {
       // Reset form
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
       setValidationErrors({});
+      setCaptchaToken('');
+      turnstileRef.current?.reset();
     } catch (err) {
       // Error - Show SweetAlert
       await Swal.fire({
@@ -271,6 +282,45 @@ export default function ContactPage() {
                     />
                     {validationErrors.message && (
                       <p className="mt-1 text-sm text-red-600">{validationErrors.message}</p>
+                    )}
+                  </div>
+
+                  {/* Cloudflare Turnstile CAPTCHA */}
+                  <div>
+                    <Turnstile
+                      ref={turnstileRef}
+                      siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''}
+                      onSuccess={(token) => {
+                        setCaptchaToken(token);
+                        // Clear captcha error when verified
+                        if (validationErrors.captcha) {
+                          setValidationErrors({
+                            ...validationErrors,
+                            captcha: undefined
+                          });
+                        }
+                      }}
+                      onError={() => {
+                        setCaptchaToken('');
+                        setValidationErrors({
+                          ...validationErrors,
+                          captcha: 'Xác minh CAPTCHA thất bại. Vui lòng thử lại.'
+                        });
+                      }}
+                      onExpire={() => {
+                        setCaptchaToken('');
+                        setValidationErrors({
+                          ...validationErrors,
+                          captcha: 'CAPTCHA đã hết hạn. Vui lòng xác minh lại.'
+                        });
+                      }}
+                      options={{
+                        theme: 'light',
+                        size: 'normal',
+                      }}
+                    />
+                    {validationErrors.captcha && (
+                      <p className="mt-2 text-sm text-red-600">{validationErrors.captcha}</p>
                     )}
                   </div>
 
