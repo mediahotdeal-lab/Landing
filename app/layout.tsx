@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     template: "%s | HotDeal Media",
   },
   description: "Chuyên gia giải pháp Marketing Online hàng đầu Việt Nam. Dịch vụ Google Ads, Facebook Ads, SEO, thiết kế website chuyên nghiệp. Tăng doanh số bán hàng hiệu quả, chi phí tối ưu. Đối tác tin cậy của hơn 1000+ doanh nghiệp.",
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
