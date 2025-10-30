@@ -4,6 +4,14 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { submitContactForm, type ContactFormData } from '@/lib/api';
 
+interface ValidationErrors {
+  name?: string;
+  email?: string;
+  phone?: string;
+  service?: string;
+  message?: string;
+}
+
 export default function ContactPage() {
   const t = useTranslations('contactPage');
   const [formData, setFormData] = useState({
@@ -17,9 +25,66 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string>('');
+  const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
+
+  const validateForm = (): boolean => {
+    const errors: ValidationErrors = {};
+
+    // Name validation
+    if (!formData.name.trim()) {
+      errors.name = 'Vui lòng nhập họ tên';
+    } else if (formData.name.trim().length < 2) {
+      errors.name = 'Họ tên phải có ít nhất 2 ký tự';
+    } else if (formData.name.length > 255) {
+      errors.name = 'Họ tên không được vượt quá 255 ký tự';
+    }
+
+    // Email validation
+    if (!formData.email.trim()) {
+      errors.email = 'Vui lòng nhập email';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
+      errors.email = 'Email không hợp lệ';
+    } else if (formData.email.length > 255) {
+      errors.email = 'Email không được vượt quá 255 ký tự';
+    }
+
+    // Phone validation (Vietnamese format: 10-11 digits)
+    if (!formData.phone.trim()) {
+      errors.phone = 'Vui lòng nhập số điện thoại';
+    } else if (!/^[0-9]{10,11}$/.test(formData.phone.replace(/\s/g, ''))) {
+      errors.phone = 'Số điện thoại phải có 10-11 chữ số';
+    } else if (formData.phone.length > 20) {
+      errors.phone = 'Số điện thoại không được vượt quá 20 ký tự';
+    }
+
+    // Service validation
+    if (!formData.service.trim()) {
+      errors.service = 'Vui lòng chọn dịch vụ';
+    } else if (formData.service.length > 100) {
+      errors.service = 'Dịch vụ không được vượt quá 100 ký tự';
+    }
+
+    // Message validation
+    if (!formData.message.trim()) {
+      errors.message = 'Vui lòng nhập tin nhắn';
+    } else if (formData.message.trim().length < 10) {
+      errors.message = 'Tin nhắn phải có ít nhất 10 ký tự';
+    } else if (formData.message.length > 5000) {
+      errors.message = 'Tin nhắn không được vượt quá 5000 ký tự';
+    }
+
+    setValidationErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validate form
+    if (!validateForm()) {
+      return;
+    }
+
     setLoading(true);
     setError('');
     setSubmitted(false);
@@ -31,6 +96,7 @@ export default function ContactPage() {
       // Success
       setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+      setValidationErrors({});
 
       // Clear success message after 3 seconds
       setTimeout(() => {
@@ -50,10 +116,18 @@ export default function ContactPage() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     });
+    // Clear validation error for this field when user starts typing
+    if (validationErrors[name as keyof ValidationErrors]) {
+      setValidationErrors({
+        ...validationErrors,
+        [name]: undefined
+      });
+    }
   };
 
   return (
@@ -120,12 +194,15 @@ export default function ContactPage() {
                       type="text"
                       id="name"
                       name="name"
-                      required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
+                      maxLength={255}
+                      className={`w-full px-4 py-3 border-2 ${validationErrors.name ? 'border-red-500' : 'border-gray-300'} rounded-xl focus:outline-none focus:border-red-600 transition-colors`}
                       placeholder={t('form.namePlaceholder')}
                     />
+                    {validationErrors.name && (
+                      <p className="mt-1 text-sm text-red-600">{validationErrors.name}</p>
+                    )}
                   </div>
 
                   {/* Email & Phone */}
@@ -138,12 +215,15 @@ export default function ContactPage() {
                         type="email"
                         id="email"
                         name="email"
-                        required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
+                        maxLength={255}
+                        className={`w-full px-4 py-3 border-2 ${validationErrors.email ? 'border-red-500' : 'border-gray-300'} rounded-xl focus:outline-none focus:border-red-600 transition-colors`}
                         placeholder={t('form.emailPlaceholder')}
                       />
+                      {validationErrors.email && (
+                        <p className="mt-1 text-sm text-red-600">{validationErrors.email}</p>
+                      )}
                     </div>
 
                     <div>
@@ -154,26 +234,29 @@ export default function ContactPage() {
                         type="tel"
                         id="phone"
                         name="phone"
-                        required
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
+                        maxLength={20}
+                        className={`w-full px-4 py-3 border-2 ${validationErrors.phone ? 'border-red-500' : 'border-gray-300'} rounded-xl focus:outline-none focus:border-red-600 transition-colors`}
                         placeholder={t('form.phonePlaceholder')}
                       />
+                      {validationErrors.phone && (
+                        <p className="mt-1 text-sm text-red-600">{validationErrors.phone}</p>
+                      )}
                     </div>
                   </div>
 
                   {/* Service */}
                   <div>
                     <label htmlFor="service" className="block text-sm font-semibold text-gray-900 mb-2">
-                      {t('form.service')}
+                      {t('form.service')} <span className="text-red-600">{t('form.required')}</span>
                     </label>
                     <select
                       id="service"
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
+                      className={`w-full px-4 py-3 border-2 ${validationErrors.service ? 'border-red-500' : 'border-gray-300'} rounded-xl focus:outline-none focus:border-red-600 transition-colors`}
                     >
                       <option value="">{t('form.selectService')}</option>
                       <option value="quang-cao-google-ads">{t('form.services.googleAds')}</option>
@@ -181,6 +264,9 @@ export default function ContactPage() {
                       <option value="thiet-ke-website">{t('form.services.websiteDesign')}</option>
                       <option value="thiet-ke-landing-page">{t('form.services.landingPageDesign')}</option>
                     </select>
+                    {validationErrors.service && (
+                      <p className="mt-1 text-sm text-red-600">{validationErrors.service}</p>
+                    )}
                   </div>
 
                   {/* Message */}
@@ -191,13 +277,16 @@ export default function ContactPage() {
                     <textarea
                       id="message"
                       name="message"
-                      required
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors resize-none"
+                      maxLength={5000}
+                      className={`w-full px-4 py-3 border-2 ${validationErrors.message ? 'border-red-500' : 'border-gray-300'} rounded-xl focus:outline-none focus:border-red-600 transition-colors resize-none`}
                       placeholder={t('form.messagePlaceholder')}
                     />
+                    {validationErrors.message && (
+                      <p className="mt-1 text-sm text-red-600">{validationErrors.message}</p>
+                    )}
                   </div>
 
                   {/* Submit Button */}
