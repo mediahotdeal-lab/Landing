@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('footer');
+  const tCommon = useTranslations('common');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,7 +18,7 @@ export default function Footer() {
               HotDeal <span className="text-red-600">Media</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Đối tác tin cậy trong hành trình phát triển kinh doanh của bạn.
+              {t('description')}
             </p>
             <div className="flex space-x-3">
               <a href="#" className="bg-gray-800 p-2.5 rounded-lg hover:bg-red-600 transition-colors">
@@ -36,31 +41,31 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Dịch vụ</h3>
+            <h3 className="font-bold text-lg mb-4">{t('servicesTitle')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Facebook Ads
+                  {t('services.facebookAds')}
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Google Ads
+                  {t('services.googleAds')}
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-red-600 transition-colors">
-                  SEO Marketing
+                  {t('services.seo')}
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Content Marketing
+                  {t('services.content')}
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Email Marketing
+                  {t('services.email')}
                 </Link>
               </li>
             </ul>
@@ -68,31 +73,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Liên kết</h3>
+            <h3 className="font-bold text-lg mb-4">{t('quickLinksTitle')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#about" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Về chúng tôi
+                  {t('quickLinks.about')}
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Dịch vụ
+                  {t('quickLinks.services')}
                 </Link>
               </li>
               <li>
                 <Link href="#stats" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Thành tích
+                  {t('quickLinks.achievements')}
                 </Link>
               </li>
               <li>
                 <Link href="#contact" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Liên hệ
+                  {t('quickLinks.contact')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-red-600 transition-colors">
-                  Blog
+                  {t('quickLinks.blog')}
                 </Link>
               </li>
             </ul>
@@ -100,20 +105,20 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Liên hệ</h3>
+            <h3 className="font-bold text-lg mb-4">{t('contactTitle')}</h3>
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-start">
                 <svg className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>123 Đường ABC, Quận 1, TP.HCM</span>
+                <span>332 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP.HCM</span>
               </li>
               <li className="flex items-center">
                 <svg className="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span>+84 123 456 789</span>
+                <span>(028) 7300 5757</span>
               </li>
               <li className="flex items-center">
                 <svg className="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +132,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} HotDeal Media. All rights reserved</p>
+          <p>&copy; {currentYear} HotDeal Media. {tCommon('allRightsReserved')}</p>
         </div>
       </div>
     </footer>

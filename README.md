@@ -151,7 +151,7 @@ CMD ["npm", "start"]
 
 - Website: https://hotdealmedia.com
 - Email: contact@hotdealmedia.com
-- Phone: +84 123 456 789
+- Phone: (028) 7300 5757
 
 ## 📄 License
 

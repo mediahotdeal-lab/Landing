@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
+  const t = useTranslations('contact');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -44,13 +46,13 @@ export default function Contact() {
           {/* Left Side - Contact Info */}
           <div>
             <span className="inline-block bg-red-50 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Liên hệ với chúng tôi
+              {t('badge')}
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-              Sẵn sàng bứt phá <span className="text-red-600">doanh số</span>?
+              {t('heading')} <span className="text-red-600">{t('headingHighlight')}</span>?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Để lại thông tin để nhận tư vấn miễn phí từ chuyên gia của chúng tôi
+              {t('description')}
             </p>
 
             {/* Contact Methods */}
@@ -72,8 +74,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Hotline</h3>
-                  <p className="text-gray-600">+84 123 456 789</p>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">{t('info.hotline')}</h3>
+                  <p className="text-gray-600">{t('info.phone')}</p>
                 </div>
               </div>
 
@@ -94,8 +96,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Email</h3>
-                  <p className="text-gray-600">contact@hotdealmedia.com</p>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">{t('info.email')}</h3>
+                  <p className="text-gray-600">{t('info.emailValue')}</p>
                 </div>
               </div>
 
@@ -122,15 +124,15 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Địa chỉ</h3>
-                  <p className="text-gray-600">123 Đường ABC, Quận 1, TP.HCM</p>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">{t('info.address')}</h3>
+                  <p className="text-gray-600">{t('info.addressValue')}</p>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="mt-8">
-              <h3 className="font-semibold text-lg mb-4 text-gray-900">Kết nối với chúng tôi</h3>
+              <h3 className="font-semibold text-lg mb-4 text-gray-900">{t('info.socialTitle')}</h3>
               <div className="flex space-x-3">
                 <a href="#" className="group bg-red-50 text-red-600 p-3 rounded-xl hover:bg-red-600 hover:text-white transition-all hover:scale-110">
                   <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
@@ -156,7 +158,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Họ và tên *
+                  {t('form.name')} *
                 </label>
                 <input
                   type="text"
@@ -166,13 +168,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
-                  placeholder="Nguyễn Văn A"
+                  placeholder={t('form.namePlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Email *
+                  {t('form.email')} *
                 </label>
                 <input
                   type="email"
@@ -182,13 +184,13 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
-                  placeholder="email@example.com"
+                  placeholder={t('form.emailPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Số điện thoại *
+                  {t('form.phone')} *
                 </label>
                 <input
                   type="tel"
@@ -198,13 +200,13 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
-                  placeholder="0123456789"
+                  placeholder={t('form.phonePlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Dịch vụ quan tâm
+                  {t('form.service')}
                 </label>
                 <select
                   id="service"
@@ -213,19 +215,19 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
                 >
-                  <option value="">Chọn dịch vụ</option>
-                  <option value="facebook-ads">Facebook Ads</option>
-                  <option value="google-ads">Google Ads</option>
-                  <option value="seo">SEO Marketing</option>
-                  <option value="content">Content Marketing</option>
-                  <option value="email">Email Marketing</option>
-                  <option value="social">Social Media</option>
+                  <option value="">{t('form.selectService')}</option>
+                  <option value="facebook-ads">{t('form.services.facebookAds')}</option>
+                  <option value="google-ads">{t('form.services.googleAds')}</option>
+                  <option value="seo">{t('form.services.seo')}</option>
+                  <option value="content">{t('form.services.content')}</option>
+                  <option value="email">{t('form.services.email')}</option>
+                  <option value="social">{t('form.services.social')}</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Nội dung
+                  {t('form.message')}
                 </label>
                 <textarea
                   id="message"
@@ -234,7 +236,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition resize-none"
-                  placeholder="Mô tả chi tiết nhu cầu của bạn..."
+                  placeholder={t('form.messagePlaceholder')}
                 />
               </div>
 
@@ -243,12 +245,12 @@ export default function Contact() {
                 disabled={isSubmitting}
                 className="w-full bg-red-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-red-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-xl hover:scale-105"
               >
-                {isSubmitting ? 'Đang gửi...' : 'Gửi thông tin'}
+                {isSubmitting ? t('form.submitting') : t('form.submit')}
               </button>
 
               {submitStatus === 'success' && (
                 <div className="bg-green-100 text-green-700 p-4 rounded-lg text-center">
-                  ✓ Gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.
+                  {t('form.success')}
                 </div>
               )}
             </form>

@@ -1,11 +1,14 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com';
+
   return {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: ['/api/', '/_next/', '/admin/'],
     },
-    sitemap: 'https://hotdealmedia.com/sitemap.xml', // Thay đổi theo domain thực tế
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

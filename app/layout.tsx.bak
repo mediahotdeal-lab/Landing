@@ -1,0 +1,149 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com'),
+  title: {
+    default: "HotDeal Media - Digital Marketing Agency | Dịch vụ Marketing Online",
+    template: "%s | HotDeal Media",
+  },
+  description: "Chuyên gia giải pháp Marketing Online hàng đầu Việt Nam. Dịch vụ Google Ads, Facebook Ads, SEO, thiết kế website chuyên nghiệp. Tăng doanh số bán hàng hiệu quả, chi phí tối ưu. Đối tác tin cậy của hơn 1000+ doanh nghiệp.",
+  keywords: [
+    "digital marketing",
+    "marketing online",
+    "google ads",
+    "facebook ads",
+    "seo",
+    "content marketing",
+    "thiết kế website",
+    "landing page",
+    "quảng cáo google",
+    "quảng cáo facebook",
+    "dịch vụ marketing",
+    "hotdeal media",
+    "agency marketing việt nam"
+  ],
+  authors: [{ name: "HotDeal Media" }],
+  creator: "HotDeal Media",
+  publisher: "HotDeal Media",
+  openGraph: {
+    title: "HotDeal Media - Digital Marketing Agency",
+    description: "Đối tác tin cậy giúp doanh nghiệp tăng trưởng với Google Ads, Facebook Ads, SEO và thiết kế website chuyên nghiệp",
+    type: "website",
+    locale: "vi_VN",
+    url: "/",
+    siteName: "HotDeal Media",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "HotDeal Media - Digital Marketing Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HotDeal Media - Digital Marketing Agency",
+    description: "Đối tác tin cậy giúp doanh nghiệp tăng trưởng với Google Ads, SEO và thiết kế website chuyên nghiệp",
+    images: ["/og-image.jpg"],
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  manifest: "/manifest.json",
+  alternates: {
+    canonical: "/",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'HotDeal Media',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com',
+    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com'}/images/logo_2.png`,
+    description: 'Chuyên gia giải pháp Marketing Online hàng đầu Việt Nam',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '332 Lũy Bán Bích, Phường Hòa Thạnh',
+      addressLocality: 'Quận Tân Phú',
+      addressRegion: 'TP.HCM',
+      postalCode: '700000',
+      addressCountry: 'VN',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+84-28-7300-5757',
+      contactType: 'customer service',
+      email: 'contact@hotdealmedia.vn',
+      areaServed: 'VN',
+      availableLanguage: ['vi', 'en'],
+    },
+    sameAs: [
+      // Add social media URLs here when available
+    ],
+  };
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'HotDeal Media',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com',
+    description: 'Dịch vụ Digital Marketing chuyên nghiệp',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com'}/search?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  return (
+    <html lang="vi" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
+      <body className={`${inter.className} antialiased`} suppressHydrationWarning>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}

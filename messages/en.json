@@ -1,0 +1,199 @@
+{
+  "common": {
+    "companyName": "HotDeal Media",
+    "tagline": "#1 Digital Marketing Agency Vietnam",
+    "freeConsultation": "Free Consultation",
+    "contactUs": "Contact Us",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "allRightsReserved": "All rights reserved"
+  },
+  "navbar": {
+    "services": "SERVICES",
+    "about": "ABOUT US",
+    "blog": "BLOG",
+    "contact": "CONTACT",
+    "freeConsultation": "Free Consultation",
+    "servicePrefix": "Service",
+    "viewAllServices": "View All Services",
+    "servicesList": {
+      "googleAds": "Google Ads Advertising",
+      "googleAdsRental": "Google Ads Account Rental",
+      "websiteDesign": "Website Design",
+      "landingPageDesign": "Landing Page Design"
+    }
+  },
+  "hero": {
+    "badge": "#1 Digital Marketing Agency Vietnam",
+    "heading1": "Marketing Solutions",
+    "heading2": "Accelerate Your Revenue",
+    "heading3": "Growth",
+    "description": "We help your business reach the right customers, increase sales, and build a strong brand with effective Digital Marketing solutions.",
+    "primaryCta": "Get Free Consultation",
+    "secondaryCta": "Explore Services",
+    "stats": {
+      "projectsCompleted": "Projects Completed",
+      "trustedClients": "Trusted Clients",
+      "satisfaction": "Customer Satisfaction",
+      "avgROI": "Average ROI"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "heading": "Comprehensive Marketing Solutions",
+    "description": "We provide complete Online Marketing services to help businesses achieve exceptional growth",
+    "cta": "Get Free Consultation",
+    "list": {
+      "facebookAds": {
+        "title": "Facebook Ads",
+        "description": "Effective Facebook advertising, reaching the right target audience with optimized costs.",
+        "features": [
+          "Precise Targeting",
+          "Budget Optimization",
+          "Detailed Reporting"
+        ]
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Professional Google Ads campaigns, bringing your business to TOP search results.",
+        "features": [
+          "Search Ads",
+          "Display Ads",
+          "Shopping Ads"
+        ]
+      },
+      "seo": {
+        "title": "SEO Marketing",
+        "description": "Optimize your website to TOP Google organically, increase sustainable quality traffic.",
+        "features": [
+          "On-page SEO",
+          "Off-page SEO",
+          "Technical SEO"
+        ]
+      },
+      "content": {
+        "title": "Content Marketing",
+        "description": "Create quality content, effectively attract and retain customers.",
+        "features": [
+          "Copywriting",
+          "Content Strategy",
+          "Storytelling"
+        ]
+      },
+      "email": {
+        "title": "Email Marketing",
+        "description": "Professional email marketing campaigns, nurture and care for customers.",
+        "features": [
+          "Automation",
+          "Personalization",
+          "Analytics"
+        ]
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Comprehensive social media management, building strong communities and brands.",
+        "features": [
+          "Community Management",
+          "Engagement",
+          "Brand Building"
+        ]
+      }
+    }
+  },
+  "about": {
+    "badge": "Why Choose Us",
+    "heading": "Why Choose",
+    "headingHighlight": "HotDeal Media",
+    "description": "We are committed to delivering the best value to customers with professional team and optimal solutions",
+    "reasons": {
+      "strategy": {
+        "title": "Optimal Strategy",
+        "description": "Deep market and competitor analysis to build the most suitable strategy"
+      },
+      "roi": {
+        "title": "High ROI",
+        "description": "Optimize advertising costs, ensure the best return on investment"
+      },
+      "team": {
+        "title": "Professional Team",
+        "description": "Experts with years of experience in Digital Marketing"
+      },
+      "transparency": {
+        "title": "Transparent Reporting",
+        "description": "Detailed and clear reports on campaign performance in real-time"
+      },
+      "technology": {
+        "title": "Modern Technology",
+        "description": "Apply the most advanced Marketing technologies and tools"
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "Always accompany and support customers 24/7"
+      }
+    },
+    "cta": {
+      "heading": "Ready to grow your sales?",
+      "description": "Let us help you build effective Marketing strategies and breakthrough revenue",
+      "button": "Get Free Consultation Now"
+    }
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "heading": "Ready to boost your",
+    "headingHighlight": "sales",
+    "description": "Leave your information to receive free consultation from our experts",
+    "info": {
+      "hotline": "Hotline",
+      "email": "Email",
+      "address": "Address",
+      "addressValue": "332 Luy Ban Bich, Hoa Thanh Ward, Tan Phu District, Ho Chi Minh City",
+      "phone": "(028) 7300 5757",
+      "emailValue": "contact@hotdealmedia.com",
+      "socialTitle": "Connect With Us"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "service": "Interested Service",
+      "message": "Message",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "email@example.com",
+      "phonePlaceholder": "0123456789",
+      "messagePlaceholder": "Describe your needs in detail...",
+      "selectService": "Select Service",
+      "services": {
+        "facebookAds": "Facebook Ads",
+        "googleAds": "Google Ads",
+        "seo": "SEO Marketing",
+        "content": "Content Marketing",
+        "email": "Email Marketing",
+        "social": "Social Media"
+      },
+      "submit": "Send Information",
+      "submitting": "Sending...",
+      "success": "✓ Successfully sent! We will contact you soon."
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner in your business development journey.",
+    "servicesTitle": "Services",
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact",
+    "services": {
+      "facebookAds": "Facebook Ads",
+      "googleAds": "Google Ads",
+      "seo": "SEO Marketing",
+      "content": "Content Marketing",
+      "email": "Email Marketing"
+    },
+    "quickLinks": {
+      "about": "About Us",
+      "services": "Services",
+      "achievements": "Achievements",
+      "contact": "Contact",
+      "blog": "Blog"
+    }
+  }
+}

@@ -29,9 +29,6 @@ export default function BlogPage() {
               Blog & Insights
             </span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gray-900 px-4">
-            Kiến Thức <span className="text-red-600">Marketing</span>
-          </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Khám phá các bài viết, tips và chiến lược marketing mới nhất từ đội ngũ chuyên gia của HotDeal Media
           </p>

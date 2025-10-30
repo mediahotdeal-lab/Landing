@@ -1,0 +1,199 @@
+{
+  "common": {
+    "companyName": "HotDeal Media",
+    "tagline": "#1 Digital Marketing Agency Vietnam",
+    "freeConsultation": "Tư vấn miễn phí",
+    "contactUs": "Liên hệ",
+    "viewAll": "Xem tất cả",
+    "learnMore": "Tìm hiểu thêm",
+    "getStarted": "Bắt đầu ngay",
+    "allRightsReserved": "All rights reserved"
+  },
+  "navbar": {
+    "services": "DỊCH VỤ",
+    "about": "VỀ CHÚNG TÔI",
+    "blog": "BLOG",
+    "contact": "LIÊN HỆ",
+    "freeConsultation": "Tư vấn miễn phí",
+    "servicePrefix": "Dịch vụ",
+    "viewAllServices": "Xem tất cả dịch vụ",
+    "servicesList": {
+      "googleAds": "Quảng Cáo Google Ads",
+      "googleAdsRental": "Thuê tài khoản Google Ads",
+      "websiteDesign": "Thiết kế Website",
+      "landingPageDesign": "Thiết kế Landing Page"
+    }
+  },
+  "hero": {
+    "badge": "#1 Digital Marketing Agency Vietnam",
+    "heading1": "Giải Pháp Marketing",
+    "heading2": "Tăng Trưởng Doanh Thu",
+    "heading3": "Vượt Bậc",
+    "description": "Chúng tôi giúp doanh nghiệp của bạn tiếp cận đúng khách hàng, tăng doanh số bán hàng và xây dựng thương hiệu mạnh mẽ với các giải pháp Digital Marketing hiệu quả.",
+    "primaryCta": "Nhận tư vấn miễn phí",
+    "secondaryCta": "Khám phá dịch vụ",
+    "stats": {
+      "projectsCompleted": "Dự án hoàn thành",
+      "trustedClients": "Khách hàng tin tưởng",
+      "satisfaction": "Khách hàng hài lòng",
+      "avgROI": "ROI trung bình"
+    }
+  },
+  "services": {
+    "badge": "Dịch vụ của chúng tôi",
+    "heading": "Giải Pháp Marketing Toàn Diện",
+    "description": "Chúng tôi cung cấp đầy đủ các dịch vụ Marketing Online giúp doanh nghiệp tăng trưởng vượt bậc",
+    "cta": "Nhận tư vấn miễn phí",
+    "list": {
+      "facebookAds": {
+        "title": "Facebook Ads",
+        "description": "Quảng cáo Facebook hiệu quả, tiếp cận đúng đối tượng khách hàng mục tiêu với chi phí tối ưu.",
+        "features": [
+          "Targeting chính xác",
+          "Tối ưu ngân sách",
+          "Báo cáo chi tiết"
+        ]
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Chiến dịch Google Ads chuyên nghiệp, đưa doanh nghiệp lên TOP kết quả tìm kiếm.",
+        "features": [
+          "Search Ads",
+          "Display Ads",
+          "Shopping Ads"
+        ]
+      },
+      "seo": {
+        "title": "SEO Marketing",
+        "description": "Tối ưu hóa website lên TOP Google tự nhiên, tăng traffic chất lượng bền vững.",
+        "features": [
+          "On-page SEO",
+          "Off-page SEO",
+          "Technical SEO"
+        ]
+      },
+      "content": {
+        "title": "Content Marketing",
+        "description": "Sáng tạo nội dung chất lượng, thu hút và giữ chân khách hàng hiệu quả.",
+        "features": [
+          "Copywriting",
+          "Content Strategy",
+          "Storytelling"
+        ]
+      },
+      "email": {
+        "title": "Email Marketing",
+        "description": "Chiến dịch email marketing chuyên nghiệp, chăm sóc và nuôi dưỡng khách hàng.",
+        "features": [
+          "Automation",
+          "Personalization",
+          "Analytics"
+        ]
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Quản trị mạng xã hội toàn diện, xây dựng cộng đồng và thương hiệu mạnh mẽ.",
+        "features": [
+          "Community Management",
+          "Engagement",
+          "Brand Building"
+        ]
+      }
+    }
+  },
+  "about": {
+    "badge": "Tại sao chọn chúng tôi",
+    "heading": "Lý Do Nên Chọn",
+    "headingHighlight": "HotDeal Media",
+    "description": "Chúng tôi cam kết mang đến giá trị tốt nhất cho khách hàng với đội ngũ chuyên nghiệp và giải pháp tối ưu",
+    "reasons": {
+      "strategy": {
+        "title": "Chiến lược tối ưu",
+        "description": "Phân tích sâu thị trường và đối thủ để xây dựng chiến lược phù hợp nhất"
+      },
+      "roi": {
+        "title": "ROI cao",
+        "description": "Tối ưu hóa chi phí quảng cáo, đảm bảo lợi nhuận đầu tư tốt nhất"
+      },
+      "team": {
+        "title": "Đội ngũ chuyên nghiệp",
+        "description": "Chuyên gia nhiều năm kinh nghiệm trong lĩnh vực Digital Marketing"
+      },
+      "transparency": {
+        "title": "Báo cáo minh bạch",
+        "description": "Báo cáo chi tiết, rõ ràng về hiệu quả chiến dịch theo thời gian thực"
+      },
+      "technology": {
+        "title": "Công nghệ hiện đại",
+        "description": "Áp dụng công nghệ và công cụ Marketing tiên tiến nhất"
+      },
+      "support": {
+        "title": "Hỗ trợ tận tâm",
+        "description": "Luôn đồng hành và hỗ trợ khách hàng 24/7"
+      }
+    },
+    "cta": {
+      "heading": "Sẵn sàng tăng trưởng doanh số?",
+      "description": "Hãy để chúng tôi giúp bạn xây dựng chiến lược Marketing hiệu quả và bứt phá doanh thu",
+      "button": "Nhận tư vấn miễn phí ngay"
+    }
+  },
+  "contact": {
+    "badge": "Liên hệ với chúng tôi",
+    "heading": "Sẵn sàng bứt phá",
+    "headingHighlight": "doanh số",
+    "description": "Để lại thông tin để nhận tư vấn miễn phí từ chuyên gia của chúng tôi",
+    "info": {
+      "hotline": "Hotline",
+      "email": "Email",
+      "address": "Địa chỉ",
+      "addressValue": "332 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP.HCM",
+      "phone": "(028) 7300 5757",
+      "emailValue": "contact@hotdealmedia.com",
+      "socialTitle": "Kết nối với chúng tôi"
+    },
+    "form": {
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "service": "Dịch vụ quan tâm",
+      "message": "Nội dung",
+      "namePlaceholder": "Nguyễn Văn A",
+      "emailPlaceholder": "email@example.com",
+      "phonePlaceholder": "0123456789",
+      "messagePlaceholder": "Mô tả chi tiết nhu cầu của bạn...",
+      "selectService": "Chọn dịch vụ",
+      "services": {
+        "facebookAds": "Facebook Ads",
+        "googleAds": "Google Ads",
+        "seo": "SEO Marketing",
+        "content": "Content Marketing",
+        "email": "Email Marketing",
+        "social": "Social Media"
+      },
+      "submit": "Gửi thông tin",
+      "submitting": "Đang gửi...",
+      "success": "✓ Gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất."
+    }
+  },
+  "footer": {
+    "description": "Đối tác tin cậy trong hành trình phát triển kinh doanh của bạn.",
+    "servicesTitle": "Dịch vụ",
+    "quickLinksTitle": "Liên kết",
+    "contactTitle": "Liên hệ",
+    "services": {
+      "facebookAds": "Facebook Ads",
+      "googleAds": "Google Ads",
+      "seo": "SEO Marketing",
+      "content": "Content Marketing",
+      "email": "Email Marketing"
+    },
+    "quickLinks": {
+      "about": "Về chúng tôi",
+      "services": "Dịch vụ",
+      "achievements": "Thành tích",
+      "contact": "Liên hệ",
+      "blog": "Blog"
+    }
+  }
+}

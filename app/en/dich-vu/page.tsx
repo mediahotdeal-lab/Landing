@@ -1,5 +1,30 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { services } from './services-data';
+
+export const metadata: Metadata = {
+  title: "Dịch Vụ Digital Marketing",
+  description: "Khám phá các dịch vụ Digital Marketing chuyên nghiệp tại HotDeal Media: Google Ads, Facebook Ads, SEO, thiết kế website, landing page. Giải pháp toàn diện giúp doanh nghiệp tăng trưởng bền vững và hiệu quả.",
+  keywords: [
+    "dịch vụ marketing",
+    "digital marketing services",
+    "dịch vụ google ads",
+    "dịch vụ facebook ads",
+    "dịch vụ seo",
+    "thiết kế website",
+    "thiết kế landing page",
+    "marketing online",
+    "quảng cáo trực tuyến"
+  ],
+  openGraph: {
+    title: "Dịch Vụ Digital Marketing - HotDeal Media",
+    description: "Giải pháp Marketing toàn diện: Google Ads, SEO, thiết kế website. Tăng trưởng bền vững cho doanh nghiệp.",
+    url: "/dich-vu",
+  },
+  alternates: {
+    canonical: "/dich-vu",
+  },
+};
 
 export default function ServicesPage() {
   return (
@@ -12,14 +37,14 @@ export default function ServicesPage() {
           backgroundSize: '50px 50px'
         }}></div>
 
-        <div className="container mx-auto px-4 relative">
+        <div className="w-full md:w-[90%] max-w-[1440px] mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-6">
               <span className="bg-red-50 text-red-600 px-4 py-2 rounded-full text-sm font-semibold">
                 Dịch vụ chuyên nghiệp
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 leading-relaxed">
               Dịch Vụ Của Chúng Tôi
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
@@ -31,8 +56,8 @@ export default function ServicesPage() {
 
       {/* Services Grid */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="w-full md:w-[90%] max-w-[1440px] mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {services.map((service) => (
               <Link
                 key={service.slug}
@@ -43,7 +68,7 @@ export default function ServicesPage() {
                   <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
                     <span className="text-3xl">{service.icon}</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-red-600 transition-colors">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-red-600 transition-colors leading-relaxed">
                     {service.name}
                   </h3>
                   <p className="text-gray-600 mb-6 line-clamp-3">
@@ -74,8 +99,8 @@ export default function ServicesPage() {
 
       {/* CTA Section */}
       <section className="bg-gray-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+        <div className="w-full md:w-[90%] max-w-[1440px] mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4 leading-relaxed">
             Sẵn sàng bắt đầu?
           </h2>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">

@@ -1,18 +1,20 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const services = [
-  { slug: 'quang-cao-google-ads', name: 'Quảng Cáo Google Ads' },
-  { slug: 'thue-tai-khoan-google-ads-vnd', name: 'Thuê tài khoản Google Ads VNĐ' },
-  { slug: 'thue-tai-khoan-invoice-usd', name: 'Thuê tài khoản Invoice USD' },
-  { slug: 'design-website', name: 'Design Website' },
-  { slug: 'thiet-ke-landing-page', name: 'Thiết kế landing page' },
+  { slug: 'quang-cao-google-ads', nameKey: 'googleAds' },
+  { slug: 'thue-tai-khoan-google-ads-vnd', nameKey: 'googleAdsRental' },
+  { slug: 'thiet-ke-website', nameKey: 'websiteDesign' },
+  { slug: 'thiet-ke-landing-page', nameKey: 'landingPageDesign' },
 ];
 
 export default function Navbar() {
+  const t = useTranslations('navbar');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -40,10 +42,11 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/images/logo_2.png"
-              alt="Logo"
+              alt="HotDeal Media - Digital Marketing Agency Logo"
               width={150}
               height={40}
-              className="h-8 w-auto"
+              className="h-7 sm:h-8 w-auto"
+              priority
             />
           </Link>
 
@@ -56,7 +59,7 @@ export default function Navbar() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button className="flex items-center text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
-                DỊCH VỤ
+                {t('services')}
                 <svg
                   className={`w-4 h-4 ml-1 transition-transform ${
                     isServicesOpen ? 'rotate-180' : ''
@@ -74,23 +77,37 @@ export default function Navbar() {
                 </svg>
               </button>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 pt-2 w-72 z-50">
-                  <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2">
-                    {services.map((service) => (
-                      <Link
-                        key={service.slug}
-                        href={`/dich-vu/${service.slug}`}
-                        className="block px-6 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 font-medium text-sm transition-colors"
-                      >
-                        Dịch vụ ({service.name})
-                      </Link>
-                    ))}
-                    <div className="border-t border-gray-100 mt-2 pt-2">
+                <div className="absolute top-full left-0 pt-2 w-96 z-50">
+                  <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 py-3 overflow-hidden">
+                    {/* Subtle gradient at top */}
+                    <div className="h-1 bg-gradient-to-r from-red-500 via-pink-500 to-red-500"></div>
+
+                    <div className="py-2">
+                      {services.map((service) => (
+                        <Link
+                          key={service.slug}
+                          href={`/dich-vu/${service.slug}`}
+                          className="group block px-6 py-3.5 text-gray-700 hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 hover:text-red-600 font-medium text-base transition-all duration-200 relative"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-300 group-hover:bg-red-600 transition-colors"></div>
+                            <span>{t('servicePrefix')} ({t(`servicesList.${service.nameKey}`)})</span>
+                          </div>
+                          {/* Hover indicator */}
+                          <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-600 transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
+                        </Link>
+                      ))}
+                    </div>
+
+                    <div className="border-t border-gray-200 mt-2 pt-2 bg-gradient-to-r from-gray-50 to-white">
                       <Link
                         href="/dich-vu"
-                        className="block px-6 py-3 text-red-600 hover:bg-red-50 font-semibold text-sm transition-colors"
+                        className="group flex items-center justify-between px-6 py-3.5 text-red-600 hover:bg-red-50 font-bold text-base transition-all duration-200"
                       >
-                        Xem tất cả dịch vụ →
+                        <span>{t('viewAllServices')}</span>
+                        <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                       </Link>
                     </div>
                   </div>
@@ -99,21 +116,23 @@ export default function Navbar() {
             </div>
 
             <Link href="/ve-chung-toi" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
-              VỀ CHÚNG TÔI
+              {t('about')}
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
-              BLOG
+              {t('blog')}
             </Link>
             <Link href="/lien-he" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
-              LIÊN HỆ
+              {t('contact')}
             </Link>
 
             <Link
               href="/lien-he"
               className="px-6 py-2.5 bg-red-600 text-white font-semibold hover:bg-red-700 transition-all rounded-xl text-sm hover:scale-105 hover:shadow-lg"
             >
-              Tư vấn miễn phí
+              {t('freeConsultation')}
             </Link>
+
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -156,7 +175,7 @@ export default function Navbar() {
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
                   className="flex items-center justify-between w-full text-gray-700 hover:text-red-600 font-medium py-2 text-sm"
                 >
-                  DỊCH VỤ
+                  {t('services')}
                   <svg
                     className={`w-4 h-4 transition-transform ${
                       isServicesOpen ? 'rotate-180' : ''
@@ -185,7 +204,7 @@ export default function Navbar() {
                           setIsServicesOpen(false);
                         }}
                       >
-                        Dịch vụ ({service.name})
+                        {t('servicePrefix')} ({t(`servicesList.${service.nameKey}`)})
                       </Link>
                     ))}
                     <Link
@@ -196,7 +215,7 @@ export default function Navbar() {
                         setIsServicesOpen(false);
                       }}
                     >
-                      Xem tất cả →
+                      {t('viewAllServices')} →
                     </Link>
                   </div>
                 )}
@@ -207,21 +226,21 @@ export default function Navbar() {
                 className="block text-gray-700 hover:text-red-600 font-medium py-2 text-sm"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                VỀ CHÚNG TÔI
+                {t('about')}
               </Link>
               <Link
                 href="/blog"
                 className="block text-gray-700 hover:text-red-600 font-medium py-2 text-sm"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                BLOG
+                {t('blog')}
               </Link>
               <Link
                 href="/lien-he"
                 className="block text-gray-700 hover:text-red-600 font-medium py-2 text-sm"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                LIÊN HỆ
+                {t('contact')}
               </Link>
 
               <Link
@@ -229,8 +248,12 @@ export default function Navbar() {
                 className="block bg-red-600 text-white px-6 py-3 hover:bg-red-700 transition-all text-center font-semibold rounded-xl text-sm mt-4 hover:shadow-lg"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Tư vấn miễn phí
+                {t('freeConsultation')}
               </Link>
+
+              <div className="mt-4 flex justify-center">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}

@@ -149,13 +149,10 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-600 transition-colors"
                     >
                       <option value="">Chọn dịch vụ</option>
-                      <option value="facebook-ads">Facebook Ads</option>
-                      <option value="google-ads">Google Ads</option>
-                      <option value="seo">SEO Marketing</option>
-                      <option value="content">Content Marketing</option>
-                      <option value="email">Email Marketing</option>
-                      <option value="social">Social Media</option>
-                      <option value="other">Khác</option>
+                      <option value="quang-cao-google-ads">Dịch vụ (Quảng Cáo Google Ads)</option>
+                      <option value="thue-tai-khoan-google-ads-vnd">Dịch vụ (Thuê tài khoản Google Ads)</option>
+                      <option value="thiet-ke-website">Dịch vụ (Thiết kế Website)</option>
+                      <option value="thiet-ke-landing-page">Dịch vụ (Thiết kế Landing Page)</option>
                     </select>
                   </div>
 
@@ -355,7 +352,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Địa chỉ",
-    value: "123 Nguyễn Huệ, Quận 1, TP.HCM, Việt Nam"
+    value: "332 Lũy Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP.HCM"
   },
   {
     icon: (
@@ -364,7 +361,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Hotline",
-    value: "1900 xxxx"
+    value: "(028) 7300 5757"
   },
   {
     icon: (
