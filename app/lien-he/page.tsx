@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { submitContactForm, type ContactFormData } from '@/lib/api';
+import Swal from 'sweetalert2';
 
 interface ValidationErrors {
   name?: string;
@@ -23,8 +24,6 @@ export default function ContactPage() {
   });
 
   const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState<string>('');
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
 
   const validateForm = (): boolean => {
@@ -86,30 +85,34 @@ export default function ContactPage() {
     }
 
     setLoading(true);
-    setError('');
-    setSubmitted(false);
 
     try {
       // Submit form to CRM API
       await submitContactForm(formData as ContactFormData);
 
-      // Success
-      setSubmitted(true);
+      // Success - Show SweetAlert
+      await Swal.fire({
+        icon: 'success',
+        title: t('form.successMessage'),
+        text: 'Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#dc2626',
+        timer: 3000,
+        timerProgressBar: true,
+      });
+
+      // Reset form
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
       setValidationErrors({});
-
-      // Clear success message after 3 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 3000);
     } catch (err) {
-      // Error
-      setError(err instanceof Error ? err.message : 'Có lỗi xảy ra. Vui lòng thử lại.');
-
-      // Clear error message after 5 seconds
-      setTimeout(() => {
-        setError('');
-      }, 5000);
+      // Error - Show SweetAlert
+      await Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: err instanceof Error ? err.message : 'Có lỗi xảy ra. Vui lòng thử lại.',
+        confirmButtonText: 'Đóng',
+        confirmButtonColor: '#dc2626',
+      });
     } finally {
       setLoading(false);
     }
@@ -165,24 +168,6 @@ export default function ContactPage() {
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                   {t('form.heading')}
                 </h2>
-
-                {submitted && (
-                  <div className="mb-6 p-4 bg-green-50 border-2 border-green-500 rounded-xl text-green-700 font-semibold flex items-center gap-2">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    {t('form.successMessage')}
-                  </div>
-                )}
-
-                {error && (
-                  <div className="mb-6 p-4 bg-red-50 border-2 border-red-500 rounded-xl text-red-700 font-semibold flex items-center gap-2">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    {error}
-                  </div>
-                )}
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name */}

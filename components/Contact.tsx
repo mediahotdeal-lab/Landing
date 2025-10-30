@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { submitContactForm, type ContactFormData } from '@/lib/api';
+import Swal from 'sweetalert2';
 
 interface ValidationErrors {
   name?: string;
@@ -23,8 +24,6 @@ export default function Contact() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
-  const [errorMessage, setErrorMessage] = useState<string>('');
   const [validationErrors, setValidationErrors] = useState<ValidationErrors>({});
 
   const validateForm = (): boolean => {
@@ -86,32 +85,34 @@ export default function Contact() {
     }
 
     setIsSubmitting(true);
-    setSubmitStatus(null);
-    setErrorMessage('');
 
     try {
       // Submit form to CRM API
       await submitContactForm(formData as ContactFormData);
 
-      // Success
-      setSubmitStatus('success');
+      // Success - Show SweetAlert
+      await Swal.fire({
+        icon: 'success',
+        title: t('form.success'),
+        text: 'Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#dc2626',
+        timer: 3000,
+        timerProgressBar: true,
+      });
+
+      // Reset form
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
       setValidationErrors({});
-
-      // Clear success message after 3 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 3000);
     } catch (error) {
-      // Error
-      setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Có lỗi xảy ra. Vui lòng thử lại.');
-
-      // Clear error message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-        setErrorMessage('');
-      }, 5000);
+      // Error - Show SweetAlert
+      await Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: error instanceof Error ? error.message : 'Có lỗi xảy ra. Vui lòng thử lại.',
+        confirmButtonText: 'Đóng',
+        confirmButtonColor: '#dc2626',
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -354,18 +355,6 @@ export default function Contact() {
               >
                 {isSubmitting ? t('form.submitting') : t('form.submit')}
               </button>
-
-              {submitStatus === 'success' && (
-                <div className="bg-green-100 text-green-700 p-4 rounded-lg text-center">
-                  {t('form.success')}
-                </div>
-              )}
-
-              {submitStatus === 'error' && (
-                <div className="bg-red-100 text-red-700 p-4 rounded-lg text-center">
-                  {errorMessage}
-                </div>
-              )}
             </form>
           </div>
         </div>
