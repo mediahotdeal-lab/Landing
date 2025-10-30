@@ -3,11 +3,6 @@ import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
-import { locales } from '@/i18n';
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
 
 export const metadata: Metadata = {
   title: "Trang chủ",

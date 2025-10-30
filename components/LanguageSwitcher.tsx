@@ -1,17 +1,16 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
-import { useState, useTransition } from 'react';
+import { useLocale } from './LocaleProvider';
+import { useState } from 'react';
 
 const languages = [
   {
-    code: 'vi',
+    code: 'vi' as const,
     name: 'Tiếng Việt',
     flag: '🇻🇳',
   },
   {
-    code: 'en',
+    code: 'en' as const,
     name: 'English',
     flag: '🇬🇧',
   },
@@ -19,39 +18,25 @@ const languages = [
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isPending, startTransition] = useTransition();
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
+  const { locale, setLocale } = useLocale();
 
   const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0];
 
-  const switchLanguage = (newLocale: string) => {
+  const switchLanguage = (newLocale: 'vi' | 'en') => {
     if (newLocale === locale) {
       setIsOpen(false);
       return;
     }
 
-    startTransition(() => {
-      // Remove current locale from pathname if it exists
-      const pathnameWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '');
-
-      // Add new locale to pathname, but only if it's not the default (vi)
-      const newPathname = newLocale === 'vi'
-        ? pathnameWithoutLocale || '/'
-        : `/${newLocale}${pathnameWithoutLocale || '/'}`;
-
-      router.push(newPathname);
-      setIsOpen(false);
-    });
+    setLocale(newLocale);
+    setIsOpen(false);
   };
 
   return (
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        disabled={isPending}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-300 hover:border-red-600 transition-all hover:shadow-sm bg-white disabled:opacity-50"
+        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-300 hover:border-red-600 transition-all hover:shadow-sm bg-white"
         aria-label="Change language"
       >
         <span className="text-xl">{currentLanguage.flag}</span>
