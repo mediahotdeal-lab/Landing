@@ -332,8 +332,17 @@
       "badge": "Blog & Insights",
       "description": "Khám phá các bài viết, tips và chiến lược marketing mới nhất từ đội ngũ chuyên gia của HotDeal Media"
     },
+    "categories": {
+      "all": "Tất cả"
+    },
     "post": {
       "readMore": "Đọc thêm"
+    },
+    "error": {
+      "loadFailed": "Không thể tải bài viết. Vui lòng thử lại sau."
+    },
+    "empty": {
+      "noPosts": "Chưa có bài viết nào"
     },
     "newsletter": {
       "heading1": "Đăng ký nhận",
@@ -341,6 +350,41 @@
       "description": "Nhận các tips và insights mới nhất về Digital Marketing qua email",
       "placeholder": "Email của bạn",
       "button": "Đăng ký"
+    }
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "blog": "Blog"
+    },
+    "meta": {
+      "views": "lượt xem"
+    },
+    "share": {
+      "title": "Chia sẻ bài viết"
+    },
+    "backToBlog": "Quay lại Blog",
+    "relatedPosts": {
+      "title": "Bài viết liên quan"
+    }
+  },
+  "categoryPage": {
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "blog": "Blog"
+    },
+    "postsCount": "bài viết",
+    "empty": {
+      "noPosts": "Chưa có bài viết nào trong danh mục này",
+      "backToAll": "← Quay lại tất cả bài viết"
+    },
+    "pagination": {
+      "previous": "← Trang trước",
+      "next": "Trang sau →",
+      "pageOf": "Trang {current} / {total}"
+    },
+    "error": {
+      "loadFailed": "Không thể tải bài viết. Vui lòng thử lại sau."
     }
   },
   "servicesPage": {

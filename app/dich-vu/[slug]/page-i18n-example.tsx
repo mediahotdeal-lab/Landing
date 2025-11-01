@@ -12,7 +12,6 @@ import Link from 'next/link';
 
 export default function ServiceDetailPageExample() {
   const t = useTranslations('serviceDetailPage.googleAds');
-  const tCommon = useTranslations('serviceDetailPage.common');
   const tCta = useTranslations('serviceDetailPage.cta');
   const tHeroSteps = useTranslations('serviceDetailPage.heroSteps');
   const tSections = useTranslations('serviceDetailPage.sections');

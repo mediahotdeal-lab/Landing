@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  images: {
+    unoptimized: true, // Allow all external images
+  },
 };
 
 export default withNextIntl(nextConfig);

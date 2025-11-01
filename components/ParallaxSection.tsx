@@ -9,7 +9,6 @@ export default function ParallaxSection({ children, speed = 0.5 }: { children: R
   useEffect(() => {
     const handleScroll = () => {
       if (ref.current) {
-        const rect = ref.current.getBoundingClientRect();
         const scrolled = window.pageYOffset;
         const offset = scrolled * speed;
         setOffsetY(offset);

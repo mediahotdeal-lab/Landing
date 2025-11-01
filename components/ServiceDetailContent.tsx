@@ -189,7 +189,6 @@ interface ServiceCTAProps {
 
 export function ServiceCTA({ serviceName }: ServiceCTAProps) {
   const t = useTranslations('serviceDetailPage');
-  const tCommon = useTranslations('serviceDetailPage.common');
 
   return (
     <section className="py-12 sm:py-16 bg-white">

@@ -22,7 +22,6 @@ export default function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
 
   const serviceKey = getServiceKey(service.slug);
   const t = useTranslations(`serviceDetailPage.${serviceKey}`);
-  const tSteps = useTranslations('serviceDetailPage.heroSteps');
 
   return (
     <section className="relative bg-white pt-24 sm:pt-32 pb-12 sm:pb-16 overflow-hidden">

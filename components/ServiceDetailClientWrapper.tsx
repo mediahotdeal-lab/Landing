@@ -8,13 +8,9 @@ import PricingTable from './PricingTable';
 import {
   AboutServiceBadge,
   WhyChooseUsBadge,
-  AccountTypesBadge,
-  AccountTypesNote,
-  RentalModelSection,
   BenefitsSectionHeader,
   PackageIntroSection,
   ServiceCTA,
-  PopularBadge,
   ContactNowButton
 } from './ServiceDetailContent';
 import { Platform } from '@/app/dich-vu/services-data';

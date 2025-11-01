@@ -332,8 +332,17 @@
       "badge": "Blog & Insights",
       "description": "Discover the latest articles, tips and marketing strategies from HotDeal Media's expert team"
     },
+    "categories": {
+      "all": "All"
+    },
     "post": {
       "readMore": "Read more"
+    },
+    "error": {
+      "loadFailed": "Unable to load posts. Please try again later."
+    },
+    "empty": {
+      "noPosts": "No posts yet"
     },
     "newsletter": {
       "heading1": "Subscribe to",
@@ -341,6 +350,41 @@
       "description": "Get the latest tips and insights about Digital Marketing via email",
       "placeholder": "Your email",
       "button": "Subscribe"
+    }
+  },
+  "blogDetail": {
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "meta": {
+      "views": "views"
+    },
+    "share": {
+      "title": "Share this post"
+    },
+    "backToBlog": "Back to Blog",
+    "relatedPosts": {
+      "title": "Related Posts"
+    }
+  },
+  "categoryPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "postsCount": "posts",
+    "empty": {
+      "noPosts": "No posts in this category yet",
+      "backToAll": "← Back to all posts"
+    },
+    "pagination": {
+      "previous": "← Previous",
+      "next": "Next →",
+      "pageOf": "Page {current} / {total}"
+    },
+    "error": {
+      "loadFailed": "Unable to load posts. Please try again later."
     }
   },
   "servicesPage": {

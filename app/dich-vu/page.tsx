@@ -2,12 +2,10 @@
 
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { useLocale } from '@/components/LocaleProvider';
 import { services } from './services-data';
 
 export default function ServicesPage() {
   const t = useTranslations('servicesPage');
-  const { locale } = useLocale();
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
