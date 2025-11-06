@@ -47,6 +47,39 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     keywords.push('Thiết kế landing page', 'Landing page', 'Trang đích', 'Conversion optimization');
   }
 
+  // Define Open Graph images based on service
+  const ogImages: { url: string; width: number; height: number; alt: string }[] = [];
+
+  if (service.slug === 'thue-tai-khoan-google-ads-vnd') {
+    ogImages.push({
+      url: '/images/banner/banner-cho-thue-tai-khoan-quang-cao-google.jpg',
+      width: 1200,
+      height: 630,
+      alt: service.heroTitle,
+    });
+  } else if (service.slug === 'quang-cao-google-ads') {
+    ogImages.push({
+      url: '/images/banner/banner-quang-cao-google-ads.jpg',
+      width: 1200,
+      height: 630,
+      alt: service.heroTitle,
+    });
+  } else if (service.slug === 'thiet-ke-landing-page') {
+    ogImages.push({
+      url: '/images/banner/banner-xay-dung-landing-page.jpg',
+      width: 1200,
+      height: 630,
+      alt: service.heroTitle,
+    });
+  } else if (service.slug === 'thiet-ke-website') {
+    ogImages.push({
+      url: '/images/banner/banner-xay-dung-website.jpg',
+      width: 1200,
+      height: 630,
+      alt: service.heroTitle,
+    });
+  }
+
   return {
     title: `${service.heroTitle} | HotDeal Media`,
     description: service.description,
@@ -58,11 +91,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       locale: 'vi_VN',
       url: `/dich-vu/${service.slug}`,
       siteName: 'HotDeal Media',
+      ...(ogImages.length > 0 && { images: ogImages }),
     },
     twitter: {
       card: 'summary_large_image',
       title: service.heroTitle,
       description: service.description,
+      ...(ogImages.length > 0 && { images: ogImages.map(img => img.url) }),
     },
     alternates: {
       canonical: `/dich-vu/${service.slug}`,
