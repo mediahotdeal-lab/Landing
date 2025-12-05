@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hotdealmedia.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.hotdealmedia.com'),
   title: {
     default: "HotDeal Media - Digital Marketing Agency | Dịch vụ Marketing Online",
     template: "%s | HotDeal Media",
@@ -24,6 +24,19 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/favicon.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'vi_VN',
+    siteName: 'HotDeal Media',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'HotDeal Media - Digital Marketing Agency',
+      },
+    ],
   },
 };
 

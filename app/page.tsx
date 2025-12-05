@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     title: "HotDeal Media - Đối tác Digital Marketing tin cậy",
     description: "Giải pháp Marketing Online toàn diện: Google Ads, SEO, thiết kế website. Tăng doanh số nhanh chóng, chi phí tối ưu.",
     url: "/",
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: "/",
