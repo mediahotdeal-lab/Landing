@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { submitContactForm, type ContactFormData } from '@/lib/api';
+import { trackContactFormSubmission } from '@/lib/tracking';
 import Swal from 'sweetalert2';
 import { Turnstile, TurnstileInstance } from '@marsidev/react-turnstile';
 
@@ -98,6 +99,14 @@ export default function Contact() {
     try {
       // Submit form to CRM API
       await submitContactForm(formData as ContactFormData);
+
+      // Track form submission for Google Analytics & Ads
+      trackContactFormSubmission({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+      });
 
       // Success - Show SweetAlert
       await Swal.fire({
