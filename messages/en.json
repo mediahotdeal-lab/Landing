@@ -208,6 +208,15 @@
       "achievements": "Achievements",
       "contact": "Contact",
       "blog": "Blog"
+    },
+    "contact": {
+      "companyName": "Hotdeal Joint Stock Company",
+      "taxCode": "Tax ID: 0310955176",
+      "address": "332 Luy Ban Bich, Tan Phu Ward, Ho Chi Minh City",
+      "phone": "Phone: (028) 7300 5757",
+      "mobile": "Mobile: 0375307068",
+      "zalo": "Zalo: 0375307068",
+      "email": "contact@hotdealmedia.com"
     }
   },
   "aboutPage": {

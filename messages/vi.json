@@ -208,6 +208,15 @@
       "achievements": "Thành tích",
       "contact": "Liên hệ",
       "blog": "Blog"
+    },
+    "contact": {
+      "companyName": "Công Ty Cổ Phần Hotdeal",
+      "taxCode": "MST: 0310955176",
+      "address": "332 Lũy Bán Bích, Phường Tân Phú, TP.HCM",
+      "phone": "Điện Thoại: (028) 7300 5757",
+      "mobile": "Di Động: 0375307068",
+      "zalo": "Zalo: 0375307068",
+      "email": "contact@hotdealmedia.com"
     }
   },
   "aboutPage": {

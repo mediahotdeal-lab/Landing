@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import LocaleProvider from "@/components/LocaleProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingContact from "@/components/FloatingContact";
 import { GoogleTagManager, GoogleTagManagerNoscript } from "@/components/GoogleTagManager";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { GoogleAdsTracking } from "@/components/GoogleAdsTracking";
@@ -66,6 +67,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <FloatingContact />
         </LocaleProvider>
       </body>
     </html>
