@@ -217,6 +217,189 @@
       "mobile": "Di Động: 0375307068",
       "zalo": "Zalo: 0375307068",
       "email": "contact@hotdealmedia.com"
+    },
+    "legalTitle": "Pháp lý",
+    "legal": {
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản dịch vụ"
+    }
+  },
+  "policyPage": {
+    "metadata": {
+      "title": "Chính Sách Bảo Mật - HotDeal Media",
+      "description": "Chính sách bảo mật của HotDeal Media. Cam kết bảo vệ thông tin cá nhân và dữ liệu của bạn."
+    },
+    "hero": {
+      "badge": "Chính Sách Bảo Mật",
+      "heading1": "Chính Sách",
+      "heading2": "Bảo Mật",
+      "description": "Cam kết bảo vệ quyền riêng tư và thông tin cá nhân của bạn",
+      "lastUpdated": "Cập nhật lần cuối: Tháng 1, 2025"
+    },
+    "sections": {
+      "intro": {
+        "title": "1. Giới thiệu",
+        "content": "HotDeal Media (\"chúng tôi\") cam kết bảo vệ quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng dịch vụ của chúng tôi."
+      },
+      "googleApi": {
+        "title": "2. Sử dụng Google API Services",
+        "intro": "Ứng dụng của chúng tôi sử dụng Google API Services với các quyền truy cập giới hạn sau:",
+        "scopes": {
+          "sheets": {
+            "name": "Google Sheets (Chỉ đọc)",
+            "scope": "spreadsheets.readonly",
+            "description": "Cho phép đọc nội dung các Google Sheets mà bạn chọn chia sẻ. Chúng tôi KHÔNG thể chỉnh sửa, xóa hoặc tạo mới bất kỳ spreadsheet nào."
+          },
+          "drive": {
+            "name": "Google Drive (Chỉ đọc)",
+            "scope": "drive.readonly",
+            "description": "Cho phép liệt kê các files trong Drive của bạn để bạn có thể chọn file muốn sử dụng. Chúng tôi KHÔNG thể chỉnh sửa, xóa, tải lên hoặc di chuyển bất kỳ file nào."
+          },
+          "email": {
+            "name": "Email người dùng",
+            "scope": "userinfo.email",
+            "description": "Cho phép lấy địa chỉ email của bạn để hiển thị tài khoản đang kết nối. Chúng tôi KHÔNG truy cập nội dung email của bạn."
+          }
+        },
+        "commitments": {
+          "title": "Cam kết của chúng tôi:",
+          "items": [
+            "Chỉ truy cập dữ liệu khi bạn cho phép",
+            "Không lưu trữ vĩnh viễn dữ liệu Google của bạn trên máy chủ",
+            "Không chia sẻ dữ liệu với bên thứ ba",
+            "Không sử dụng dữ liệu cho mục đích quảng cáo",
+            "Bạn có thể thu hồi quyền truy cập bất cứ lúc nào"
+          ]
+        },
+        "disclosure": "Việc sử dụng thông tin nhận được từ Google APIs tuân thủ Google API Services User Data Policy, bao gồm các yêu cầu về Limited Use."
+      },
+      "dataCollection": {
+        "title": "3. Thông tin chúng tôi thu thập",
+        "intro": "Chúng tôi có thể thu thập các loại thông tin sau:",
+        "items": [
+          "Thông tin bạn cung cấp: Tên, email, số điện thoại khi bạn liên hệ với chúng tôi",
+          "Thông tin tự động: Địa chỉ IP, loại trình duyệt, thời gian truy cập",
+          "Thông tin Google: Email và dữ liệu sheets khi bạn kết nối tài khoản Google (chỉ khi được sự cho phép)"
+        ]
+      },
+      "dataUsage": {
+        "title": "4. Cách chúng tôi sử dụng thông tin",
+        "intro": "Chúng tôi sử dụng thông tin của bạn để:",
+        "items": [
+          "Cung cấp và cải thiện dịch vụ",
+          "Hỗ trợ khách hàng và phản hồi yêu cầu",
+          "Gửi thông tin cập nhật về dịch vụ (nếu bạn đồng ý)",
+          "Phân tích và tối ưu trải nghiệm người dùng"
+        ]
+      },
+      "dataSecurity": {
+        "title": "5. Bảo mật dữ liệu",
+        "content": "Chúng tôi áp dụng các biện pháp bảo mật kỹ thuật và tổ chức phù hợp để bảo vệ thông tin của bạn khỏi truy cập trái phép, mất mát hoặc tiết lộ. Tuy nhiên, không có phương thức truyền tải qua Internet hoặc lưu trữ điện tử nào an toàn 100%."
+      },
+      "userRights": {
+        "title": "6. Quyền của bạn",
+        "intro": "Bạn có quyền:",
+        "items": [
+          "Truy cập và xem thông tin cá nhân của bạn",
+          "Yêu cầu chỉnh sửa thông tin không chính xác",
+          "Yêu cầu xóa thông tin cá nhân",
+          "Thu hồi quyền truy cập Google bất cứ lúc nào tại: https://myaccount.google.com/permissions",
+          "Từ chối nhận email marketing"
+        ]
+      },
+      "cookies": {
+        "title": "7. Cookies",
+        "content": "Chúng tôi sử dụng cookies để cải thiện trải nghiệm của bạn. Bạn có thể điều chỉnh cài đặt trình duyệt để từ chối cookies, tuy nhiên điều này có thể ảnh hưởng đến một số tính năng của website."
+      },
+      "changes": {
+        "title": "8. Thay đổi chính sách",
+        "content": "Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Mọi thay đổi sẽ được đăng tải trên trang này với ngày cập nhật mới."
+      },
+      "contact": {
+        "title": "9. Liên hệ",
+        "content": "Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ:",
+        "email": "Email: contact@hotdealmedia.vn",
+        "address": "Địa chỉ: 332 Lũy Bán Bích, Phường Tân Phú, TP.HCM"
+      }
+    }
+  },
+  "termsPage": {
+    "metadata": {
+      "title": "Điều Khoản Dịch Vụ - HotDeal Media",
+      "description": "Điều khoản dịch vụ của HotDeal Media. Quy định về việc sử dụng dịch vụ và website của chúng tôi."
+    },
+    "hero": {
+      "badge": "Điều Khoản Dịch Vụ",
+      "heading1": "Điều Khoản",
+      "heading2": "Dịch Vụ",
+      "description": "Quy định về việc sử dụng dịch vụ của HotDeal Media",
+      "lastUpdated": "Cập nhật lần cuối: Tháng 1, 2025"
+    },
+    "sections": {
+      "intro": {
+        "title": "1. Giới thiệu",
+        "content": "Chào mừng bạn đến với HotDeal Media. Bằng việc truy cập và sử dụng website cũng như dịch vụ của chúng tôi, bạn đồng ý tuân thủ các điều khoản dịch vụ này. Vui lòng đọc kỹ trước khi sử dụng."
+      },
+      "definitions": {
+        "title": "2. Định nghĩa",
+        "items": [
+          "\"Chúng tôi\", \"Công ty\" đề cập đến Công Ty Cổ Phần Hotdeal (HotDeal Media)",
+          "\"Bạn\", \"Người dùng\" đề cập đến cá nhân hoặc tổ chức sử dụng dịch vụ",
+          "\"Dịch vụ\" bao gồm website, ứng dụng và các dịch vụ marketing của chúng tôi"
+        ]
+      },
+      "usage": {
+        "title": "3. Điều kiện sử dụng",
+        "intro": "Khi sử dụng dịch vụ của chúng tôi, bạn đồng ý:",
+        "items": [
+          "Cung cấp thông tin chính xác và đầy đủ",
+          "Không sử dụng dịch vụ cho mục đích bất hợp pháp",
+          "Không can thiệp hoặc phá hoại hệ thống",
+          "Không vi phạm quyền sở hữu trí tuệ",
+          "Tuân thủ pháp luật Việt Nam"
+        ]
+      },
+      "googleServices": {
+        "title": "4. Tích hợp Google Services",
+        "intro": "Khi kết nối tài khoản Google với dịch vụ của chúng tôi:",
+        "items": [
+          "Bạn cho phép chúng tôi truy cập các quyền đã được liệt kê trong quá trình xác thực",
+          "Chúng tôi chỉ sử dụng quyền truy cập đọc (readonly) và không thể chỉnh sửa dữ liệu của bạn",
+          "Bạn có thể thu hồi quyền truy cập bất cứ lúc nào",
+          "Việc sử dụng dữ liệu tuân thủ Chính sách bảo mật của chúng tôi"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "5. Quyền sở hữu trí tuệ",
+        "content": "Tất cả nội dung trên website bao gồm văn bản, hình ảnh, logo, thiết kế thuộc quyền sở hữu của HotDeal Media hoặc đối tác được cấp phép. Bạn không được sao chép, phân phối hoặc sử dụng cho mục đích thương mại mà không có sự cho phép bằng văn bản."
+      },
+      "liability": {
+        "title": "6. Giới hạn trách nhiệm",
+        "intro": "Trong phạm vi pháp luật cho phép:",
+        "items": [
+          "Dịch vụ được cung cấp \"nguyên trạng\" không có bảo đảm về tính liên tục hoặc không có lỗi",
+          "Chúng tôi không chịu trách nhiệm cho thiệt hại gián tiếp phát sinh từ việc sử dụng dịch vụ",
+          "Trách nhiệm tối đa của chúng tôi được giới hạn trong phạm vi số tiền bạn đã thanh toán"
+        ]
+      },
+      "termination": {
+        "title": "7. Chấm dứt",
+        "content": "Chúng tôi có quyền tạm ngừng hoặc chấm dứt quyền truy cập của bạn nếu vi phạm các điều khoản này. Bạn cũng có thể ngừng sử dụng dịch vụ và xóa tài khoản bất cứ lúc nào."
+      },
+      "changes": {
+        "title": "8. Thay đổi điều khoản",
+        "content": "Chúng tôi có thể cập nhật các điều khoản này theo thời gian. Việc tiếp tục sử dụng dịch vụ sau khi thay đổi đồng nghĩa với việc bạn chấp nhận các điều khoản mới."
+      },
+      "law": {
+        "title": "9. Luật áp dụng",
+        "content": "Các điều khoản này được điều chỉnh bởi pháp luật Việt Nam. Mọi tranh chấp sẽ được giải quyết tại tòa án có thẩm quyền tại TP. Hồ Chí Minh."
+      },
+      "contact": {
+        "title": "10. Liên hệ",
+        "content": "Nếu bạn có câu hỏi về các điều khoản này, vui lòng liên hệ:",
+        "email": "Email: contact@hotdealmedia.vn",
+        "address": "Địa chỉ: 332 Lũy Bán Bích, Phường Tân Phú, TP.HCM"
+      }
     }
   },
   "aboutPage": {

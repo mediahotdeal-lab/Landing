@@ -113,6 +113,21 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+
+            {/* Legal Links */}
+            <h3 className="font-bold text-lg mb-4 mt-6">{t('legalTitle')}</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/policy" className="text-gray-400 hover:text-red-600 transition-colors">
+                  {t('legal.privacy')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-service" className="text-gray-400 hover:text-red-600 transition-colors">
+                  {t('legal.terms')}
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Contact */}

@@ -217,6 +217,189 @@
       "mobile": "Mobile: 0375307068",
       "zalo": "Zalo: 0375307068",
       "email": "contact@hotdealmedia.com"
+    },
+    "legalTitle": "Legal",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "policyPage": {
+    "metadata": {
+      "title": "Privacy Policy - HotDeal Media",
+      "description": "HotDeal Media Privacy Policy. Our commitment to protecting your personal information and data."
+    },
+    "hero": {
+      "badge": "Privacy Policy",
+      "heading1": "Privacy",
+      "heading2": "Policy",
+      "description": "Our commitment to protecting your privacy and personal information",
+      "lastUpdated": "Last updated: January, 2025"
+    },
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "HotDeal Media (\"we\", \"us\") is committed to protecting your privacy. This privacy policy explains how we collect, use, and protect your information when using our services."
+      },
+      "googleApi": {
+        "title": "2. Use of Google API Services",
+        "intro": "Our application uses Google API Services with the following limited access permissions:",
+        "scopes": {
+          "sheets": {
+            "name": "Google Sheets (Read-only)",
+            "scope": "spreadsheets.readonly",
+            "description": "Allows reading content of Google Sheets that you choose to share. We CANNOT edit, delete, or create any spreadsheets."
+          },
+          "drive": {
+            "name": "Google Drive (Read-only)",
+            "scope": "drive.readonly",
+            "description": "Allows listing files in your Drive so you can select which file to use. We CANNOT edit, delete, upload, or move any files."
+          },
+          "email": {
+            "name": "User Email",
+            "scope": "userinfo.email",
+            "description": "Allows retrieving your email address to display the connected account. We do NOT access your email content."
+          }
+        },
+        "commitments": {
+          "title": "Our Commitments:",
+          "items": [
+            "Only access data when you give permission",
+            "Do not permanently store your Google data on our servers",
+            "Do not share data with third parties",
+            "Do not use data for advertising purposes",
+            "You can revoke access at any time"
+          ]
+        },
+        "disclosure": "Our use of information received from Google APIs complies with the Google API Services User Data Policy, including the Limited Use requirements."
+      },
+      "dataCollection": {
+        "title": "3. Information We Collect",
+        "intro": "We may collect the following types of information:",
+        "items": [
+          "Information you provide: Name, email, phone number when you contact us",
+          "Automatic information: IP address, browser type, access time",
+          "Google information: Email and sheets data when you connect your Google account (only with your permission)"
+        ]
+      },
+      "dataUsage": {
+        "title": "4. How We Use Information",
+        "intro": "We use your information to:",
+        "items": [
+          "Provide and improve services",
+          "Customer support and respond to requests",
+          "Send service updates (if you agree)",
+          "Analyze and optimize user experience"
+        ]
+      },
+      "dataSecurity": {
+        "title": "5. Data Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your information from unauthorized access, loss, or disclosure. However, no method of transmission over the Internet or electronic storage is 100% secure."
+      },
+      "userRights": {
+        "title": "6. Your Rights",
+        "intro": "You have the right to:",
+        "items": [
+          "Access and view your personal information",
+          "Request correction of inaccurate information",
+          "Request deletion of personal information",
+          "Revoke Google access at any time at: https://myaccount.google.com/permissions",
+          "Opt-out of marketing emails"
+        ]
+      },
+      "cookies": {
+        "title": "7. Cookies",
+        "content": "We use cookies to improve your experience. You can adjust your browser settings to reject cookies, however this may affect some website features."
+      },
+      "changes": {
+        "title": "8. Policy Changes",
+        "content": "We may update this privacy policy from time to time. Any changes will be posted on this page with a new update date."
+      },
+      "contact": {
+        "title": "9. Contact",
+        "content": "If you have questions about this privacy policy, please contact:",
+        "email": "Email: contact@hotdealmedia.vn",
+        "address": "Address: 332 Luy Ban Bich, Tan Phu Ward, Ho Chi Minh City"
+      }
+    }
+  },
+  "termsPage": {
+    "metadata": {
+      "title": "Terms of Service - HotDeal Media",
+      "description": "HotDeal Media Terms of Service. Regulations on the use of our services and website."
+    },
+    "hero": {
+      "badge": "Terms of Service",
+      "heading1": "Terms of",
+      "heading2": "Service",
+      "description": "Regulations on the use of HotDeal Media services",
+      "lastUpdated": "Last updated: January, 2025"
+    },
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "Welcome to HotDeal Media. By accessing and using our website and services, you agree to comply with these terms of service. Please read carefully before using."
+      },
+      "definitions": {
+        "title": "2. Definitions",
+        "items": [
+          "\"We\", \"Company\" refers to Hotdeal Joint Stock Company (HotDeal Media)",
+          "\"You\", \"User\" refers to individuals or organizations using the services",
+          "\"Services\" includes our website, applications, and marketing services"
+        ]
+      },
+      "usage": {
+        "title": "3. Terms of Use",
+        "intro": "When using our services, you agree to:",
+        "items": [
+          "Provide accurate and complete information",
+          "Not use services for illegal purposes",
+          "Not interfere with or damage the system",
+          "Not violate intellectual property rights",
+          "Comply with Vietnamese law"
+        ]
+      },
+      "googleServices": {
+        "title": "4. Google Services Integration",
+        "intro": "When connecting your Google account to our services:",
+        "items": [
+          "You authorize us to access the permissions listed during authentication",
+          "We only use read-only access and cannot modify your data",
+          "You can revoke access at any time",
+          "Data usage complies with our Privacy Policy"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "5. Intellectual Property",
+        "content": "All content on the website including text, images, logos, and designs are owned by HotDeal Media or licensed partners. You may not copy, distribute, or use for commercial purposes without written permission."
+      },
+      "liability": {
+        "title": "6. Limitation of Liability",
+        "intro": "To the extent permitted by law:",
+        "items": [
+          "Services are provided \"as is\" without guarantees of continuity or error-free operation",
+          "We are not responsible for indirect damages arising from the use of services",
+          "Our maximum liability is limited to the amount you have paid"
+        ]
+      },
+      "termination": {
+        "title": "7. Termination",
+        "content": "We reserve the right to suspend or terminate your access if you violate these terms. You may also stop using services and delete your account at any time."
+      },
+      "changes": {
+        "title": "8. Changes to Terms",
+        "content": "We may update these terms from time to time. Continued use of services after changes means you accept the new terms."
+      },
+      "law": {
+        "title": "9. Applicable Law",
+        "content": "These terms are governed by Vietnamese law. Any disputes will be resolved at competent courts in Ho Chi Minh City."
+      },
+      "contact": {
+        "title": "10. Contact",
+        "content": "If you have questions about these terms, please contact:",
+        "email": "Email: contact@hotdealmedia.vn",
+        "address": "Address: 332 Luy Ban Bich, Tan Phu Ward, Ho Chi Minh City"
+      }
     }
   },
   "aboutPage": {
