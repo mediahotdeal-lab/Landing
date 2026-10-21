@@ -7,7 +7,7 @@ export default function FloatingContact() {
     <div className="fixed right-4 bottom-8 z-50 flex flex-col items-center gap-3">
       {/* Hotline Button */}
       <a
-        href="tel:0375307068"
+        href="tel:0336033039"
         className="relative flex items-center justify-center w-[50px] h-[50px] bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:scale-105 transition-all duration-300 animate-float-soft"
         aria-label="Gọi hotline"
       >
@@ -43,7 +43,7 @@ export default function FloatingContact() {
 
       {/* Zalo Button - Bottom Right */}
       <a
-        href="http://zalo.me/0375307068"
+        href="http://zalo.me/0336033039"
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center justify-center w-[50px] h-[50px] bg-transparent hover:scale-105 transition-all duration-300 animate-float-soft"
