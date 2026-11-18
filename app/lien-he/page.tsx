@@ -259,6 +259,7 @@ export default function ContactPage() {
                       <option value="thue-tai-khoan-google-ads-vnd">{t('form.services.googleAdsRental')}</option>
                       <option value="thiet-ke-website">{t('form.services.websiteDesign')}</option>
                       <option value="thiet-ke-landing-page">{t('form.services.landingPageDesign')}</option>
+                      <option value="dich-vu-tiktok">{t('form.services.tiktok')}</option>
                     </select>
                     {validationErrors.service && (
                       <p className="mt-1 text-sm text-red-600">{validationErrors.service}</p>

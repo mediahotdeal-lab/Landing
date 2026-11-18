@@ -150,4 +150,263 @@
       opacity: 0.15;
     }
   }
+
+  /* Register Form Modal */
+  .animate-modal-fade {
+    animation: modal-fade 0.25s ease-out;
+  }
+
+  .animate-modal-pop {
+    animation: modal-pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+  }
+
+  @keyframes modal-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes modal-pop {
+    from {
+      opacity: 0;
+      transform: translateY(24px) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* TikTok Page - scroll reveal */
+  .tt-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .tt-reveal-left {
+    transform: translateX(-32px);
+  }
+
+  .tt-reveal-right {
+    transform: translateX(32px);
+  }
+
+  .tt-reveal-zoom {
+    transform: scale(0.92);
+  }
+
+  .tt-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Light sweep across buttons and badges */
+  .tt-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tt-shine::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+    transform: translateX(-120%);
+    animation: tt-shine 3.6s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes tt-shine {
+    0%, 55% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  }
+
+  /* Hero image slow zoom */
+  .tt-kenburns {
+    animation: tt-kenburns 14s ease-in-out infinite alternate;
+  }
+
+  @keyframes tt-kenburns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.06);
+    }
+  }
+
+  /* TikTok live-style hearts */
+  .tt-heart {
+    animation: tt-heart-rise 4.5s ease-in infinite;
+    opacity: 0;
+  }
+
+  @keyframes tt-heart-rise {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0) scale(0.5) rotate(0deg);
+    }
+    15% {
+      opacity: 1;
+      transform: translate(-6px, -30px) scale(1) rotate(-8deg);
+    }
+    50% {
+      transform: translate(10px, -120px) scale(1.05) rotate(8deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-8px, -240px) scale(1.15) rotate(-6deg);
+    }
+  }
+
+  /* Arrows between process steps */
+  .tt-arrow-flow {
+    animation: tt-arrow-flow 1.6s ease-in-out infinite;
+  }
+
+  @keyframes tt-arrow-flow {
+    0%, 100% {
+      transform: translateX(-4px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateX(6px);
+      opacity: 1;
+    }
+  }
+
+  /* 3D TikTok tile */
+  .tt-float-3d {
+    animation: tt-float-3d 5s ease-in-out infinite;
+  }
+
+  @keyframes tt-float-3d {
+    0%, 100% {
+      transform: perspective(600px) rotateY(-18deg) rotateX(10deg) rotateZ(-6deg) translateY(0);
+    }
+    50% {
+      transform: perspective(600px) rotateY(-8deg) rotateX(4deg) rotateZ(-2deg) translateY(-10px);
+    }
+  }
+
+  /* Growth chart bars and arrow */
+  .tt-bar {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .is-visible .tt-bar {
+    transform: scaleY(1);
+  }
+
+  .tt-draw {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    transition: stroke-dashoffset 1.4s ease-out 0.4s;
+  }
+
+  .is-visible .tt-draw {
+    stroke-dashoffset: 0;
+  }
+
+  /* Slow drifting light streaks on the CTA banner */
+  .tt-streak {
+    animation: tt-streak 9s ease-in-out infinite alternate;
+  }
+
+  @keyframes tt-streak {
+    from {
+      transform: translateX(-6%) skewX(-20deg);
+    }
+    to {
+      transform: translateX(6%) skewX(-20deg);
+    }
+  }
+
+  /* Hero video card and floating badges */
+  .tt-float-card {
+    animation: tt-float-card 6s ease-in-out infinite;
+  }
+
+  @keyframes tt-float-card {
+    0%, 100% {
+      transform: rotate(-4deg) translateY(0);
+    }
+    50% {
+      transform: rotate(-2deg) translateY(-8px);
+    }
+  }
+
+  .tt-float-soft-slow {
+    animation: float-soft 4s ease-in-out infinite;
+  }
+
+  /* Live comments rising inside the video card */
+  .tt-comment {
+    opacity: 0;
+    animation: tt-comment 10s ease-out infinite;
+  }
+
+  @keyframes tt-comment {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    4% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    22% {
+      opacity: 1;
+      transform: translateY(-115%);
+    }
+    30%, 100% {
+      opacity: 0;
+      transform: translateY(-230%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tt-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .tt-bar {
+      transform: none;
+    }
+
+    .tt-comment {
+      animation: none;
+    }
+
+    .tt-comment:first-child {
+      opacity: 1;
+    }
+
+    .tt-draw {
+      stroke-dashoffset: 0;
+    }
+
+    .tt-shine::after,
+    .tt-float-card,
+    .tt-float-soft-slow,
+    .tt-kenburns,
+    .tt-heart,
+    .tt-arrow-flow,
+    .tt-float-3d,
+    .tt-streak {
+      animation: none;
+    }
+  }
 }

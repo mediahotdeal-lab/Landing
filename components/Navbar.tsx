@@ -11,6 +11,8 @@ const services = [
   { slug: 'thue-tai-khoan-google-ads-vnd', nameKey: 'googleAdsRental' },
   { slug: 'thiet-ke-website', nameKey: 'websiteDesign' },
   { slug: 'thiet-ke-landing-page', nameKey: 'landingPageDesign' },
+  // Full label without the "Dịch vụ (...)" prefix wrapper
+  { slug: 'dich-vu-tiktok', nameKey: 'tiktok', standalone: true },
 ];
 
 export default function Navbar() {
@@ -18,6 +20,11 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+  const getServiceLabel = (service: (typeof services)[number]) =>
+    'standalone' in service
+      ? t(`servicesList.${service.nameKey}`)
+      : `${t('servicePrefix')} (${t(`servicesList.${service.nameKey}`)})`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +58,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {/* Services Dropdown */}
             <div
               className="relative"
@@ -91,7 +98,7 @@ export default function Navbar() {
                         >
                           <div className="flex items-center gap-3">
                             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-300 group-hover:bg-red-600 transition-colors"></div>
-                            <span>{t('servicePrefix')} ({t(`servicesList.${service.nameKey}`)})</span>
+                            <span>{getServiceLabel(service)}</span>
                           </div>
                           {/* Hover indicator */}
                           <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-600 transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
@@ -137,7 +144,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+            className="lg:hidden w-10 h-10 flex items-center justify-center text-gray-700"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg
@@ -167,7 +174,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="lg:hidden py-4 border-t border-gray-100">
             <div className="space-y-2">
               {/* Services Dropdown Mobile */}
               <div>
@@ -204,7 +211,7 @@ export default function Navbar() {
                           setIsServicesOpen(false);
                         }}
                       >
-                        {t('servicePrefix')} ({t(`servicesList.${service.nameKey}`)})
+                        {getServiceLabel(service)}
                       </Link>
                     ))}
                     <Link

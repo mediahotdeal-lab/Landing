@@ -44,6 +44,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     // Individual service pages (dynamically generated)
     ...servicePages,
+    // TikTok service page (standalone route, not in services-data)
+    {
+      url: `${baseUrl}/dich-vu/dich-vu-tiktok`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     // Blog index page
     {
       url: `${baseUrl}/blog`,

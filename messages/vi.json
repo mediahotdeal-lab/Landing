@@ -21,7 +21,8 @@
       "googleAds": "Quảng Cáo Google Ads",
       "googleAdsRental": "Thuê tài khoản Google Ads",
       "websiteDesign": "Thiết kế Website",
-      "landingPageDesign": "Thiết kế Landing Page"
+      "landingPageDesign": "Thiết kế Landing Page",
+      "tiktok": "Dịch vụ TikTok"
     }
   },
   "hero": {
@@ -167,7 +168,8 @@
         "googleAds": "Dịch vụ (Quảng Cáo Google Ads)",
         "googleAdsRental": "Dịch vụ (Thuê tài khoản Google Ads)",
         "websiteDesign": "Dịch vụ (Thiết kế Website)",
-        "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)"
+        "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)",
+        "tiktok": "Dịch vụ TikTok"
       },
       "submit": "Gửi thông tin",
       "submitting": "Đang gửi...",
@@ -643,7 +645,8 @@
         "googleAds": "Dịch vụ (Quảng Cáo Google Ads)",
         "googleAdsRental": "Dịch vụ (Thuê tài khoản Google Ads)",
         "websiteDesign": "Dịch vụ (Thiết kế Website)",
-        "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)"
+        "landingPageDesign": "Dịch vụ (Thiết kế Landing Page)",
+        "tiktok": "Dịch vụ TikTok"
       },
       "submit": "Gửi tin nhắn",
       "submitting": "Đang gửi...",
@@ -1570,6 +1573,192 @@
         ],
         "footer": "Hotdeal Media – Chuyên nghiệp, sáng tạo, và tận tâm đồng hành cùng thành công của bạn."
       }
+    }
+  },
+  "registerModal": {
+    "title": "Đăng ký tư vấn",
+    "description": "Để lại thông tin, đội ngũ Hotdeal Media sẽ liên hệ tư vấn chi tiết nhất.",
+    "close": "Đóng",
+    "registerForm": "Đăng ký tư vấn"
+  },
+  "tiktokPage": {
+    "hero": {
+      "badge": "HOTDEAL MEDIA | TIKTOK SOLUTIONS",
+      "titlePrefix": "Giải pháp",
+      "titleHighlight": "TIKTOK SHOP",
+      "titleLine2": "TOÀN DIỆN CHO DOANH NGHIỆP",
+      "description": "Kết nối thương hiệu với cộng đồng KOC, triển khai chiến dịch Freecast và đồng hành xây dựng, vận hành gian hàng TikTok Shop.",
+      "cta": "Đăng ký tư vấn ngay",
+      "portfolio": "Xem hồ sơ năng lực",
+      "imageAlt": "Nhà sáng tạo nội dung livestream bán hàng trên TikTok Shop",
+      "highlights": [
+        "Mạng lưới KOC đa dạng",
+        "Giải pháp trọn gói TikTok Shop",
+        "Tối ưu hiệu quả kinh doanh"
+      ],
+      "tagline": "Phát triển thương hiệu cùng Hotdeal Media!",
+      "buyNow": "Mua ngay",
+      "liveComments": [
+        "Chốt đơn cho mình nha! 🛒",
+        "Sản phẩm xịn quá 😍",
+        "Còn hàng không shop ơi?",
+        "Đã đặt 2 hộp ✅"
+      ]
+    },
+    "services": {
+      "label": "DỊCH VỤ NỔI BẬT",
+      "title": "5 Gói dịch vụ TikTok từ Hotdeal Media",
+      "description": "Giải pháp linh hoạt, phù hợp với từng mục tiêu kinh doanh",
+      "cta": "Đăng ký dịch vụ",
+      "messageTemplate": "Tôi muốn đăng ký gói dịch vụ: {service}",
+      "items": [
+        {
+          "title": "Booking KOC Freecast",
+          "description": "Kết nối KOC review, unbox, UGC..."
+        },
+        {
+          "title": "Booking CAST",
+          "description": "Tuyển chọn và kết nối nhân sự phù hợp."
+        },
+        {
+          "title": "Xây dựng gian hàng TikTok Shop",
+          "description": "Thiết lập gian hàng, đăng sản phẩm."
+        },
+        {
+          "title": "Vận hành gian hàng TikTok Shop",
+          "description": "Quản lý, tối ưu gian hàng hiệu quả."
+        },
+        {
+          "title": "Quảng cáo TikTok",
+          "description": "Tăng độ nhận diện, tiếp cận khách hàng."
+        }
+      ]
+    },
+    "process": {
+      "label": "QUY TRÌNH TRIỂN KHAI",
+      "title": "5 Bước triển khai đơn giản",
+      "steps": [
+        {
+          "title": "Tiếp nhận yêu cầu",
+          "description": "Tìm hiểu nhu cầu của doanh nghiệp"
+        },
+        {
+          "title": "Tư vấn giải pháp",
+          "description": "Đề xuất gói dịch vụ phù hợp"
+        },
+        {
+          "title": "Lên kế hoạch",
+          "description": "Thống nhất ngân sách và tiến độ"
+        },
+        {
+          "title": "Triển khai",
+          "description": "Thực hiện chiến dịch theo kế hoạch"
+        },
+        {
+          "title": "Báo cáo",
+          "description": "Tổng hợp kết quả và đánh giá hiệu quả"
+        }
+      ]
+    },
+    "team": {
+      "label": "ĐỘI NGŨ CHUYÊN GIA",
+      "title": "Đồng hành cùng bạn trên hành trình bứt phá doanh thu",
+      "description": "Đội ngũ Hotdeal Media với nhiều năm kinh nghiệm trong lĩnh vực TikTok Shop và Booking KOC, sẵn sàng tư vấn và triển khai giải pháp tối ưu nhất.",
+      "cta": "Về chúng tôi",
+      "members": [
+        {
+          "name": "Ngọc Trâm",
+          "role": "Booking KOC Việt Nam",
+          "experience": "5+ năm kinh nghiệm",
+          "note": ""
+        },
+        {
+          "name": "Phan Nguyễn Mạnh Cường",
+          "role": "Booking KOC",
+          "experience": "4+ năm kinh nghiệm",
+          "note": "(Philippines & Việt Nam)"
+        },
+        {
+          "name": "Nguyễn Trần Hoàng",
+          "role": "Vận hành Sàn",
+          "experience": "5+ năm kinh nghiệm",
+          "note": ""
+        },
+        {
+          "name": "Phan Thị Trà My",
+          "role": "Business Development",
+          "experience": "",
+          "note": ""
+        },
+        {
+          "name": "Nguyễn Cao Tuyết Nhi",
+          "role": "Business Development",
+          "experience": "",
+          "note": ""
+        }
+      ]
+    },
+    "industries": {
+      "label": "NGÀNH HÀNG PHỤC VỤ",
+      "titleNumber": "7",
+      "title": "ngành hàng trọng điểm",
+      "items": [
+        "Mỹ phẩm",
+        "Thời trang",
+        "Gia dụng",
+        "Thực phẩm",
+        "Mẹ và bé",
+        "Công nghệ",
+        "Sản phẩm dịch vụ Nhà hàng/Spa/..."
+      ]
+    },
+    "revenue": {
+      "title": "Hàng trăm Shop đã bứt phá cùng Hotdeal Media",
+      "imageAlt": "Doanh số TikTok Shop thực tế của khách hàng Hotdeal Media - ảnh {index}",
+      "prev": "Ảnh trước",
+      "next": "Ảnh tiếp theo",
+      "goTo": "Xem ảnh {index}",
+      "zoom": "Phóng to",
+      "close": "Đóng"
+    },
+    "faq": {
+      "label": "CÂU HỎI THƯỜNG GẶP",
+      "title": "Giải đáp các thắc mắc về dịch vụ TikTok",
+      "description": "Những câu hỏi phổ biến nhất về dịch vụ Booking KOC, TikTok Shop và quảng cáo.",
+      "viewAll": "Xem tất cả",
+      "collapseAll": "Thu gọn",
+      "items": [
+        {
+          "question": "Booking KOC Freecast là gì?",
+          "answer": "Booking KOC Freecast là hình thức kết nối thương hiệu với cộng đồng KOC để review, unbox hoặc làm video UGC về sản phẩm. Thay vì trả phí cast, doanh nghiệp gửi sản phẩm cho KOC trải nghiệm và tạo nội dung. Cách này giúp tăng độ phủ và độ tin cậy cho sản phẩm với chi phí tối ưu. Hotdeal lo toàn bộ khâu tuyển chọn KOC phù hợp, gửi brief, theo dõi tiến độ và nghiệm thu nội dung."
+        },
+        {
+          "question": "Chi phí triển khai như thế nào?",
+          "answer": "Chi phí phụ thuộc vào gói dịch vụ, ngành hàng và mục tiêu kinh doanh của từng doanh nghiệp. Hotdeal có 5 nhóm dịch vụ (Booking KOC Freecast, Booking CAST, Xây dựng gian hàng, Vận hành gian hàng, Quảng cáo TikTok) và sẽ đề xuất gói phù hợp cùng báo giá minh bạch sau khi tư vấn. Để nhận báo giá chi tiết, bạn để lại thông tin, đội ngũ sẽ liên hệ ngay."
+        },
+        {
+          "question": "Thời gian triển khai là bao lâu?",
+          "answer": "Sau khi thống nhất kế hoạch và ký hợp đồng, Hotdeal thường bắt đầu triển khai trong vòng 3–7 ngày làm việc. Thời gian cụ thể tùy theo dịch vụ: booking KOC cần thêm thời gian chọn KOC và gửi sản phẩm, còn xây dựng và vận hành gian hàng cần thời gian thiết lập và đăng sản phẩm. Các gói vận hành thường chạy theo hợp đồng 3 tháng để đủ thời gian tối ưu và đo lường hiệu quả."
+        },
+        {
+          "question": "Doanh nghiệp chưa có TikTok Shop có sử dụng được không?",
+          "answer": "Được. Hotdeal hỗ trợ xây dựng gian hàng từ đầu: đăng ký và thiết lập shop, tối ưu hồ sơ, đăng sản phẩm. Sau đó doanh nghiệp có thể triển khai tiếp vận hành, booking KOC và quảng cáo để tăng trưởng doanh số."
+        },
+        {
+          "question": "Hotdeal có hỗ trợ kiểm duyệt nội dung không?",
+          "answer": "Có. Nội dung của KOC và các kênh đều được Hotdeal rà soát trước khi đăng, để đảm bảo đúng thông điệp thương hiệu và phù hợp với chính sách của TikTok Shop. Doanh nghiệp cũng có thể xem và phản hồi nội dung theo quy trình đã thống nhất."
+        },
+        {
+          "question": "Các ngành hàng nào được triển khai?",
+          "answer": "Hotdeal hiện triển khai 7 ngành hàng trọng điểm: Mỹ phẩm, Thời trang, Gia dụng, Thực phẩm, Mẹ và bé, Công nghệ, và Sản phẩm dịch vụ (Nhà hàng/Spa...). Nếu ngành của bạn chưa có trong danh sách, bạn vẫn có thể để lại thông tin để được tư vấn riêng."
+        }
+      ]
+    },
+    "cta": {
+      "titleLine1": "BẠN ĐANG TÌM KIẾM GIẢI PHÁP",
+      "titleLine2": "PHÁT TRIỂN TIKTOK SHOP?",
+      "description": "Để lại thông tin, đội ngũ Hotdeal Media sẽ liên hệ tư vấn chi tiết nhất.",
+      "button": "Đăng ký tư vấn ngay"
     }
   }
 }

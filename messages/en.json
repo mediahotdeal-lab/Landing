@@ -21,7 +21,8 @@
       "googleAds": "Google Ads Advertising",
       "googleAdsRental": "Google Ads Account Rental",
       "websiteDesign": "Website Design",
-      "landingPageDesign": "Landing Page Design"
+      "landingPageDesign": "Landing Page Design",
+      "tiktok": "TikTok Services"
     }
   },
   "hero": {
@@ -167,7 +168,8 @@
         "googleAds": "Service (Google Ads Advertising)",
         "googleAdsRental": "Service (Google Ads Account Rental)",
         "websiteDesign": "Service (Website Design)",
-        "landingPageDesign": "Service (Landing Page Design)"
+        "landingPageDesign": "Service (Landing Page Design)",
+        "tiktok": "TikTok Services"
       },
       "submit": "Send Information",
       "submitting": "Sending...",
@@ -643,7 +645,8 @@
         "googleAds": "Service (Google Ads Advertising)",
         "googleAdsRental": "Service (Google Ads Account Rental)",
         "websiteDesign": "Service (Website Design)",
-        "landingPageDesign": "Service (Landing Page Design)"
+        "landingPageDesign": "Service (Landing Page Design)",
+        "tiktok": "TikTok Services"
       },
       "submit": "Send message",
       "submitting": "Sending...",
@@ -1576,6 +1579,192 @@
         ],
         "footer": "Hotdeal Media – Professional, creative, and dedicated to accompanying your success."
       }
+    }
+  },
+  "registerModal": {
+    "title": "Request a Consultation",
+    "description": "Leave your information and the Hotdeal Media team will contact you with detailed advice.",
+    "close": "Close",
+    "registerForm": "Request a consultation"
+  },
+  "tiktokPage": {
+    "hero": {
+      "badge": "HOTDEAL MEDIA | TIKTOK SOLUTIONS",
+      "titlePrefix": "Complete",
+      "titleHighlight": "TIKTOK SHOP",
+      "titleLine2": "SOLUTIONS FOR BUSINESSES",
+      "description": "Connect your brand with the KOC community, run Freecast campaigns and get support building and operating your TikTok Shop.",
+      "cta": "Get a consultation",
+      "portfolio": "View our portfolio",
+      "imageAlt": "Content creator livestreaming sales on TikTok Shop",
+      "highlights": [
+        "Diverse KOC network",
+        "All-in-one TikTok Shop solution",
+        "Optimized business performance"
+      ],
+      "tagline": "Grow your brand with Hotdeal Media!",
+      "buyNow": "Buy now",
+      "liveComments": [
+        "Adding to cart! 🛒",
+        "Love this product 😍",
+        "Is it still in stock?",
+        "Just ordered 2 boxes ✅"
+      ]
+    },
+    "services": {
+      "label": "FEATURED SERVICES",
+      "title": "5 TikTok Service Packages from Hotdeal Media",
+      "description": "Flexible solutions tailored to every business goal",
+      "cta": "Register for service",
+      "messageTemplate": "I would like to register for the service package: {service}",
+      "items": [
+        {
+          "title": "KOC Freecast Booking",
+          "description": "Connect with KOCs for reviews, unboxing, UGC..."
+        },
+        {
+          "title": "CAST Booking",
+          "description": "Select and connect the right talent."
+        },
+        {
+          "title": "TikTok Shop Setup",
+          "description": "Set up your shop and list products."
+        },
+        {
+          "title": "TikTok Shop Operation",
+          "description": "Manage and optimize your shop effectively."
+        },
+        {
+          "title": "TikTok Ads",
+          "description": "Boost awareness and reach customers."
+        }
+      ]
+    },
+    "process": {
+      "label": "IMPLEMENTATION PROCESS",
+      "title": "5 Simple Steps",
+      "steps": [
+        {
+          "title": "Receive request",
+          "description": "Understand your business needs"
+        },
+        {
+          "title": "Consult solution",
+          "description": "Propose a suitable package"
+        },
+        {
+          "title": "Plan",
+          "description": "Agree on budget and timeline"
+        },
+        {
+          "title": "Execute",
+          "description": "Run the campaign as planned"
+        },
+        {
+          "title": "Report",
+          "description": "Summarize results and evaluate performance"
+        }
+      ]
+    },
+    "team": {
+      "label": "EXPERT TEAM",
+      "title": "With you on the journey to breakthrough revenue",
+      "description": "The Hotdeal Media team has years of experience in TikTok Shop and KOC Booking, ready to advise and deliver the best solution for you.",
+      "cta": "About us",
+      "members": [
+        {
+          "name": "Ngọc Trâm",
+          "role": "KOC Booking Vietnam",
+          "experience": "5+ years of experience",
+          "note": ""
+        },
+        {
+          "name": "Phan Nguyễn Mạnh Cường",
+          "role": "KOC Booking",
+          "experience": "4+ years of experience",
+          "note": "(Philippines & Vietnam)"
+        },
+        {
+          "name": "Nguyễn Trần Hoàng",
+          "role": "Marketplace Operations",
+          "experience": "5+ years of experience",
+          "note": ""
+        },
+        {
+          "name": "Phan Thị Trà My",
+          "role": "Business Development",
+          "experience": "",
+          "note": ""
+        },
+        {
+          "name": "Nguyễn Cao Tuyết Nhi",
+          "role": "Business Development",
+          "experience": "",
+          "note": ""
+        }
+      ]
+    },
+    "industries": {
+      "label": "INDUSTRIES WE SERVE",
+      "titleNumber": "7",
+      "title": "key industries",
+      "items": [
+        "Cosmetics",
+        "Fashion",
+        "Home Appliances",
+        "Food",
+        "Mother & Baby",
+        "Technology",
+        "Services Restaurants/Spas/..."
+      ]
+    },
+    "revenue": {
+      "title": "Hundreds of Shops have grown with Hotdeal Media",
+      "imageAlt": "Real TikTok Shop sales of a Hotdeal Media client - image {index}",
+      "prev": "Previous image",
+      "next": "Next image",
+      "goTo": "View image {index}",
+      "zoom": "Zoom in",
+      "close": "Close"
+    },
+    "faq": {
+      "label": "FREQUENTLY ASKED QUESTIONS",
+      "title": "Answers to your questions about TikTok services",
+      "description": "The most common questions about KOC Booking, TikTok Shop and advertising services.",
+      "viewAll": "View all",
+      "collapseAll": "Collapse",
+      "items": [
+        {
+          "question": "What is KOC Freecast booking?",
+          "answer": "KOC Freecast booking connects your brand with a community of KOCs (Key Opinion Consumers) who review, unbox or create UGC videos about your products. Instead of paying casting fees, you send products for KOCs to experience and create content. This increases reach and product credibility at an optimized cost. Hotdeal handles everything: selecting suitable KOCs, sending briefs, tracking progress and approving content."
+        },
+        {
+          "question": "How much does it cost?",
+          "answer": "Costs depend on the service package, product category and business goals of each company. Hotdeal offers 5 service groups (KOC Freecast Booking, CAST Booking, Shop Setup, Shop Operation, TikTok Ads) and will propose a suitable package with a transparent quote after consultation. Leave your information to receive a detailed quote and our team will contact you right away."
+        },
+        {
+          "question": "How long does implementation take?",
+          "answer": "After agreeing on the plan and signing the contract, Hotdeal usually starts within 3–7 working days. Exact timing depends on the service: KOC booking needs extra time to select KOCs and ship products, while shop setup and operation need time for configuration and product listing. Operation packages usually run on 3-month contracts to allow enough time to optimize and measure results."
+        },
+        {
+          "question": "Can businesses without a TikTok Shop use the service?",
+          "answer": "Yes. Hotdeal helps you build a shop from scratch: registration and setup, profile optimization and product listing. After that, you can continue with shop operation, KOC booking and advertising to grow sales."
+        },
+        {
+          "question": "Does Hotdeal review content before posting?",
+          "answer": "Yes. All KOC and channel content is reviewed by Hotdeal before posting to ensure it matches your brand message and complies with TikTok Shop policies. You can also review and give feedback on content following the agreed process."
+        },
+        {
+          "question": "Which product categories do you serve?",
+          "answer": "Hotdeal currently serves 7 key categories: Cosmetics, Fashion, Home Appliances, Food, Mother & Baby, Technology, and Services (Restaurants/Spas...). If your category is not on the list, you can still leave your information for a tailored consultation."
+        }
+      ]
+    },
+    "cta": {
+      "titleLine1": "LOOKING FOR A SOLUTION",
+      "titleLine2": "TO GROW YOUR TIKTOK SHOP?",
+      "description": "Leave your information and the Hotdeal Media team will contact you with detailed advice.",
+      "button": "Get a consultation"
     }
   }
 }
