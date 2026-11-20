@@ -15,8 +15,10 @@ export const API_CONFIG = {
 };
 
 /**
- * Get the full URL for contact form submission
+ * URL the browser posts contact forms to.
+ * Same-origin route (app/api/contact-forms/route.ts) that forwards to the CRM server-side,
+ * avoiding mixed-content and CORS failures when the CRM is called directly from the page.
  */
 export function getContactFormURL(): string {
-  return `${API_CONFIG.baseURL}${API_CONFIG.contactFormEndpoint}`;
+  return API_CONFIG.contactFormEndpoint;
 }
