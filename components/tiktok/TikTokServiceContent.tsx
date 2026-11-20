@@ -10,7 +10,6 @@ import RevenueCarousel from './RevenueCarousel';
 import { Reveal, SectionLabel, ArrowRight, TikTokTile, primaryButtonClass } from './shared';
 
 const SERVICE_SLUG = 'dich-vu-tiktok';
-const PORTFOLIO_URL = 'https://canva.link/t3xbgzekncx9ltr';
 const CONTAINER = 'container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1400px]';
 
 interface TextItem {
@@ -146,14 +145,6 @@ function HeroSection() {
                 {t('cta')}
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </button>
-              <a
-                href={PORTFOLIO_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-red-600/20 px-6 py-3 font-semibold text-red-600 transition-all hover:border-red-600 hover:bg-red-50"
-              >
-                {t('portfolio')}
-              </a>
             </Reveal>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-3">
